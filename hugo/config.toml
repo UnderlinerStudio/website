@@ -1,0 +1,27 @@
+baseURL = 'https://underliner.studio/'
+publishDir = "../dist"
+enableEmoji = true
+timeZone = "Europe/Prague"
+defaultContentLanguage = "cs"
+languageCode = "cs"
+
+
+[menu]
+  [[menu.main]]
+    identifier = "homepage"
+    name = "home"
+    URL = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    URL = "/o-nas"
+    weight = 2
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    URL = "/kontakt"
+    weight = 99
+
+[minify]
+  minifyOutput = true

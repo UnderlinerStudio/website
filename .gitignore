@@ -1,0 +1,26 @@
+node_modules/
+dist/
+
+*~
+*.sw[mnpcod]
+*.log
+*.lock
+*.tmp
+*.tmp.*
+log.txt
+*.sublime-project
+*.sublime-workspace
+
+.idea/
+.vscode/
+.versions/
+$RECYCLE.BIN/
+
+.DS_Store
+.env
+
+hugo/assets/js/CookieBanner
+
+
+# Local Netlify folder
+.netlify
