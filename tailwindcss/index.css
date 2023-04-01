@@ -16,8 +16,12 @@
 
 @layer components {
 	.custom-scroll::-webkit-scrollbar {
-		@apply w-1 h-full rounded-full;
+		@apply h-full w-1 rounded-full;
 		@apply bg-neutral-800;
+	}
+
+	.checkbox-switch {
+		@apply invisible h-0 w-0;
 	}
 
 	.prose a {
