@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		font-family: Gilroy;
+	}
+	body {
+		@apply relative;
+	}
+	.base-grid {
+		@apply grid grid-cols-12;
+	}
+}
+
+@layer components {
+	.custom-scroll::-webkit-scrollbar {
+		@apply w-1 h-full rounded-full;
+		@apply bg-neutral-800;
+	}
+
+	.prose a {
+		@apply italic decoration-red-500;
+		@apply link-strikethrough;
+	}
+}
