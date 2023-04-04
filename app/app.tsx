@@ -24,6 +24,11 @@ export const App = () => {
 	};
 	if (consetCookie) decodedCookie = JSON.parse(consetCookie);
 
+	// @ts-ignore
+	gtag("consent", "update", {
+		ad_storage: decodedCookie.analytics_storage ? "granted" : "denied",
+		analytics_storage: decodedCookie.ad_storage ? "granted" : "denied",
+	});
 	const consent = useCookieContext();
 
 	consent.setState({

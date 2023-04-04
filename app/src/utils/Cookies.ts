@@ -36,7 +36,7 @@ export const setConsentCookies = (adStorage: boolean, analStorage: boolean) => {
 	);
 
 	// @ts-ignore
-	gtag("consent", {
+	gtag("consent", "update", {
 		ad_storage: adStorage ? "granted" : "denied",
 		analytics_storage: analStorage ? "granted" : "denied",
 	});
