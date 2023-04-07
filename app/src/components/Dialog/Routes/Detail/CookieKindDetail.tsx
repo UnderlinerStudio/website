@@ -2,16 +2,24 @@ import { JSX } from "solid-js/jsx-runtime";
 import { Switch, SwitchProps } from "@s-src/components/Switch";
 import { Accessor, createSignal } from "solid-js";
 
+type cookiesDetailInfo = {
+	app?: string;
+	name: string;
+	description: string;
+}[];
+
 type CookieKindDetailProps = {
 	heading: string;
 	text: string;
 	switchProps: SwitchProps;
+	cookiesDetailInfo: cookiesDetailInfo;
 };
 
 export const CookieKindDetail = ({
 	heading,
 	text,
 	switchProps,
+	cookiesDetailInfo,
 }: CookieKindDetailProps) => {
 	const [isOpen, setIsOpen] = createSignal(false);
 
@@ -33,7 +41,7 @@ export const CookieKindDetail = ({
 				/>
 			</div>
 			<p class="text-sm leading-relaxed text-neutral-400">{text}</p>
-			{isOpen() && <div>Somethign</div>}
+			{isOpen() && <CookieDetailTable cookiesDetailInfo={cookiesDetailInfo} />}
 		</div>
 	);
 };
@@ -65,5 +73,46 @@ const CollapsibleButton = ({
 			</span>
 			{children}
 		</button>
+	);
+};
+
+const CookieDetailTable = ({
+	cookiesDetailInfo,
+}: {
+	cookiesDetailInfo: cookiesDetailInfo;
+}) => {
+	return (
+		<table class="text-left">
+			<thead>
+				<tr>
+					{cookiesDetailInfo[0].app && (
+						<th class="border-b border-neutral-600 py-4 pr-4 font-bold">
+							Aplikace
+						</th>
+					)}
+					<th class="border-b border-neutral-600 py-4 pr-4 font-bold">Název</th>
+					<th class="border-b border-neutral-600 py-4 pr-4 font-bold">Účel</th>
+				</tr>
+			</thead>
+			<tbody>
+				{cookiesDetailInfo.map((detail) => {
+					return (
+						<tr>
+							{detail.app && (
+								<td class="border-b border-neutral-600 py-4 pr-4">
+									{detail.app}
+								</td>
+							)}
+							<td class="border-b border-neutral-600 py-4 pr-4">
+								{detail.name}
+							</td>
+							<td class="border-b border-neutral-600 py-4 pr-4">
+								{detail.description}
+							</td>
+						</tr>
+					);
+				})}
+			</tbody>
+		</table>
 	);
 };

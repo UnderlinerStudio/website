@@ -1,6 +1,6 @@
 import { LangData } from "app/app";
 import { CookieKindDetail } from "./CookieKindDetail";
-import { useCookieContext } from "../../../../context/cookieProvider";
+import { useCookieContext } from "@s-src/context/cookieProvider";
 
 export const Detail = ({
 	content,
@@ -16,6 +16,7 @@ export const Detail = ({
 					heading={content.necesaryCookies.heading}
 					text={content.necesaryCookies.text}
 					switchProps={{ isDisabled: true, checked: true, onClick: () => {} }}
+					cookiesDetailInfo={content.necesaryCookies.cookies}
 				/>
 				<CookieKindDetail
 					heading={content.analyticsCookies.heading}
@@ -29,19 +30,7 @@ export const Detail = ({
 								analytics_storage: !consent.state().analytics_storage,
 							}),
 					}}
-				/>
-				<CookieKindDetail
-					heading={content.marketingCookies.heading}
-					text={content.marketingCookies.text}
-					switchProps={{
-						isDisabled: false,
-						checked: consent.state().ad_storage,
-						onClick: () =>
-							consent.setState({
-								ad_storage: !consent.state().ad_storage,
-								analytics_storage: consent.state().analytics_storage,
-							}),
-					}}
+					cookiesDetailInfo={content.analyticsCookies.cookies}
 				/>
 			</div>
 		</div>

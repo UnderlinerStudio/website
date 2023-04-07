@@ -28,14 +28,14 @@ export const SlideRouter = ({
 				setActiveSlide={setActiveSlide}
 				key={"detail"}
 			>
-				{content.consent.key}
+				{content.details.key}
 			</SlideButton>
 			<SlideButton
 				activeSlide={activeSlide}
 				setActiveSlide={setActiveSlide}
 				key={"about"}
 			>
-				{content.consent.key}
+				{content.about.key}
 			</SlideButton>
 		</div>
 	);

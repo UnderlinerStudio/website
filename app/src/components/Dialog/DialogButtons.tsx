@@ -4,27 +4,27 @@ import { ButtonFilled, ButtonOutlined } from "@s-src/components/Buttons";
 export const DialogButtons = ({ setConsent }: any) => {
 	const { state } = useCookieContext();
 	return (
-		<div class="grid grid-cols-3 gap-4 px-3 pb-3 pt-5">
+		<div class="grid grid-cols-3 gap-2 px-3 pb-3 pt-5 sm:gap-4">
 			<ButtonFilled
 				onClick={() => {
 					setConsent(true, true);
 				}}
 			>
-				Accept All
+				Přijmout vše
 			</ButtonFilled>
 			<ButtonOutlined
 				onClick={() => {
-					setConsent(state().ad_storage, state().analytics_storage);
+					setConsent(state().analytics_storage, state().ad_storage);
 				}}
 			>
-				Confirm
+				Potvrdit
 			</ButtonOutlined>
 			<ButtonOutlined
 				onClick={() => {
 					setConsent(false, false);
 				}}
 			>
-				Deny
+				Odmítnout
 			</ButtonOutlined>
 		</div>
 	);

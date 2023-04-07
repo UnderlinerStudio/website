@@ -6,7 +6,7 @@ import { consentData } from "@s-src/data/consent";
 import { getCookie, setConsentCookies } from "@s-src/utils/Cookies";
 
 type Data = typeof consentData;
-export type LangData = Data["en"];
+export type LangData = Data["cs"];
 
 export const App = () => {
 	// const html = document.querySelector("html");
@@ -17,7 +17,7 @@ export const App = () => {
 	//@ts-ignore
 	const langContent: LangData = consentData[lang];
 
-	const consetCookie = getCookie("consent") || null;
+	const consetCookie = getCookie("u_consent") || null;
 	let decodedCookie = {
 		analytics_storage: false,
 		ad_storage: false,
@@ -40,12 +40,14 @@ export const App = () => {
 
 	if (consetCookie) consent.setConsentFIlled(true);
 
-	const updateConset = (adStorage: boolean, analyticsStorage: boolean) => {
+	const updateConset = (analyticsStorage: boolean, adStorage: boolean) => {
 		consent.setState({
 			analytics_storage: analyticsStorage,
-			ad_storage: adStorage,
+			//? BY default because ad_storage is disabled
+			ad_storage: false,
 		});
-		setConsentCookies(adStorage, analyticsStorage);
+		//? By default because ad_storage is disabled
+		setConsentCookies(analyticsStorage, false);
 		consent.setConsentFIlled(true);
 		setConsentDialog(false);
 	};
@@ -62,7 +64,7 @@ export const App = () => {
 	});
 	return (
 		<Show when={!consent.consetFilled() || consentDialog()}>
-			<div class="fixed bottom-4 left-4 right-4 z-50 max-h-[80vh] max-w-[600px] overflow-hidden border border-neutral-600 bg-neutral-800 sm:left-auto sm:right-5">
+			<div class="fixed bottom-4 left-1 right-1 z-50 max-h-[80vh] max-w-[600px] overflow-hidden border border-neutral-600 bg-neutral-800 sm:left-auto sm:right-5">
 				<div
 					class={`${
 						consent.consetFilled() || consentDialog() ? "hidden" : "flex"

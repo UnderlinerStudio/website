@@ -25,9 +25,9 @@ export const getCookie = (cookieName: string) => {
 	return cookie;
 };
 
-export const setConsentCookies = (adStorage: boolean, analStorage: boolean) => {
+export const setConsentCookies = (analStorage: boolean, adStorage: boolean) => {
 	setCookie(
-		"consent",
+		"u_consent",
 		JSON.stringify({
 			ad_storage: adStorage,
 			analytics_storage: analStorage,

@@ -19,15 +19,28 @@ export const consentData = {
 				necesaryCookies: {
 					heading: "Nezbytné",
 					text: "Nezbytné soubory cookie pomáhají zajistit použitelnost webových stránek tím, že umožňují základní funkce, jako je navigace na stránce a přístup do zabezpečených oblastí webových stránek. Bez těchto souborů cookie nemůže webová stránka správně fungovat.",
+					cookies: [
+						{
+							name: "u_consent",
+							description: "Soubor pro identifikování preference cookies",
+						},
+					],
 				},
 				analyticsCookies: {
 					heading: "Statistické",
 					text: "Statistické soubory cookie pomáhají majitelům webových stránek pochopit, jak návštěvníci interagují s webovými stránkami, a to prostřednictvím anonymního shromažďování a vykazování informací.",
+					cookies: [
+						{
+							app: "Google Analytics",
+							name: "_ga, _gid",
+							description: "Měření návštěvnosti a e-commerce",
+						},
+					],
 				},
-				marketingCookies: {
-					heading: "Marketingové",
-					text: "Marketingové soubory cookie se používají ke sledování návštěvníků na různých webových stránkách. Záměrem je zobrazovat reklamy, které jsou relevantní a zajímavé pro jednotlivé uživatele, a tím hodnotnější pro vydavatele a inzerenty třetích stran.",
-				},
+				// marketingCookies: {
+				// 	heading: "Marketingové",
+				// 	text: "Marketingové soubory cookie se používají ke sledování návštěvníků na různých webových stránkách. Záměrem je zobrazovat reklamy, které jsou relevantní a zajímavé pro jednotlivé uživatele, a tím hodnotnější pro vydavatele a inzerenty třetích stran.",
+				// },
 			},
 			about: {
 				key: "O cookies",
