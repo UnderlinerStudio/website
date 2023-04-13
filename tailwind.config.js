@@ -5,6 +5,7 @@ module.exports = {
 			colors: {
 				sunset: {
 					// primary
+					300: "#ff5851",
 					400: "#ff5751",
 				},
 			},

@@ -3,8 +3,8 @@
 	"version": "1.0.0",
 	"description": "Agency presentation website",
 	"scripts": {
-		"dev:tailwndcss": "tailwindcss -i ./tailwindcss/index.css -o ./hugo/assets/css/tw.css -w",
-		"build:tailwndcss": "tailwindcss -i ./tailwindcss/index.css -o ./hugo/assets/css/tw.css --minify",
+		"dev:tailwind": "tailwindcss -i ./tailwindcss/index.css -o ./hugo/assets/css/tw.css -w",
+		"build:tailwnid": "tailwindcss -i ./tailwindcss/index.css -o ./hugo/assets/css/tw.css --minify",
 		"dev:solid": "vite",
 		"start:solid": "vite build --watch",
 		"build:solid": "vite build",
@@ -27,6 +27,7 @@
 	},
 	"dependencies": {
 		"motion": "^10.15.5",
-		"solid-js": "^1.6.16"
+		"solid-js": "^1.6.16",
+		"zod": "^3.21.4"
 	}
 }

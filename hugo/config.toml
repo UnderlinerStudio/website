@@ -9,18 +9,17 @@ languageCode = "cs"
 [menu]
   [[menu.main]]
     identifier = "homepage"
-    name = "home"
     URL = "/"
     weight = 1
   [[menu.main]]
     identifier = "about"
-    name = "About"
-    URL = "/o-nas"
+    name = "O nás"
+    URL = "/o-nas/"
     weight = 2
   [[menu.main]]
     identifier = "contact"
-    name = "Contact"
-    URL = "/kontakt"
+    name = "Kontakt"
+    URL = "/kontakt/"
     weight = 99
 
 [minify]
