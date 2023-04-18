@@ -1,13 +1,12 @@
 module.exports = {
 	content: ["./hugo/**/*.{html,md,svg,tsx,ts}", "./app/**/*.{tsx,ts}"],
+	darkMode: "class",
 	theme: {
 		extend: {
 			colors: {
-				sunset: {
-					// primary
-					300: "#ff5851",
-					400: "#ff5751",
-				},
+				sunset: "#DF625A",
+				ronchi: "#EBC350",
+				tealblue: "#05416C",
 			},
 			zIndex: {
 				"-10": "-10",

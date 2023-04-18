@@ -7,19 +7,24 @@ languageCode = "cs"
 
 
 [menu]
-  [[menu.main]]
-    identifier = "homepage"
-    URL = "/"
-    weight = 1
-  [[menu.main]]
-    identifier = "about"
-    name = "O nás"
-    URL = "/o-nas/"
-    weight = 2
+  # [[menu.main]]
+  #   identifier = "homepage"
+  #   name = "Domovská stránka"
+  #   URL = "/"
+  #   weight = 1
+  #   [menu.main.params]
+  #     hidden = "true"
+  # [[menu.main]]
+  #   identifier = "about"
+  #   name = "O nás"
+  #   URL = "/o-nas/"
+  #   weight = 2
+  #   [menu.main.params]
+  #     hidden = "true"
   [[menu.main]]
     identifier = "contact"
     name = "Kontakt"
-    URL = "/kontakt/"
+    URL = "/contact/"
     weight = 99
 
 [minify]
