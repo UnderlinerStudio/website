@@ -1,0 +1,52 @@
+<footer class="grid grid-cols-12">
+	<div
+		class="grid w-full col-span-10 col-start-2 grid-rows-3 px-4 py-16 mx-auto place-items-center md:grid-cols-3 md:grid-rows-1 md:place-items-stretch md:px-0"
+	>
+		<div
+			class="flex flex-col justify-center row-start-2 gap-1 mt-4 text-neutral-300 dark:text-neutral-800 md:row-start-auto md:mt-0 md:justify-start"
+		>
+			<div>
+				<div class="flex gap-2 text-sm">
+					<span>&copy;</span>
+					<div class="inline-block w-2 fill-[#ebebeb] dark:fill-neutral-800">
+						{{ partial "svg/logo-min.svg" . }}
+					</div>
+					<span>Underliner&nbsp;studio</span>
+				</div>
+			</div>
+		</div>
+		<button
+			id="scrolltotop"
+			class="flex items-center justify-center text-sm group hover:underline"
+		>
+			<span
+				class="inline-block w-4 h-4 fill-neutral-300 group-hover:fill-sunset dark:fill-neutral-700"
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 512 512"
+					width="100%"
+					height="100%"
+				>
+					<path
+						d="M278.6 41.4L256 18.7 233.4 41.4l-192 192L18.7 256 64 301.3l22.6-22.6L256 109.3 425.4 278.6 448 301.3 493.3 256l-22.6-22.6-192-192zm0 192L256 210.7l-22.6 22.6-192 192L18.7 448 64 493.3l22.6-22.6L256 301.3 425.4 470.6 448 493.3 493.3 448l-22.6-22.6-192-192z"
+					/>
+				</svg>
+			</span>
+			<span
+				class="ml-4 text-neutral-300 group-hover:underline dark:text-neutral-800"
+				>Zpět na začátek</span
+			>
+		</button>
+		<div
+			class="flex justify-center row-start-3 gap-4 text-sm text-neutral-300 dark:text-neutral-800 md:row-start-auto md:justify-end"
+		>
+			<button
+				id="cookie-f-button"
+				class="block link-strikethrough hover:text-neutral-200 hover:underline"
+			>
+				Cookies
+			</button>
+		</div>
+	</div>
+</footer>

@@ -1,0 +1,31 @@
+<header class="fixed inset-x-0 z-50 grid w-screen grid-cols-12 py-9">
+	<div class="h-10 col-span-2 col-start-2 justify-self-start fill-neutral-800">
+		<a
+			href="{{ ($.Site.GetPage `/`).RelPermalink }}"
+			class="fill-[#ebebeb] transition-colors hover:fill-sunset dark:fill-neutral-800 dark:hover:fill-sunset"
+		>
+			{{ partial "svg/logo.svg" }}
+		</a>
+	</div>
+	<nav class="col-start-6 col-end-12 justify-self-end">
+		<ul
+			class="flex gap-8 text-base font-semibold text-neutral-300 dark:text-neutral-700 md:flex-col md:gap-1 md:text-xl"
+		>
+			{{ range $.Site.Menus.main }}
+				{{ if ne .Params.hidden "true" }}
+					<li>
+						<a
+							class="{{ if eq $.Page.RelPermalink .URL }}
+								text-sunset
+							{{ end }} font-bold hover:text-red-500"
+							href="{{ .URL }}"
+						>
+							{{ .Name }}
+						</a>
+					</li>
+				{{ end }}
+			{{ end }}
+
+		</ul>
+	</nav>
+</header>
