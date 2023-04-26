@@ -2,6 +2,8 @@
 <html lang="{{ .Site.Language }}">
 	{{ partial "head.html" . }}
 	<body class="overflow-x-hidden bg-neutral-900">
+		{{ partial "analytics/gtmBody.html" . }}
+
 		{{ block "header" . }}
 			{{ partial "header.html" . }}
 		{{ end }}
