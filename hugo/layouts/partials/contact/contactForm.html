@@ -2,7 +2,7 @@
 	<form name="contact" method="POST" netlify-honeypot="bot-field" netlify>
 		<div class="base-grid">
 			<div
-				class="col-start-3 col-end-12 grid grid-cols-1 gap-x-6 gap-y-8 text-neutral-100 sm:col-end-11 md:col-start-4 md:col-end-11 md:grid-cols-2 lg:col-end-9"
+				class="grid grid-cols-1 col-start-3 col-end-12 gap-x-6 gap-y-8 text-neutral-100 sm:col-end-11 md:col-start-4 md:col-end-11 md:grid-cols-2 lg:col-end-9"
 			>
 				<p class="hidden">
 					<label>
@@ -10,12 +10,12 @@
 					</label>
 				</p>
 				<div>
-					<label for="firstname" class="text-sm"
+					<label for="firstname" class="text-xs uppercase"
 						>{{ i18n "form.name.label" }}</label
 					>
 					<div class="relative">
 						<input
-							class="w-full border border-neutral-400 bg-neutral-50 py-2 pl-3 pr-4"
+							class="w-full py-2 pl-3 pr-4 transition-colors duration-300 border border-transparent rounded-none bg-neutral-800 hover:bg-neutral-700 focus:border-neutral-600 focus-visible:outline-none"
 							type="text"
 							name="firstname"
 							id="firstname"
@@ -25,21 +25,21 @@
 						/>
 						{{/* error message */}}
 						<div
-							class="absolute bottom-0 w-full translate-y-full transform text-left italic text-red-600"
+							class="absolute bottom-0 w-full italic text-left text-red-600 transform translate-y-full"
 						>
-							<span class="w-ful hidden text-sm" data-validation-empty="true">
+							<span class="hidden w-full text-sm" data-validation-empty="true">
 								{{ i18n "form.name.error.empty" }}
 							</span>
 						</div>
 					</div>
 				</div>
 				<div>
-					<label for="secondname" class="text-sm">
+					<label for="secondname" class="text-xs uppercase">
 						{{ i18n "form.surname.label" }}
 					</label>
 					<div class="relative">
 						<input
-							class="w-full border border-neutral-400 bg-neutral-50 py-2 pl-3 pr-4"
+							class="w-full py-2 pl-3 pr-4 transition-colors duration-300 border border-transparent rounded-none bg-neutral-800 hover:bg-neutral-700 focus:border-neutral-600 focus-visible:outline-none"
 							type="text"
 							name="secondname"
 							id="secondname"
@@ -49,21 +49,21 @@
 						/>
 						{{/* error message */}}
 						<div
-							class="absolute bottom-0 w-full translate-y-full transform text-left italic text-red-600"
+							class="absolute bottom-0 w-full italic text-left text-red-600 transform translate-y-full"
 						>
-							<span class="w-ful hidden text-sm" data-validation-empty="true">
+							<span class="hidden w-full text-sm" data-validation-empty="true">
 								{{ i18n "form.surname.error.empty" }}
 							</span>
 						</div>
 					</div>
 				</div>
 				<div class="col-span-full">
-					<label for="email" class="text-sm"
+					<label for="email" class="text-xs uppercase"
 						>{{ i18n "form.email.label" }}</label
 					>
 					<div class="relative">
 						<input
-							class="w-full border border-neutral-400 bg-neutral-50 py-2 pl-3 pr-4"
+							class="w-full py-2 pl-3 pr-4 transition-colors duration-300 border border-transparent rounded-none bg-neutral-800 hover:bg-neutral-700 focus:border-neutral-600 focus-visible:outline-none"
 							type="text"
 							name="email"
 							id="email"
@@ -73,27 +73,27 @@
 						/>
 						{{/* error message */}}
 						<div
-							class="absolute bottom-0 w-full translate-y-full transform text-left italic text-red-600"
+							class="absolute bottom-0 w-full italic text-left text-red-600 transform translate-y-full"
 						>
-							<span class="w-ful hidden text-sm" data-validation-empty="true">
+							<span class="hidden w-full text-sm" data-validation-empty="true">
 								{{ i18n "form.email.error.empty" }}
 							</span>
-							<span class="w-ful hidden text-sm" data-validation-format="true">
+							<span class="hidden w-full text-sm" data-validation-format="true">
 								{{ i18n "form.email.error.format" }}
 							</span>
 						</div>
 					</div>
 				</div>
 				<div>
-					<label for="phone" class="text-sm">
+					<label for="phone" class="text-xs uppercase">
 						{{ i18n "form.phone.label" }}
-						<span class="align-top text-xs text-neutral-400">
+						<span class="align-top text-[10px] text-neutral-400">
 							&nbsp;({{ i18n "form.optional" }})
 						</span>
 					</label>
 					<div class="relative">
 						<input
-							class="w-full border border-neutral-400 bg-neutral-50 py-2 pl-3 pr-4"
+							class="w-full py-2 pl-3 pr-4 transition-colors duration-300 border border-transparent rounded-none bg-neutral-800 hover:bg-neutral-700 focus:border-neutral-600 focus-visible:outline-none"
 							type="text"
 							name="phone"
 							id="phone"
@@ -102,24 +102,24 @@
 						/>
 						{{/* error message */}}
 						<div
-							class="absolute bottom-0 w-full translate-y-full transform text-left italic text-red-600"
+							class="absolute bottom-0 w-full italic text-left text-red-600 transform translate-y-full"
 						>
-							<span class="w-ful hidden text-sm" data-validation-format="true">
+							<span class="hidden w-full text-sm" data-validation-format="true">
 								{{ i18n "form.email.error.format" }}
 							</span>
 						</div>
 					</div>
 				</div>
 				<div>
-					<label for="company" class="text-sm">
+					<label for="company" class="text-xs uppercase">
 						{{ i18n "form.company.label" }}
-						<span class="align-top text-xs text-neutral-400">
+						<span class="align-top text-[10px] text-neutral-400">
 							&nbsp;({{ i18n "form.optional" }})
 						</span>
 					</label>
 					<div class="relative">
 						<input
-							class="w-full border border-neutral-400 bg-neutral-50 py-2 pl-3 pr-4"
+							class="w-full py-2 pl-3 pr-4 transition-colors duration-300 border border-transparent rounded-none bg-neutral-800 hover:bg-neutral-700 focus:border-neutral-600 focus-visible:outline-none"
 							type="text"
 							name="company"
 							id="company"
@@ -129,12 +129,12 @@
 					</div>
 				</div>
 				<div class="col-span-full">
-					<label for="message" class="text-sm"
+					<label for="message" class="text-xs uppercase"
 						>{{ i18n "form.message.label" }}</label
 					>
 					<div class="relative">
 						<textarea
-							class="w-full border border-neutral-400 bg-neutral-50 py-2 pl-3 pr-4"
+							class="w-full py-2 pl-3 pr-4 transition-colors duration-300 border border-transparent rounded-none bg-neutral-800 hover:bg-neutral-700 focus:border-neutral-600 focus-visible:outline-none"
 							type="text"
 							name="message"
 							id="message"
@@ -144,9 +144,9 @@
 						></textarea>
 						{{/* error message */}}
 						<div
-							class="absolute bottom-0 w-full translate-y-full transform text-left italic text-red-600"
+							class="absolute bottom-0 w-full italic text-left text-red-600 transform translate-y-full"
 						>
-							<span class="w-ful hidden text-sm" data-validation-empty="true">
+							<span class="hidden w-full text-sm" data-validation-empty="true">
 								{{ i18n "form.message.error.empty" }}
 							</span>
 						</div>
@@ -154,21 +154,21 @@
 				</div>
 				<button
 					type="submit"
-					class="col-span-full border border-neutral-500 bg-neutral-50 fill-neutral-500 py-3 transition-colors hover:bg-neutral-700 hover:fill-neutral-50 hover:text-neutral-50"
+					class="py-3 transition-colors border border-600tral-500 col-span-full border-neutral-600 bg-neutral-800 fill-neutral-500 hover:bg-neutral-700 hover:fill-neutral-50 hover:text-neutral-50 focus:border-neutral-600 focus-visible:outline-none"
 				>
 					<div class="relative inline-block">
-						<span class="invisible absolute -left-4 top-1 inline-block h-3">
+						<span class="absolute invisible inline-block h-3 -left-4 top-1">
 							{{/* {{ partial "svg/Checkmark.svg" . }} */}}
 						</span>
 						{{ i18n "form.button" }}
 					</div>
 				</button>
-				<p class="col-span-full text-neutral-600">
+				<p class="col-span-full text-neutral-400">
 					{{ i18n "form.legal.text" }}
 					{{ $privacyURL := ($.Site.GetPage "privacy-policy").RelPermalink }}
 					<a
 						href="{{ $privacyURL }}"
-						class="font-bold underline hover:text-neutral-800"
+						class="underline text-neutral-300 hover:text-neutral-200"
 						>{{ i18n "form.legal.link-text" }}</a
 					>.
 				</p>
