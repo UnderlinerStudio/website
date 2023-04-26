@@ -4,3 +4,7 @@
 	{{ $contactScript := resources.Get "ts/contact.ts" | js.Build "js/contact.js" | fingerprint }}
 	<script src="{{ $contactScript.RelPermalink }}"></script>
 {{ end }}
+
+{{ define "footer" }}
+	{{ partial "footer.html" . }}
+{{ end }}

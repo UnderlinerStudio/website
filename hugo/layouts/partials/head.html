@@ -10,6 +10,9 @@
 	<title>
 		{{ .Page.Title }}
 	</title>
-	<meta name="description" content="{{ .Page.Description }}" />
+	<meta name="description" content="{{ $.Page.Description }}" />
 	{{ partial "head/robots.html" . }}
+	{{ block "head" . }}
+
+	{{ end }}
 </head>

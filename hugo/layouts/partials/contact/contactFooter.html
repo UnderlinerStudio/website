@@ -1,0 +1,15 @@
+<section class="base-grid">
+	<div class="col-start-1 col-end-13 mx-auto py-32 md:py-40">
+		<h2
+			class="text-center text-3xl font-black sm:text-4xl md:text-6xl lg:text-8xl"
+		>
+			{{ i18n "contact-footer.text" }} <br />
+			{{ $contacURL := ($.Site.GetPage `contact`).RelPermalink }}
+			<a
+				href="{{ $contacURL }}"
+				class="text-sunset underline transition-colors hover:text-sunset"
+				>{{ i18n "contact-footer.link-text" }}</a
+			>
+		</h2>
+	</div>
+</section>

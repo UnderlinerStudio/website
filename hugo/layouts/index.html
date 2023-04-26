@@ -1,3 +1,6 @@
+{{ define "head" }}
+	<meta http-equiv="Cache-Control" content="no-store" />
+{{ end }}
 {{ define "main" }}
 	<section class="base-grid grid h-screen w-screen items-center">
 		<div class="col-start-2 col-end-12 grid grid-flow-row place-items-center">
@@ -14,7 +17,6 @@
 							id="marketing-link"
 							class="group absolute inset-0 bg-ronchi"
 						>
-							<link rel="prerender" href="/marketing" />
 							<span
 								class="text-8xl font-black uppercase text-neutral-800 opacity-0 transition-all group-hover:opacity-100"
 							>
@@ -69,7 +71,7 @@
 				</div>
 				<a
 					href="/about"
-					class="after:scale-x-1 relative ml-auto mt-4 block w-max text-3xl font-black uppercase text-neutral-100 opacity-0 transition-all after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-left after:bg-white after:transition-transform hover:after:origin-right hover:after:scale-x-0"
+					class="after:scale-x-1 relative ml-auto mt-4 block w-max text-3xl font-black uppercase text-neutral-100 opacity-0 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-left after:bg-white after:transition-transform hover:after:origin-right hover:after:scale-x-0"
 				>
 					o nás
 				</a>
