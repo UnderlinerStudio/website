@@ -1,5 +1,6 @@
 import { animate } from "motion";
 import { $ } from "./selector";
+import { homeGridReveal } from "./animations";
 
 document.addEventListener("DOMContentLoaded", () => {
 	const marketingLink = document.getElementById("marketing-link");
@@ -10,40 +11,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	const grid = $(".hero-grid");
 	const elements = grid.childNodes;
-	const link = grid.nextElementSibling;
+	const aboutLink = grid.nextElementSibling as HTMLElement;
 
-	animate(link, { opacity: [0, 1] }, { duration: 0.4 });
-	elements.forEach((el, index) => {
-		animate(
-			// @ts-ignore
-			el,
-			{ scale: [0, 1] },
-			{ duration: 0.25, delay: 0.25 + 0.05 * index },
-		);
-	});
-
-	setTimeout(() => {
-		grid.classList.add("bg-neutral-100");
-		grid.classList.remove("relative");
-		grid.removeChild(grid.firstChild);
-	}, 450);
+	homeGridReveal(grid, aboutLink, elements);
 
 	links.forEach((el) => {
+		el.parentElement.style.inset = "auto";
 		el.addEventListener("click", function (e) {
 			e.preventDefault();
 			const parent = this.parentElement;
+			const href = this.getAttribute("href");
+
 			const t = parent.offsetTop;
 			const l = parent.offsetLeft;
 			const b = window.innerHeight - (parent.offsetHeight + t);
 			const r = window.innerWidth - (parent.offsetWidth + l);
 
-			parent.style.top = `${t}px`;
-			parent.style.right = `${r}px`;
-			parent.style.bottom = `${b}px`;
-			parent.style.left = `${l}px`;
+			parent.style.inset = `${t}px ${r}px ${b}px ${l}px`;
 
 			parent.style.position = "fixed";
-			parent.style.zIndex = "200";
+			parent.style.zIndex = "40";
 
 			animate(
 				parent,
@@ -55,19 +42,36 @@ document.addEventListener("DOMContentLoaded", () => {
 				},
 				{ duration: 0.25, easing: "ease-in-out" },
 			);
-			animate(
-				// @ts-ignore
-				this.children,
-				{
-					opacity: [1, 0],
-				},
-				{ duration: 0.25, delay: 0.25, easing: "ease-in-out" },
-			);
 
 			setTimeout(() => {
-				// @ts-ignore
-				window.location.href = this.href;
-			}, 500);
+				location.href = href;
+			}, 300);
 		});
 	});
+
+	window.addEventListener("pageshow", (e) => onHomepageLoad(e, links, grid));
 });
+
+function onHomepageLoad(
+	e: PageTransitionEvent,
+	links: HTMLElement[],
+	grid: HTMLElement,
+) {
+	const historyTraversal = e.persisted;
+	if (historyTraversal) {
+		const elements = grid.childNodes;
+		const aboutLink = grid.nextElementSibling as HTMLElement;
+
+		links.forEach((el) => {
+			const parent = el.parentElement;
+			parent.removeAttribute("style");
+			el.firstElementChild.removeAttribute("style");
+		});
+
+		grid.classList.remove("bg-neutral-100");
+		grid.classList.add("relative");
+		(grid.firstChild as HTMLElement).classList.remove("hidden");
+
+		homeGridReveal(grid, aboutLink, elements);
+	}
+}

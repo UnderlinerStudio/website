@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			return;
 		}
 
-		const myForm = event.target;
+		const myForm = event.target as HTMLFormElement;
 		const formData = new FormData(myForm);
 
 		fetch("/", {
