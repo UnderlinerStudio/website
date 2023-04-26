@@ -14,7 +14,7 @@ export const CookieBanner = ({ content, setConsent, openDialog }: any) => {
 					{content.content.text}{" "}
 					<button
 						onClick={openDialog}
-						class="font-medium uppercase underline hover:text-[#ff5751]"
+						class="font-medium uppercase underline hover:text-sunset-dark"
 					>
 						{content.content.manageToggle}
 					</button>
