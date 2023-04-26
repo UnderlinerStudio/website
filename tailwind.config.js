@@ -1,12 +1,20 @@
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+export default {
 	content: ["./hugo/**/*.{html,md,svg,tsx,ts}", "./app/**/*.{tsx,ts}"],
 	darkMode: "class",
 	theme: {
 		extend: {
 			colors: {
-				sunset: "#DF625A",
-				ronchi: "#EBC350",
-				tealblue: "#05416C",
+				sunset: {
+					DEFAULT: "#DF625A",
+					dark: "#FF5751",
+				},
+				ronchi: {
+					DEFAULT: "#EBC350",
+				},
+				tealblue: {
+					DEFAULT: "#05416C",
+				},
 			},
 			zIndex: {
 				"-10": "-10",

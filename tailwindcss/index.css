@@ -6,6 +6,7 @@
 	html {
 		font-family: Gilroy;
 		scroll-behavior: smooth;
+		font-variant-ligatures: no-common-ligatures;
 	}
 	body {
 		@apply relative;
