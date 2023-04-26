@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	homeGridReveal(grid, aboutLink, elements);
 
-	links.forEach((el) => {
+	/* links.forEach((el) => {
 		el.parentElement.style.inset = "auto";
 		el.addEventListener("click", function (e) {
 			e.preventDefault();
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				location.href = href;
 			}, 300);
 		});
-	});
+	}); */
 
 	window.addEventListener("pageshow", (e) => onHomepageLoad(e, links, grid));
 });
