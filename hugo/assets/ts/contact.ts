@@ -1,10 +1,17 @@
 import { coppyContent } from "./utils";
 import { z } from "zod";
 import { $ } from "./selector";
+import { Toast } from "./toast";
 
 document.addEventListener("DOMContentLoaded", () => {
 	const copyElement = document.getElementById("copyitem");
-	if (copyElement) copyElement.addEventListener("click", coppyContent);
+	if (copyElement)
+		copyElement.addEventListener("click", (e: MouseEvent) => {
+			coppyContent(e);
+			const target = e.target as HTMLElement;
+
+			Toast(target.dataset.toast, 1500, "success");
+		});
 
 	const phoneRegex = /^((\+420)? ?[1-9][0-9]{2} ?[0-9]{3} ?[0-9]{3}){0,1}$/;
 
@@ -123,10 +130,11 @@ document.addEventListener("DOMContentLoaded", () => {
 		fetch("/", {
 			method: "POST",
 			headers: { "Content-Type": "application/x-www-form-urlencoded" },
+			// @ts-ignore
 			body: new URLSearchParams(formData).toString(),
 		})
 			.then(() => {
-				const button = $("button[type='submit']");
+				const button = $("button[type='submit']") as HTMLButtonElement;
 				button.classList.remove(
 					"hover:bg-neutral-700",
 					"hover:text-neutral-50",
@@ -138,8 +146,14 @@ document.addEventListener("DOMContentLoaded", () => {
 					"hover:fill-neutral-50",
 				);
 				button.querySelector("span").classList.remove("hidden");
+				button.disabled = true;
+				Toast(button.dataset["toast-success"], 1500, "success");
 				console.log("Form successfully submitted");
 			})
-			.catch((error) => console.error(error));
+			.catch((error) => {
+				const button = $("button[type='submit']") as HTMLButtonElement;
+				console.error(error);
+				Toast(button.dataset["toast-error"], 1500, "success");
+			});
 	}
 });

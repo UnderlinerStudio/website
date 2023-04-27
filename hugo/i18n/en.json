@@ -19,6 +19,10 @@
 		"company": { "label": "Company" },
 		"message": { "label": "Message" },
 		"button": "Send",
+		"toast": {
+			"success": "Form submitted",
+			"error": "Something went wrong"
+		},
 		"legal": {
 			"text": "By clicking the button, I agree with the collection and processing of my personal data as described in the",
 			"link-text": "Privacy policy"

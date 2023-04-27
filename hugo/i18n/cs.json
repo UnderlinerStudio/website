@@ -31,6 +31,10 @@
 			"error": { "empty": "Pole nesmí být prázdné" }
 		},
 		"button": "Odeslat",
+		"toast": {
+			"success": "Formulář byl úspěšně odeslán.",
+			"error": "Něco se pokazilo."
+		},
 		"legal": {
 			"text": "Odesláním formuláře souhlasíte se ",
 			"link-text": "zpracováním osobních údajů"
