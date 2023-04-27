@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const elements = grid.childNodes;
 	const aboutLink = grid.nextElementSibling as HTMLElement;
 
-	homeGridReveal(grid, aboutLink, elements);
+	homeGridReveal(aboutLink, elements);
 
 	/* links.forEach((el) => {
 		el.parentElement.style.inset = "auto";
@@ -68,10 +68,6 @@ function onHomepageLoad(
 			el.firstElementChild.removeAttribute("style");
 		});
 
-		grid.classList.remove("bg-neutral-100");
-		grid.classList.add("relative");
-		(grid.firstChild as HTMLElement).classList.remove("hidden");
-
-		homeGridReveal(grid, aboutLink, elements);
+		homeGridReveal(aboutLink, elements);
 	}
 }

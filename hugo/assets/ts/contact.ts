@@ -144,8 +144,9 @@ document.addEventListener("DOMContentLoaded", () => {
 					"cursor-not-allowed",
 					"bg-emerald-400",
 					"hover:fill-neutral-50",
+					"opacity-40",
 				);
-				button.querySelector("span").classList.remove("hidden");
+				button.querySelector("span").classList.remove("invisible");
 				button.disabled = true;
 				Toast(button.dataset["toast-success"], 1500, "success");
 				console.log("Form successfully submitted");
