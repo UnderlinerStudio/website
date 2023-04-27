@@ -2,14 +2,16 @@
 	<div class="col-span-2 col-start-2 h-10 justify-self-start fill-neutral-800">
 		<a
 			href="{{ ($.Site.GetPage `/`).RelPermalink }}"
-			class="fill-[#ebebeb] transition-colors hover:fill-sunset dark:fill-neutral-800 dark:hover:fill-sunset"
+			class="fill-[#ebebeb] transition-colors hover:fill-sunset"
 		>
 			{{ partial "svg/logo.svg" }}
 		</a>
 	</div>
-	<nav class="col-start-6 col-end-12 justify-self-end">
+	<nav
+		class="col-start-6 col-end-12 flex flex-col items-center gap-3 justify-self-end sm:flex-row"
+	>
 		<ul
-			class="flex gap-8 text-base font-semibold text-neutral-300 dark:text-neutral-700 md:flex-col md:gap-1 md:text-xl"
+			class="flex gap-8 text-base font-semibold text-neutral-300 md:flex-col md:gap-1 md:text-xl"
 		>
 			{{ range $.Site.Menus.main }}
 				{{ if ne .Params.hidden "true" }}
@@ -27,5 +29,23 @@
 			{{ end }}
 
 		</ul>
+
+		<a
+			href="{{ range .Translations }}{{ .RelPermalink }}{{ end }}"
+			class="flex items-center gap-1 border-2 border-neutral-500 bg-neutral-800 p-[6px] text-sm font-medium outline-none sm:p-2 sm:text-base"
+		>
+			<span
+				class="{{ if eq .Page.Language.Lang `cs` }}
+					bg-neutral-200 text-neutral-900
+				{{ end }} inline-block aspect-square p-[2px] leading-none sm:p-1"
+				>cs</span
+			>
+			<span
+				class="{{ if eq .Page.Language.Lang `en` }}
+					bg-neutral-200 text-neutral-900
+				{{ end }} inline-block aspect-square p-[2px] leading-none sm:p-1"
+				>en</span
+			>
+		</a>
 	</nav>
 </header>

@@ -5,27 +5,26 @@ timeZone = "Europe/Prague"
 defaultContentLanguage = "cs"
 languageCode = "cs"
 
+[languages]
+  [languages.cs]
+    languageName = "Čeština"
+    weight = 1
+    [languages.cs.menu]
+      [[languages.cs.menu.main]]
+        identifier = "contact"
+        name = "Kontakt"
+        URL = "/contact/"
+        weight = 99
+  [languages.en]
+    languageName = "English"
+    weight = 2
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "contact"
+        name = "Contact"
+        URL = "/en/contact/"
+        weight = 99
 
-[menu]
-  # [[menu.main]]
-  #   identifier = "homepage"
-  #   name = "Domovská stránka"
-  #   URL = "/"
-  #   weight = 1
-  #   [menu.main.params]
-  #     hidden = "true"
-  # [[menu.main]]
-  #   identifier = "about"
-  #   name = "O nás"
-  #   URL = "/o-nas/"
-  #   weight = 2
-  #   [menu.main.params]
-  #     hidden = "true"
-  [[menu.main]]
-    identifier = "contact"
-    name = "Kontakt"
-    URL = "/contact/"
-    weight = 99
 
 [minify]
   minifyOutput = true
