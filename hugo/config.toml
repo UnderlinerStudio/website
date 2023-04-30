@@ -5,6 +5,8 @@ timeZone = "Europe/Prague"
 defaultContentLanguage = "cs"
 languageCode = "cs"
 
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
 [languages]
   [languages.cs]
     languageName = "Čeština"
