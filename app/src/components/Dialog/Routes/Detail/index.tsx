@@ -32,6 +32,20 @@ export const Detail = ({
 					}}
 					cookiesDetailInfo={content.analyticsCookies.cookies}
 				/>
+				{/* <CookieKindDetail
+					heading={content.marketingCookies.heading}
+					text={content.marketingCookies.text}
+					switchProps={{
+						isDisabled: false,
+						checked: consent.state().ad_storage,
+						onClick: () =>
+							consent.setState({
+								ad_storage: !consent.state().ad_storage,
+								analytics_storage: consent.state().analytics_storage,
+							}),
+					}}
+					cookiesDetailInfo={content.marketingCookies.cookies}
+				/> */}
 			</div>
 		</div>
 	);

@@ -23,5 +23,6 @@
 		<script src="{{ $solidJS.RelPermalink }}"></script>
 		{{ $indexJS := resources.Get "ts/index.ts" | js.Build "js/index.js" | fingerprint }}
 		<script src="{{ $indexJS.RelPermalink }}"></script>
+		{{ block "scripts" . }}{{ end }}
 	</body>
 </html>

@@ -54,7 +54,6 @@ const createToast = (text: string, type: ToastType): HTMLOutputElement => {
 		"items-center",
 	);
 	node.setAttribute("role", "status");
-	console.log(node);
 
 	return node;
 };

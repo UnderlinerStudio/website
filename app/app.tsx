@@ -9,10 +9,10 @@ type Data = typeof consentData;
 export type LangData = Data["cs"];
 
 export const App = () => {
-	// const html = document.querySelector("html");
+	const html = document.querySelector("html");
 	const cookieBtn = document.getElementById("cookie-f-button");
 	let lang = "cs";
-	// if (html) lang = html.lang;
+	if (html) lang = html.lang;
 
 	//@ts-ignore
 	const langContent: LangData = consentData[lang];
@@ -43,11 +43,9 @@ export const App = () => {
 	const updateConset = (analyticsStorage: boolean, adStorage: boolean) => {
 		consent.setState({
 			analytics_storage: analyticsStorage,
-			//? BY default because ad_storage is disabled
-			ad_storage: false,
+			ad_storage: true,
 		});
-		//? By default because ad_storage is disabled
-		setConsentCookies(analyticsStorage, false);
+		setConsentCookies(analyticsStorage, true);
 		consent.setConsentFIlled(true);
 		setConsentDialog(false);
 	};

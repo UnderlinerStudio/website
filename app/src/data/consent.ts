@@ -37,10 +37,17 @@ export const consentData = {
 						},
 					],
 				},
-				// marketingCookies: {
-				// 	heading: "Marketingové",
-				// 	text: "Marketingové soubory cookie se používají ke sledování návštěvníků na různých webových stránkách. Záměrem je zobrazovat reklamy, které jsou relevantní a zajímavé pro jednotlivé uživatele, a tím hodnotnější pro vydavatele a inzerenty třetích stran.",
-				// },
+				marketingCookies: {
+					heading: "Marketingové",
+					text: "Marketingové soubory cookie se používají ke sledování návštěvníků na různých webových stránkách. Záměrem je zobrazovat reklamy, které jsou relevantní a zajímavé pro jednotlivé uživatele, a tím hodnotnější pro vydavatele a inzerenty třetích stran.",
+					cookies: [
+						{
+							app: "Google Analytics",
+							name: "_ga, _gid",
+							description: "Měření návštěvnosti a e-commerce",
+						},
+					],
+				},
 			},
 			about: {
 				key: "O cookies",
@@ -77,6 +84,13 @@ export const consentData = {
 				analyticsCookies: {
 					heading: "Statystics",
 					text: "Statistic cookies help website owners to understand how visitors interact with websites by collecting and reporting information anonymously.",
+					cookies: [
+						{
+							app: "Google Analytics",
+							name: "_ga, _gid",
+							description: "Traffic and e-commerce measurement",
+						},
+					],
 				},
 				marketingCookies: {
 					heading: "Marketing",

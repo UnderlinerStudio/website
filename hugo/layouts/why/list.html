@@ -1,0 +1,8 @@
+{{ define "main" }}
+	{{ .Content }}
+{{ end }}
+
+{{ define "scripts" }}
+	{{ $whyJS := resources.Get "ts/why.ts" | js.Build "js/why.js" | fingerprint }}
+	<script src="{{ $whyJS.RelPermalink }}"></script>
+{{ end }}

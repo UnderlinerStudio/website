@@ -1,0 +1,109 @@
+{{ define "head" }}
+	<meta http-equiv="Cache-Control" content="no-store" />
+{{ end }}
+{{ define "main" }}
+	{{ partial "homeHero.html" . }}
+	<section class="py-20 base-grid md:py-32" id="heading-section">
+		<div class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12">
+			<h1 class="font-black uppercase">
+				<span class="inline-block overflow-hidden">
+					<span
+						class="block"
+						style="transform: translateY(var(--motion-translateY)); --motion-translateY: 100%;"
+						data-animate="from-bottom"
+					>
+						<span class="text-sunset">Next-level</span> brand</span
+					>
+				</span>
+				<span class="inline-block overflow-hidden">
+					<span
+						class="block"
+						style="transform: translateY(var(--motion-translateY)); --motion-translateY: 100%;"
+						data-animate="from-bottom"
+					>
+						development
+					</span>
+				</span>
+			</h1>
+		</div>
+		<div
+			data-animate="fade-in"
+			class="max-w-4xl col-start-1 col-end-13 mt-6 mb-12 space-y-4 text-lg sm:col-start-3 sm:col-end-12 sm:mt-16 sm:space-y-8 sm:text-xl md:text-2xl xl:text-3xl"
+			style="opacity: 0;"
+		>
+			<p class="leading-relaxed">
+				We believe that every idea, product or a service deserve to be
+				recognised.
+				<span class="font-bold text-sunset"
+					>We believe everyone has a chance to success.</span
+				>
+			</p>
+			<p class="leading-relaxed">
+				By building beautiful designs, carefully engineering software,
+				passionately making meaningful marketing and by telling your story –
+				<span class="font-black">We make your brand pop.</span>
+			</p>
+			<div class="grid grid-cols-2 gap-5 sm:w-max sm:grid-flow-col sm:gap-10">
+				<div>
+					<a
+						href="/en/contact"
+						class="inline-block w-full px-5 text-base font-bold text-white uppercase h-11 bg-sunset-dark hover:bg-sunset sm:h-14 sm:px-8"
+					>
+						<div
+							class="flex items-center justify-center w-full h-full text-xs sm:text-sm"
+						>
+							Let's talk
+						</div>
+					</a>
+				</div>
+				<div>
+					<a
+						href="/en/why"
+						class="inline-block w-full px-5 text-base font-bold text-white uppercase bg-transparent border-2 h-11 border-neutral-700 hover:border-neutral-500 sm:h-14 sm:px-8"
+					>
+						<div
+							class="flex items-center justify-center w-full h-full text-xs sm:text-sm"
+						>
+							Why UNDERLINER?
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="py-20 base-grid md:py-32" id="heading-section">
+		<div class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12">
+			<h2
+				class="text-4xl font-black leading-10 uppercase text-neutral-100 sm:text-5xl md:col-start-3 md:text-7xl xl:text-8xl"
+			>
+				about
+				<span class="text-sunset">underliner</span>
+			</h2>
+		</div>
+		<div
+			class="max-w-4xl col-start-1 col-end-13 mt-6 mb-12 space-y-4 text-lg sm:col-start-3 sm:col-end-12 sm:mt-16 sm:space-y-8 sm:text-xl md:text-2xl xl:text-3xl"
+		>
+			<p class="leading-relaxed">
+				<span class="font-bold uppercase">UNDERLINER STUDIO</span> is a team of
+				curious and creative minds that are willing to go extra mile to make
+				something exeptional –
+				<span class="font-bold">We are striving for more</span>. For our craft,
+				our partners and for each other we are pushing through our limits.
+			</p>
+			<div class="w-max">
+				<a
+					href="/en/about"
+					class="inline-block w-full px-5 text-base font-bold text-white uppercase bg-transparent border-2 h-11 border-neutral-700 hover:border-neutral-500 sm:h-14 sm:px-8"
+				>
+					<div
+						class="flex items-center justify-center w-full h-full text-xs sm:text-sm"
+					>
+						About underliner
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+	{{ $homeScript := resources.Get "ts/homepage.ts" | js.Build "js/homepage.js" | fingerprint }}
+	<script src="{{ $homeScript.RelPermalink }}" defer></script>
+{{ end }}

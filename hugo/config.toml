@@ -13,6 +13,24 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     weight = 1
     [languages.cs.menu]
       [[languages.cs.menu.main]]
+        identifier = "why"
+        name = "Proč"
+        URL = "/why/"
+        weight = 2
+        [languages.cs.menu.main.params]
+          minlogo = "true"
+      # [[languages.cs.menu.main]]
+      #   identifier = "services"
+      #   name = "Služby"
+      #   URL = "/services/"
+      #   weight = 3
+          
+      # [[languages.cs.menu.main]]
+      #   identifier = "work"
+      #   name = "Práce"
+      #   URL = "/services/"
+      #   weight = 3
+      [[languages.cs.menu.main]]
         identifier = "contact"
         name = "Kontakt"
         URL = "/contact/"
@@ -21,6 +39,23 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     languageName = "English"
     weight = 2
     [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "why"
+        name = "Why"
+        URL = "/en/why/"
+        weight = 2
+        [languages.en.menu.main.params]
+          minlogo = "true"
+      # [[languages.en.menu.main]]
+      #   identifier = "services"
+      #   name = "Services"
+      #   URL = "/en/services/"
+      #   weight = 3
+      # [[languages.en.menu.main]]
+      #   identifier = "work"
+      #   name = "Work"
+      #   URL = "/en/work/"
+      #   weight = 3
       [[languages.en.menu.main]]
         identifier = "contact"
         name = "Contact"

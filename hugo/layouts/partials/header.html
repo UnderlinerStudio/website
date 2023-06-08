@@ -1,17 +1,21 @@
-<header class="fixed inset-x-0 z-50 grid w-screen grid-cols-12 py-9">
-	<div class="col-span-2 col-start-2 h-10 justify-self-start fill-neutral-800">
+<header
+	class="absolute inset-x-0 z-40 grid w-screen grid-cols-12 px-5 py-3 sm:px-0 sm:py-9"
+>
+	<div
+		class="h-10 col-span-3 col-start-1 justify-self-start sm:col-span-2 sm:col-start-2"
+	>
 		<a
 			href="{{ ($.Site.GetPage `/`).RelPermalink }}"
-			class="fill-[#ebebeb] transition-colors hover:fill-sunset"
+			class="fill-[#ebebeb] transition-colors hover:fill-sunset dark:fill-neutral-900"
 		>
 			{{ partial "svg/logo.svg" }}
 		</a>
 	</div>
 	<nav
-		class="col-start-6 col-end-12 flex flex-col items-center gap-3 justify-self-end sm:flex-row"
+		class="flex flex-col items-end col-start-4 col-end-13 gap-3 justify-self-end sm:col-end-12 sm:flex-row sm:items-center"
 	>
 		<ul
-			class="flex gap-8 text-base font-semibold text-neutral-300 md:flex-col md:gap-1 md:text-xl"
+			class="flex gap-3 text-base font-semibold text-neutral-300 sm:gap-5 md:text-xl"
 		>
 			{{ range $.Site.Menus.main }}
 				{{ if ne .Params.hidden "true" }}
@@ -19,13 +23,22 @@
 						<a
 							class="{{ if eq $.Page.RelPermalink .URL }}
 								text-sunset
-							{{ end }} font-bold hover:text-red-500"
+							{{ end }} group font-bold hover:text-sunset-dark dark:text-neutral-900"
 							href="{{ .URL }}"
 						>
 							{{ .Name }}
+							{{ if eq .Params.minlogo "true" }}
+								<span
+									class="{{ if eq $.Page.RelPermalink .URL }}
+										fill-sunset
+									{{ end }}inline-block h-3 w-3 fill-neutral-200 group-hover:fill-sunset-dark md:h-4 md:w-4"
+									>{{ partial "svg/logo-min.svg" }}</span
+								>
+							{{ end }}
 						</a>
 					</li>
 				{{ end }}
+
 			{{ end }}
 
 		</ul>

@@ -16,6 +16,9 @@ export default {
 					DEFAULT: "#05416C",
 				},
 			},
+			height: {
+				screen: ["100vh", "100svh"],
+			},
 			zIndex: {
 				"-10": "-10",
 				"-1": "-1",

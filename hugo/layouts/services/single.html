@@ -1,0 +1,33 @@
+{{ define "header" }}
+	{{ $dark := "" }}
+	{{ $theme := "light" }}
+	{{ if .Page.Params.isdark }}
+		{{ $dark = "dark" }}
+		{{ $theme = "dark" }}
+	{{ end }}
+	<div data-theme="{{ $theme }}" class="{{ $dark }}">
+		{{ partial "header.html" . }}
+	</div>
+{{ end }}
+
+{{ define "main" }}
+	{{ $bodybg := "bg-neutral-900" }}
+	{{ if .Page.Params.bodybg }}
+		{{ $bodybg = .Page.Params.bodybg }}
+	{{ end }}
+	{{ $dark := "" }}
+	{{ if .Page.Params.isdark }}
+		{{ $dark = "dark" }}
+	{{ end }}
+	<div
+		class="{{ $bodybg }} {{ $dark }} transition-colors duration-200"
+		data-animate="color-switch"
+	>
+		{{ .Content }}
+	</div>
+{{ end }}
+
+{{ define "scripts" }}
+	{{ $services := resources.Get "ts/servicesList.ts" | js.Build "js/services.js" | fingerprint }}
+	<script src="{{ $services.RelPermalink }}"></script>
+{{ end }}
