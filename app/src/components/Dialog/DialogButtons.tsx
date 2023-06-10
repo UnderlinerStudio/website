@@ -1,7 +1,13 @@
 import { useCookieContext } from "@s-src/context/cookieProvider";
 import { ButtonFilled, ButtonOutlined } from "@s-src/components/Buttons";
+import { LangData } from "app/app";
 
-export const DialogButtons = ({ setConsent }: any) => {
+type DialogButtons = {
+	setConsent: (analyticsStorage: boolean, adStorage: boolean) => void;
+	content: LangData["cookieDialog"];
+};
+
+export const DialogButtons = ({ setConsent, content }: DialogButtons) => {
 	const { state } = useCookieContext();
 	return (
 		<div class="grid grid-cols-3 gap-2 px-3 pb-3 pt-5 sm:gap-4">
@@ -10,21 +16,21 @@ export const DialogButtons = ({ setConsent }: any) => {
 					setConsent(true, true);
 				}}
 			>
-				Přijmout vše
+				{content.buttons.acceptAll}
 			</ButtonFilled>
 			<ButtonOutlined
 				onClick={() => {
 					setConsent(state().analytics_storage, state().ad_storage);
 				}}
 			>
-				Potvrdit
+				{content.buttons.confirmSelection}
 			</ButtonOutlined>
 			<ButtonOutlined
 				onClick={() => {
 					setConsent(false, false);
 				}}
 			>
-				Odmítnout
+				{content.buttons.deny}
 			</ButtonOutlined>
 		</div>
 	);

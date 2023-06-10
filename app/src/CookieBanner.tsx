@@ -20,13 +20,10 @@ export const CookieBanner = ({ content, setConsent, openDialog }: any) => {
 					</button>
 				</p>
 			</div>
-			<div class="mt-4 grid flex-shrink-0 flex-grow-0 grid-cols-2 gap-3 font-medium sm:mt-0 sm:w-auto ">
+			<div class="mt-4 grid flex-shrink-0 flex-grow-0 grid-cols-1 gap-3 font-medium sm:mt-0 sm:w-auto">
 				<ButtonFilled onClick={() => setConsent(true, true)}>
 					{content.buttonFilled}
 				</ButtonFilled>
-				<ButtonOutlined onClick={() => setConsent(false, false)}>
-					{content.buttonOutlined}
-				</ButtonOutlined>
 			</div>
 		</>
 	);

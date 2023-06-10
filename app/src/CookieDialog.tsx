@@ -17,7 +17,7 @@ export const CookieDialog = ({ content, setConsent }: any) => {
 				setActiveSlide={setActiveSlide}
 			/>
 			<Slide activeSlide={activeSlide} content={content} />
-			<DialogButtons setConsent={setConsent} />
+			<DialogButtons setConsent={setConsent} content={content} />
 		</div>
 	);
 };

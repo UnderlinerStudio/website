@@ -58,6 +58,11 @@ export const consentData = {
 					"Svůj souhlas můžete kdykoli změnit nebo odvolat v Prohlášení o souborech cookie na našich webových stránkách.",
 				],
 			},
+			buttons: {
+				acceptAll: "Přijmout vše",
+				confirmSelection: "Potvrdit",
+				deny: "Ormítnout",
+			},
 		},
 	},
 	en: {
@@ -105,6 +110,11 @@ export const consentData = {
 					"This site uses different types of cookies. Some cookies are placed by third party services that appear on our pages.",
 					"You can at any time change or withdraw your consent from the Cookie Declaration on our website.",
 				],
+			},
+			buttons: {
+				acceptAll: "Accept all",
+				confirmSelection: "Confirm",
+				deny: "Deny",
 			},
 		},
 	},
