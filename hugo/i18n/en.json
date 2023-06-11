@@ -33,10 +33,10 @@
 		"text": "Got a project?",
 		"link-text": "Let's colaborate!"
 	},
-	"project-process-heading": "How i handle a project",
 	"404": {
-		"text": "Tato stránka neexistuje",
-		"cta": "Zpět na domovskou stránku"
+		"text": "Not found",
+		"subtext": "LOOKS LIKE YOU’RE LOST! — GO BACK TO THE",
+		"cta": "HOMEPAGE"
 	},
-	"scroll-down": "Posuňte dolů"
+	"scroll-down": "Scroll down"
 }

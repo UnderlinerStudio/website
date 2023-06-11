@@ -1,0 +1,19 @@
+{{ define "main" }}
+	<section class="grid h-screen place-items-center px-5 text-center">
+		<div>
+			<h1
+				class="text-center text-5xl font-black uppercase md:text-7xl lg:text-8xl xl:text-9xl"
+			>
+				NOT FOUND – 404
+			</h1>
+			<p class="mt-4 text-sm uppercase sm:text-base">
+				LOOKS LIKE YOU’RE LOST! — GO BACK TO THE
+				<a
+					class="text-sunset-dark underline hover:text-sunset"
+					href="{{ ($.Site.GetPage `/`).RelPermalink }}"
+					>HOMEPAGE</a
+				>
+			</p>
+		</div>
+	</section>
+{{ end }}

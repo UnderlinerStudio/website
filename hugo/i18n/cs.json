@@ -45,10 +45,10 @@
 		"text": "Máte projekt?",
 		"link-text": "Pojďme spolupracovat!"
 	},
-	"project-process-heading": "Jak přistupuju k projektům",
 	"404": {
-		"text": "Tato stránka neexistuje",
-		"cta": "Zpět na domovskou stránku"
+		"text": "Stránka nenalezena",
+		"subtext": "VYPADÁ TO ŽE JSTE SE ZTRATILI! — VRAŤTE SE NA",
+		"cta": "DOMOVSKOU STRÁNKU"
 	},
 	"scroll-down": "Posuňte dolů"
 }
