@@ -3,11 +3,11 @@
 {{ end }}
 {{ define "main" }}
 	{{ partial "homeHero.html" . }}
-	<section class="base-grid py-20 md:py-32">
+	<section class="py-20 base-grid md:py-32">
 		<div class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12">
 			<h1 class="font-black uppercase">
 				<span
-					class="inline-block overflow-hidden whitespace-nowrap leading-tight"
+					class="inline-block overflow-hidden leading-tight whitespace-nowrap"
 				>
 					<span
 						class="block"
@@ -31,28 +31,28 @@
 		<div
 			data-animate="fade-in"
 			style="opacity: 0;"
-			class="col-start-1 col-end-13 mb-12 mt-6 max-w-4xl space-y-4 text-lg sm:col-start-3 sm:col-end-12 sm:mt-16 sm:space-y-8 sm:text-xl md:text-2xl xl:text-3xl"
+			class="max-w-4xl col-start-1 col-end-13 mt-6 mb-12 space-y-4 text-lg sm:col-start-3 sm:col-end-12 sm:mt-12 sm:space-y-8 sm:text-xl md:text-2xl"
 		>
-			<p class="leading-relaxed">
-				Věříme, že každý nápad, produkt nebo služba si zaslouží uznání.
-				<span class="font-bold text-sunset"
-					>Věříme, že každý má šanci na úspěch.</span
-				>
+			<p>
+				Poháněni zvědavostí a odhodláním dělat práci lepší než
+				<i>"dostatečnou"</i>. Zaměřujeme se na kreativní a smysluplné řešení
+				výzev vaší značky a podnikání.
 			</p>
-			<p class="leading-relaxed">
+
+			<p>
 				Vytvářením funkčního a líbivého designu, pečlivým vývojem softwaru,
 				vytvářením promyšleného marketingu a vyprávěním vašeho příběhu –
-				<span class="font-black">Necháváme vaši značku vyniknout.</span>
+				<span class="font-bold">Necháváme vaši značku vyniknout.</span>
 			</p>
 
 			<div class="grid grid-cols-2 gap-5 sm:w-max sm:grid-flow-col sm:gap-10">
 				<div>
 					<a
 						href="/contact"
-						class="inline-block h-11 w-full bg-sunset-dark px-5 text-base font-bold uppercase text-white hover:bg-sunset sm:h-14 sm:px-8"
+						class="inline-block w-full px-5 text-base font-bold text-white uppercase h-11 bg-sunset-dark hover:bg-sunset sm:h-14 sm:px-8"
 					>
 						<div
-							class="flex h-full w-full items-center justify-center text-xs sm:text-sm"
+							class="flex items-center justify-center w-full h-full text-xs sm:text-sm"
 						>
 							Kontakt
 						</div>
@@ -61,10 +61,10 @@
 				<div>
 					<a
 						href="/why"
-						class="inline-block h-11 w-full border-2 border-neutral-700 bg-transparent px-3 text-base font-bold uppercase text-white hover:border-neutral-500 sm:h-14 sm:px-8"
+						class="inline-block w-full px-3 text-base font-bold text-white uppercase bg-transparent border-2 h-11 border-neutral-700 hover:border-neutral-500 sm:h-14 sm:px-8"
 					>
 						<div
-							class="flex h-full w-full items-center justify-center text-xs sm:text-sm"
+							class="flex items-center justify-center w-full h-full text-xs sm:text-sm"
 						>
 							Proč UNDERLINER?
 						</div>
@@ -73,19 +73,19 @@
 			</div>
 		</div>
 	</section>
-	<section class="base-grid py-20 md:py-32" id="heading-section">
+	<section class="py-20 base-grid md:py-32" id="heading-section">
 		<div class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12">
 			<h2
-				class="text-4xl font-black uppercase leading-10 text-neutral-100 sm:text-5xl md:col-start-3 md:text-7xl xl:text-8xl"
+				class="text-4xl font-black leading-10 uppercase text-neutral-100 sm:text-5xl md:col-start-3 md:text-7xl xl:text-8xl"
 			>
 				O
 				<span class="text-sunset">underlineru</span>
 			</h2>
 		</div>
 		<div
-			class="col-start-1 col-end-13 mb-12 mt-6 max-w-4xl space-y-4 text-lg sm:col-start-3 sm:col-end-12 sm:mt-16 sm:space-y-8 sm:text-xl md:text-2xl xl:text-3xl"
+			class="max-w-4xl col-start-1 col-end-13 mt-6 mb-12 space-y-4 text-lg sm:col-start-3 sm:col-end-12 sm:mt-16 sm:space-y-8 sm:text-xl md:text-2xl"
 		>
-			<p class="leading-relaxed">
+			<p>
 				<span class="font-bold uppercase">UNDERLINER STUDIO</span> je tým
 				zvědavých a kreativních lidí, kteří jsou ochotni udělat něco navíc, aby
 				vytvořili něco výjimečného –
@@ -95,10 +95,10 @@
 			<div class="w-max">
 				<a
 					href="/about"
-					class="inline-block h-11 w-full border-2 border-neutral-700 bg-transparent px-5 text-base font-bold uppercase text-white hover:border-neutral-500 sm:h-14 sm:px-8"
+					class="inline-block w-full px-5 text-base font-bold text-white uppercase bg-transparent border-2 h-11 border-neutral-700 hover:border-neutral-500 sm:h-14 sm:px-8"
 				>
 					<div
-						class="flex h-full w-full items-center justify-center text-xs sm:text-sm"
+						class="flex items-center justify-center w-full h-full text-xs sm:text-sm"
 					>
 						O Underlineru
 					</div>
@@ -106,6 +106,8 @@
 			</div>
 		</div>
 	</section>
+{{ end }}
+{{ define "scripts" }}
 	{{ $homeScript := resources.Get "ts/homepage.ts" | js.Build "js/homepage.js" | fingerprint }}
 	<script src="{{ $homeScript.RelPermalink }}" defer></script>
 {{ end }}

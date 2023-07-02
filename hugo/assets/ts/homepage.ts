@@ -67,53 +67,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	const observer = new IntersectionObserver(observerCallback, observerOptions);
 	observer.observe(heroSection);
 
-	const pmLink = document.getElementById("pm-link");
-	// [pmLink, ...links].forEach((el) => {
-	// 	const elHref = el.getAttribute("href");
-
-	// 	if (elHref) {
-	// 		const head = document.head;
-	// 		const preloadLink = document.createElement("link");
-	// 		preloadLink.href = elHref;
-	// 		preloadLink.rel = "prefetch";
-
-	// 		head.appendChild(preloadLink);
-
-	// 		el.addEventListener("click", function (e) {
-	// 			e.preventDefault();
-	// 			const parent = this.parentElement;
-	// 			const href = this.getAttribute("href");
-
-	// 			const { x, y, bottom, right } = parent.getBoundingClientRect();
-
-	// 			const t = y;
-	// 			const r = window.innerWidth - right;
-	// 			const b = window.innerHeight - bottom;
-	// 			const l = x;
-
-	// 			parent.style.inset = `${t}px ${r}px ${b}px ${l}px`;
-
-	// 			parent.style.position = "fixed";
-	// 			parent.style.zIndex = "45";
-
-	// 			animate(
-	// 				parent,
-	// 				{
-	// 					left: 0,
-	// 					right: 0,
-	// 					top: 0,
-	// 					bottom: 0,
-	// 				},
-	// 				{ duration: 0.25, easing: "ease-in-out" },
-	// 			);
-
-	// 			setTimeout(() => {
-	// 				location.href = href;
-	// 			}, 300);
-	// 		});
-	// 	}
-	// });
-
 	window.addEventListener("pageshow", (e) => onHomepageLoad(e, links, grid));
 
 	function onHomepageLoad(

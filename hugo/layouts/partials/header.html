@@ -14,9 +14,7 @@
 	<nav
 		class="flex flex-col items-end col-start-4 col-end-13 gap-3 justify-self-end sm:col-end-12 sm:flex-row sm:items-center"
 	>
-		<ul
-			class="flex gap-3 text-base font-semibold text-neutral-300 sm:gap-5 md:text-xl"
-		>
+		<ul class="flex gap-3 text-base text-neutral-300 sm:gap-5 md:text-xl">
 			{{ range $.Site.Menus.main }}
 				{{ if ne .Params.hidden "true" }}
 					<li>
@@ -40,7 +38,6 @@
 				{{ end }}
 
 			{{ end }}
-
 		</ul>
 
 		<a

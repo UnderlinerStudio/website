@@ -20,6 +20,9 @@
 	h2 {
 		@apply text-4xl leading-10 text-neutral-100 sm:text-5xl md:col-start-3 md:text-7xl xl:text-8xl;
 	}
+	p {
+		@apply leading-relaxed;
+	}
 }
 
 @layer components {
@@ -29,12 +32,12 @@
 	}
 
 	.custom-scroll::-webkit-scrollbar {
-		@apply w-1 h-full rounded-full;
+		@apply h-full w-1 rounded-full;
 		@apply bg-neutral-800;
 	}
 
 	.checkbox-switch {
-		@apply invisible w-0 h-0;
+		@apply invisible h-0 w-0;
 	}
 
 	.prose a {

@@ -28,20 +28,20 @@
 		</div>
 		<div
 			data-animate="fade-in"
-			class="max-w-4xl col-start-1 col-end-13 mt-6 mb-12 space-y-4 text-lg sm:col-start-3 sm:col-end-12 sm:mt-16 sm:space-y-8 sm:text-xl md:text-2xl xl:text-3xl"
+			class="max-w-4xl col-start-1 col-end-13 mt-6 mb-12 space-y-4 text-lg sm:col-start-3 sm:col-end-12 sm:mt-16 sm:space-y-8 sm:text-xl md:text-2xl"
 			style="opacity: 0;"
 		>
-			<p class="leading-relaxed">
+			<p>
 				We believe that every idea, product or a service deserve to be
 				recognised.
 				<span class="font-bold text-sunset"
 					>We believe everyone has a chance to success.</span
 				>
 			</p>
-			<p class="leading-relaxed">
+			<p>
 				By building beautiful designs, carefully engineering software,
 				passionately making meaningful marketing and by telling your story –
-				<span class="font-black">We make your brand pop.</span>
+				<span class="font-bold">We make your brand pop.</span>
 			</p>
 			<div class="grid grid-cols-2 gap-5 sm:w-max sm:grid-flow-col sm:gap-10">
 				<div>
@@ -81,9 +81,9 @@
 			</h2>
 		</div>
 		<div
-			class="max-w-4xl col-start-1 col-end-13 mt-6 mb-12 space-y-4 text-lg sm:col-start-3 sm:col-end-12 sm:mt-16 sm:space-y-8 sm:text-xl md:text-2xl xl:text-3xl"
+			class="max-w-4xl col-start-1 col-end-13 mt-6 mb-12 space-y-4 text-lg sm:col-start-3 sm:col-end-12 sm:mt-16 sm:space-y-8 sm:text-xl md:text-2xl"
 		>
-			<p class="leading-relaxed">
+			<p>
 				<span class="font-bold uppercase">UNDERLINER STUDIO</span> is a team of
 				curious and creative minds that are willing to go extra mile to make
 				something exeptional –
@@ -104,6 +104,8 @@
 			</div>
 		</div>
 	</section>
+{{ end }}
+{{ define "scripts" }}
 	{{ $homeScript := resources.Get "ts/homepage.ts" | js.Build "js/homepage.js" | fingerprint }}
 	<script src="{{ $homeScript.RelPermalink }}" defer></script>
 {{ end }}

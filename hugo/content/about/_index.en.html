@@ -4,30 +4,55 @@ description: "We are a team of product designers, developers, product managers a
 name: "About"
 ---
 
-<section class="base-grid pt-52">
-	<h1
-		class="col-start-1 col-end-13 text-4xl font-black uppercase text-neutral-100 sm:col-start-2 sm:col-end-12 sm:text-5xl md:text-7xl lg:text-8xl"
-	>
-		All about underliner
-	</h1>
+<section class="base-grid relative h-[90vh] items-center" id="hero">
+	<div class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12">
+		<h1
+			class="text-2xl font-black uppercase text-neutral-100 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl"
+		>
+			<span
+				class="inline-block overflow-hidden leading-tight whitespace-nowrap"
+			>
+				<span
+					data-animate="from-bottom"
+					class="block"
+					style="transform: translateY(var(--motion-translateY)); --motion-translateY: 100%;"
+					>We drive experiences for</span
+				>
+			</span>
+			<span
+				class="inline-block overflow-hidden leading-tight whitespace-nowrap"
+			>
+				<span
+					class="block text-sunset"
+					data-animate="from-bottom"
+					style="transform: translateY(var(--motion-translateY)); --motion-translateY: 100%;"
+				>
+					brands with purpose</span
+				>
+			</span>
+		</h1>
+	</div>
+	{{< partial "scrollDownIndicator.html" >}}
+</section>
+<section class="pt-12 base-grid">
 	<div
-		class="max-w-4xl col-start-3 col-end-12 mt-16 mb-12 text-lg md:mt-44 md:text-3xl"
+		class="max-w-4xl col-start-3 col-end-12 mt-16 mb-12 text-lg md:mt-44 md:text-2xl"
 	>
-		<p class="leading-relaxed">
+		<p>
 			We are
-			<span class="font-black uppercase">Underliner studio,</span> creative and
+			<span class="font-bold uppercase">Underliner studio,</span> creative and
 			curious team with a mindset of ongoing improvement in everything we do.
 			Our goal is simple:
 			<span class="font-bold text-sunset">We want to do top work.</span>
 		</p>
-		<p class="mt-8 leading-relaxed">
+		<p class="mt-8">
 			We like to take on challenges that break through the limits of ourselves
 			and our clients. In return we create product with actual idea at its core.
 			Not just fancy effects that decorate a big pile of nothing. We make
 			<span class="font-bold">roducts with character and soul</span>, made for
 			actual human beings.
 		</p>
-		<p class="mt-8 leading-relaxed">
+		<p class="mt-8">
 			We are going all in and together with our partners we are trying to
 			transform an idea into a product that can't be ignored.
 		</p>
