@@ -42,6 +42,10 @@
 
 	.prose a {
 		@apply italic decoration-red-500;
-		@apply link-strikethrough;
+	}
+
+	li.dash {
+		list-style-type: "— ";
+		@apply ml-5 pl-2;
 	}
 }

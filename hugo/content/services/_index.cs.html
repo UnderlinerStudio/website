@@ -3,24 +3,16 @@ title: "Služby | Underliner studio"
 description: "Jsme experti na vývoj a design. Umíme dělat webové stránky i aplikace. Náš cíl je odvádět tu nejlepší práci."
 ---
 
-<section id="hero" class="relative grid  h-[90vh] place-items-center">
+<section
+	id="hero"
+	class="relative grid h-[90vh] place-items-center px-5 sm:grid-cols-12 sm:px-0"
+>
 	<h1
-		class="text-center text-6xl font-black uppercase sm:text-7xl md:text-8xl lg:text-9xl"
+		class="col-end-13 text-4xl font-black uppercase sm:col-start-2 sm:text-7xl md:text-8xl lg:text-9xl"
 	>
 		Děláme digitální produkty
 	</h1>
-	<div class="base-grid absolute inset-x-0 bottom-4">
-		<div
-			class="col-start-1 col-end-13 flex justify-center sm:col-start-2 sm:col-end-12 sm:justify-between"
-		>
-			<span class="text-xs uppercase">
-				<span class="mr-1 inline-block h-2 w-2 fill-neutral-100">
-					{{< partial "svg/arrow-down.svg" >}}
-				</span>
-				posuňte dolů
-			</span>
-		</div>
-	</div>
+	{{< partial "scrollDownIndicator.html" >}}
 </section>
 <seciton class="base-grid py-20 md:py-32">
 	<div class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12">
@@ -37,66 +29,295 @@ description: "Jsme experti na vývoj a design. Umíme dělat webové stránky i 
 					class="block border-t border-neutral-700 px-2 py-6 font-bold hover:bg-neutral-100 hover:bg-opacity-5"
 				>
 					<span class="align-middle text-sm text-sunset">01</span>
-					<pan class="ml-4">Product management</pan>
+					<span class="ml-4">Produktový management</span>
 				</a>
 				<a
-					href="#uxui"
+					href="#web"
 					class="block border-t border-neutral-700 px-2 py-6 font-bold hover:bg-neutral-100 hover:bg-opacity-5"
 				>
 					<span class="align-middle text-sm text-sunset">02</span>
-					<pan class="ml-4">Product design</pan>
+					<span class="ml-4">Webové stránky & Aplikace</span>
 				</a>
 				<a
-					href="#dev"
+					href="#app"
 					class="block border-t border-neutral-700 px-2 py-6 font-bold hover:bg-neutral-100 hover:bg-opacity-5"
 				>
 					<span class="align-middle text-sm text-sunset">03</span>
-					<pan class="ml-4">Engineering</pan>
+					<span class="ml-4">
+						Mobilní aplikace
+						<span
+							class="align-top text-xs leading-normal text-neutral-600 md:text-sm"
+							>(IOS & Android)</span
+						>
+					</span>
+				</a>
+				<a
+					href="#ecom"
+					class="block border-t border-neutral-700 px-2 py-6 font-bold hover:bg-neutral-100 hover:bg-opacity-5"
+				>
+					<span class="align-middle text-sm text-sunset">04</span>
+					<span class="ml-4">eCommerce</span>
 				</a>
 				<a
 					href="#marketing"
 					class="block border-t border-neutral-700 px-2 py-6 font-bold hover:bg-neutral-100 hover:bg-opacity-5"
 				>
-					<span class="align-middle text-sm text-sunset">04</span>
-					<pan class="ml-4">Marketing</pan>
+					<span class="align-middle text-sm text-sunset">06</span>
+					<span class="ml-4">Marketing</span>
+				</a>
+				<a
+					href="#brand"
+					class="block border-t border-neutral-700 px-2 py-6 font-bold hover:bg-neutral-100 hover:bg-opacity-5"
+				>
+					<span class="align-middle text-sm text-sunset">07</span>
+					<pan class="ml-4">Branding & identita</pan>
+				</a>
+
+				<a
+					href="#prod"
+					class="block border-t border-neutral-700 px-2 py-6 font-bold hover:bg-neutral-100 hover:bg-opacity-5"
+				>
+					<span class="align-middle text-sm text-sunset">08</span>
+					<pan class="ml-4">Foto & video produkce</pan>
 				</a>
 			</nav>
 		</div>
 	</div>
 </seciton>
 <seciton id="pm" class="base-grid py-12 md:py-20">
-	<div class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12">
+	<div
+		class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12 md:col-start-4 md:col-end-12"
+	>
 		<h2
-			class="text-3xl font-black uppercase sm:text-6xl md:text-7xl lg:text-8xl"
+			class="text-4xl font-black uppercase sm:text-6xl md:text-7xl lg:text-8xl"
 		>
 			Produktový management
 		</h2>
+		<div class="mt-6 max-w-2xl sm:mt-8 md:mt-10">
+			<p class="text-base text-neutral-300 md:text-xl lg:text-2xl">
+				Přistupování k produktům jako k vlastním je pro náš tým klíčové –
+				<span class="font-bold text-sunset">neděláme kompromisy</span>.
+				Soustředíme se na uživatele a na to, abychom dělali ty nelepší
+				rozhodnutí pro rozvoj produktu – protože to je náš hlavní úkol.
+			</p>
+			<ul
+				class="mt-8 grid grid-cols-1 text-sm leading-relaxed text-neutral-500 sm:mt-10 sm:grid-cols-2 md:mt-12 md:text-base"
+			>
+				<li class="dash">Průzkum trhu</li>
+				<li class="dash">Uživatelský výzkum</li>
+				<li class="dash">Nadefinování produktu</li>
+				<li class="dash">Rozvoj produktu</li>
+				<li class="dash">Projektový management</li>
+				<li class="dash">Uživatelské testování</li>
+			</ul>
+		</div>
 	</div>
 </seciton>
-<seciton id="uxui" class="base-grid py-12 md:py-20 ">
-	<div class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12">
+<seciton id="web" class="base-grid py-12 md:items-end md:py-20">
+	<div
+		class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12 md:col-start-5 md:col-end-12"
+	>
 		<h2
-			class="text-3xl font-black uppercase sm:text-6xl md:text-7xl lg:text-8xl"
+			class="text-4xl font-black uppercase sm:text-6xl md:text-7xl lg:text-8xl"
 		>
-			Design
+			Webové stránky & Aplikace
 		</h2>
+		<div class="mt-6 max-w-2xl sm:mt-8 md:mt-10">
+			<p class="text-base text-neutral-300 md:text-xl lg:text-2xl">
+				Webové stránky navrhujeme tak, aby zaujaly vaše uživatele, klienty
+				a posílily identitu vaší značky. Porozumění tomu, co je motivuje, nám
+				umožňuje vytvářet ty nejúčinnější strategie a nejlepší zážitky.
+			</p>
+			<ul
+				class="mt-8 grid grid-cols-1 text-sm leading-relaxed text-neutral-500 sm:mt-10 sm:grid-cols-2 md:mt-12 md:text-base"
+			>
+				<li class="dash">React, Next, Astro</li>
+				<li class="dash">UX & UI Design</li>
+				<li class="dash">
+					Přístupnost
+					<span class="align-top text-[10px] leading-normal text-neutral-600"
+						>(A11y)</span
+					>
+				</li>
+				<li class="dash">Monitorování a vylepšování</li>
+
+				<li class="dash">SEO strategie</li>
+				<li class="dash">
+					Progresivní webové aplikace
+					<span class="align-top text-[10px] leading-normal text-neutral-600"
+						>(PWA)</span
+					>
+				</li>
+			</ul>
+		</div>
 	</div>
 </seciton>
-<seciton id="dev" class="base-grid py-12 md:py-20">
+<seciton id="app" class="base-grid py-12 md:py-20">
 	<div class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12">
 		<h2
-			class="text-3xl font-black uppercase sm:text-6xl md:text-7xl lg:text-8xl"
+			class="text-4xl font-black uppercase sm:text-6xl md:text-7xl lg:text-8xl"
 		>
-			Engineering
+			Mobilní aplikace
 		</h2>
+		<div class="mt-6 max-w-3xl sm:mt-8 md:mt-10">
+			<p class="text-base text-neutral-300 md:text-xl lg:text-2xl">
+				Vytváření mobilních aplikací pro nás není jen kódování. Jde o tvorbu
+				originálních designů a nezapomenutelných uživatelských zážitků.
+				Vytváříme funkční a líbivé mobilní aplikace, které si vaši uživatelé
+				zamilují.
+			</p>
+			<ul
+				class="mt-8 grid grid-cols-1 text-sm leading-relaxed text-neutral-500 sm:mt-10 sm:grid-cols-2 md:mt-12 md:text-base"
+			>
+				<li class="dash">IOS, Android</li>
+				<li class="dash">
+					Nativní vývoj
+					<span class="align-top text-[10px] leading-normal text-neutral-600"
+						>(Swif, Kotlin)</span
+					>
+				</li>
+				<li class="dash">
+					Hybridní vývoj
+					<span class="align-top text-[10px] leading-normal text-neutral-600"
+						>(Flutter, React Native)</span
+					>
+				</li>
+				<li class="dash">
+					Testování zajištění kvaliti
+					<span class="align-top text-[10px] leading-normal text-neutral-600"
+						>(QA)</span
+					>
+				</li>
+				<li class="dash">Strategie spuštění</li>
+				<li class="dash">Spuštění v app storech</li>
+			</ul>
+		</div>
+	</div>
+</seciton>
+<seciton id="ecom" class="base-grid py-12 md:py-20">
+	<div
+		class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12 md:col-start-7 md:col-end-12"
+	>
+		<h2
+			class="text-4xl font-black uppercase sm:text-6xl md:text-7xl lg:text-8xl"
+		>
+			eCommerce
+		</h2>
+		<div class="mt-6 max-w-2xl sm:mt-8 md:mt-10">
+			<p class="text-base text-neutral-300 md:text-xl lg:text-2xl">
+				eCommerce je především o zážitcích a my vytváříme zážitky, které mají
+				smysl a které mají výsledky. Budováním značky pomocí eCommerce kanálů
+				poháníme její růst a spolu s ní i růst vašeho podnikání.
+			</p>
+			<ul
+				class="mt-8 grid grid-cols-1 text-sm leading-relaxed text-neutral-500 sm:mt-10 sm:grid-cols-2 md:mt-12 md:text-base"
+			>
+				<li class="dash">
+					eCommerce platformy
+					<span class="align-top text-[10px] leading-normal text-neutral-600"
+						>(Shopify, Shoptet)</span
+					>
+				</li>
+				<li class="dash">E-mailové kampaně</li>
+
+				<li class="dash">Digital Guidelines</li>
+
+				<li class="dash">Youtube Ads</li>
+				<li class="dash">Sklik</li>
+				<li class="dash">Tvorba obsahu</li>
+			</ul>
+		</div>
 	</div>
 </seciton>
 <seciton id="marketing" class="base-grid py-12 md:py-20">
 	<div class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12">
 		<h2
-			class="text-3xl font-black uppercase sm:text-6xl md:text-7xl lg:text-8xl"
+			class="text-4xl font-black uppercase sm:text-6xl md:text-7xl lg:text-8xl"
 		>
 			Marketing
 		</h2>
+		<div class="mt-6 max-w-2xl sm:mt-8 md:mt-10">
+			<p class="text-base text-neutral-300 md:text-xl lg:text-2xl">
+				Kampaně zaměřené na cílové skupiny, a vyjádření hodnot vize a mise vaší
+				firmy – <span class="font-semibold">takové my děláme</span>. Zajistíme,
+				že vás vaši klienti najdou. Postaráme se o to, aby vaše značka vynikla.
+				<!-- Dělání kreativních a zajímavých
+					kampaní nám dovoluje vyprávět příběhy, které zaujmou vaše zákazníky.
+					Zajistíme že vaše značka nebo produkt vynike – .
+				-->
+			</p>
+			<ul
+				class="mt-8 grid grid-cols-1 text-sm leading-relaxed text-neutral-500 sm:mt-10 sm:grid-cols-2 md:mt-12 md:text-base"
+			>
+				<li class="dash">PPC Kapmaně</li>
+				<li class="dash">Google Ads</li>
+
+				<li class="dash">
+					Meta
+					<span class="align-top text-[10px] leading-normal text-neutral-600"
+						>(FB, IG)</span
+					>
+				</li>
+
+				<li class="dash">Youtube Ads</li>
+				<li class="dash">Sklik</li>
+				<li class="dash">Tvorba obsahu</li>
+			</ul>
+		</div>
+	</div>
+</seciton>
+<seciton id="brand" class="base-grid py-12 md:py-20">
+	<div
+		class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12 md:col-start-7"
+	>
+		<h2
+			class="text-4xl font-black uppercase sm:text-6xl md:text-7xl lg:text-8xl"
+		>
+			Branding & identita
+		</h2>
+		<div class="mt-6 max-w-2xl sm:mt-8 md:mt-10">
+			<p class="text-base text-neutral-300 md:text-xl lg:text-2xl">
+				Poháníme odvážné značky a vytváříme zážitky pro jejich zákazníky
+				a uživatele. Od vymýšlení a rozvoje nových nápadů až po propojení
+				zákazníků nebo uživatelů – vyprávíme příběh vaší značky.
+			</p>
+			<ul
+				class="mt-8 grid grid-cols-1 text-sm leading-relaxed text-neutral-500 sm:mt-10 sm:grid-cols-2 md:mt-12 md:text-base"
+			>
+				<li class="dash">Design identity</li>
+				<li class="dash">Strategie obsahu</li>
+				<li class="dash">Tištěné materiály</li>
+				<li class="dash">Strategie uvedení na trh</li>
+				<li class="dash">Strategie brandu</li>
+				<li class="dash">Online podklady</li>
+			</ul>
+		</div>
+	</div>
+</seciton>
+<seciton id="prod" class="base-grid py-12 md:py-20">
+	<div class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12">
+		<h2
+			class="text-4xl font-black uppercase sm:text-6xl md:text-7xl lg:text-8xl"
+		>
+			Foto & video<br />produkce
+		</h2>
+		<div class="mt-6 max-w-4xl sm:mt-8 md:mt-10">
+			<p class="text-base text-neutral-300 md:text-xl lg:text-2xl">
+				Každý aspekt video a foto tvorby vyžaduje kreativitu, pečlivost
+				a trpělivost. V průběhu celého procesu pracujeme na tom, abychom byvli
+				vždy v souladu s vizí našeho partnera. Od základní myšlenky až po
+				realizaci – postaráme se o kompletní produkční process.
+			</p>
+			<ul
+				class="mt-8 grid grid-cols-1 text-sm leading-relaxed text-neutral-500 sm:mt-10 sm:grid-cols-2 md:mt-12 md:text-base"
+			>
+				<li class="dash">Reklamní spoty</li>
+				<li class="dash">Video reklama pro online</li>
+				<li class="dash">Post produkce a střih</li>
+				<li class="dash">Produktová & lifestyle fotografie</li>
+				<li class="dash">Voice over</li>
+				<li class="dash">Kreativa a ideamaking</li>
+			</ul>
+		</div>
 	</div>
 </seciton>

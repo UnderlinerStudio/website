@@ -1,4 +1,4 @@
-import { animate, stagger } from "motion";
+import { stagger } from "motion";
 import { $, $$ } from "./selector";
 import {
 	homeGridReveal,
