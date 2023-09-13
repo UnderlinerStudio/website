@@ -56,7 +56,7 @@ const CollapsibleButton = ({
 	isOpen: Accessor<boolean>;
 }) => {
 	return (
-		<button onClick={onClick} class="mb-4 flex items-center font-semibold">
+		<button onClick={onClick} class="mb-4 flex items-center font-medium">
 			<span
 				class={`mr-2 aspect-square h-4 fill-neutral-300 ${
 					isOpen() ? "rotate-180 transform" : ""

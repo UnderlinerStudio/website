@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	const heading1Elements = $$("[data-animate='from-bottom']");
 	const heroSection = document.getElementById("hero");
 	const scroll = $("[data-animate='after']");
-	console.log("x");
 
 	scrollDownAnimate(scroll, heroSection);
 

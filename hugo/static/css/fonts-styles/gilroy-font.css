@@ -1,41 +1,39 @@
-@font-face {
+/* @font-face {
 	font-family: "Gilroy";
 	src: url("/fonts/Gilroy/Gilroy-Thin.otf") format("opentype");
 	font-weight: 100;
 	font-style: normal;
-}
-@font-face {
+} */
+/* @font-face {
 	font-family: "Gilroy";
 	src: url("/fonts/Gilroy/Gilroy-ThinItalic.otf") format("opentype");
 	font-weight: 100;
 	font-style: italic;
-}
-
-@font-face {
+} */
+/* @font-face {
 	font-family: "Gilroy";
 	src: url("/fonts/Gilroy/Gilroy-UltraLight.otf") format("opentype");
 	font-weight: 200;
 	font-style: normal;
-}
-@font-face {
+} */
+/* @font-face {
 	font-family: "Gilroy";
 	src: url("/fonts/Gilroy/Gilroy-UltraLightItalic.otf") format("opentype");
 	font-weight: 200;
 	font-style: italic;
-}
-
-@font-face {
+} */
+/* @font-face {
 	font-family: "Gilroy";
 	src: url("/fonts/Gilroy/Gilroy-Light.otf") format("opentype");
 	font-weight: 300;
 	font-style: normal;
-}
-@font-face {
+} */
+/* @font-face {
 	font-family: "Gilroy";
 	src: url("/fonts/Gilroy/Gilroy-LightItalic.otf") format("opentype");
 	font-weight: 300;
 	font-style: italic;
-}
+} */
 
 @font-face {
 	font-family: "Gilroy";
@@ -56,25 +54,25 @@
 	font-weight: 500;
 	font-style: normal;
 }
-@font-face {
+/* @font-face {
 	font-family: "Gilroy";
 	src: url("/fonts/Gilroy/Gilroy-MediumItalic.otf") format("opentype");
 	font-weight: 500;
 	font-style: italic;
-}
+} */
 
-@font-face {
+/* @font-face {
 	font-family: "Gilroy";
 	src: url("/fonts/Gilroy/Gilroy-SemiBold.otf") format("opentype");
 	font-weight: 600;
 	font-style: normal;
-}
-@font-face {
+} */
+/* @font-face {
 	font-family: "Gilroy";
 	src: url("/fonts/Gilroy/Gilroy-SemiBoldItalic.otf") format("opentype");
 	font-weight: 600;
 	font-style: italic;
-}
+} */
 
 @font-face {
 	font-family: "Gilroy";
@@ -82,25 +80,25 @@
 	font-weight: 700;
 	font-style: normal;
 }
-@font-face {
+/* @font-face {
 	font-family: "Gilroy";
 	src: url("/fonts/Gilroy/Gilroy-BoldItalic.otf") format("opentype");
 	font-weight: 700;
 	font-style: italic;
-}
+} */
 
-@font-face {
+/* @font-face {
 	font-family: "Gilroy";
 	src: url("/fonts/Gilroy/Gilroy-ExtraBold.otf") format("opentype");
 	font-weight: 800;
 	font-style: normal;
-}
-@font-face {
+} */
+/* @font-face {
 	font-family: "Gilroy";
 	src: url("/fonts/Gilroy/Gilroy-ExtraBoldItalic.otf") format("opentype");
 	font-weight: 800;
 	font-style: italic;
-}
+} */
 
 @font-face {
 	font-family: "Gilroy";
@@ -108,9 +106,9 @@
 	font-weight: 900;
 	font-style: normal;
 }
-@font-face {
+/* @font-face {
 	font-family: "Gilroy";
 	src: url("/fonts/Gilroy/Gilroy-BlackItalic.otf") format("opentype");
 	font-weight: 900;
 	font-style: italic;
-}
+} */

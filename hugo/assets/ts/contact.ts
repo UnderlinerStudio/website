@@ -1,4 +1,4 @@
-import { coppyContent } from "./utils";
+import { copyContent } from "./utils";
 import { z } from "zod";
 import { $ } from "./selector";
 import { Toast } from "./toast";
@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const copyElement = document.getElementById("copyitem");
 	if (copyElement)
 		copyElement.addEventListener("click", (e: MouseEvent) => {
-			coppyContent(e);
+			copyContent(e);
 			const target = e.target as HTMLElement;
 
 			Toast(target.dataset.toast, 1500, "success");

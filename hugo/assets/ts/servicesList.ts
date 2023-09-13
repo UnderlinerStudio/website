@@ -1,38 +1,27 @@
-import { $ } from "./selector";
+import { stagger } from "motion";
+import { observerAnimation, scrollDownAnimate } from "./animations";
+import { $, $$ } from "./selector";
 
 document.addEventListener("DOMContentLoaded", () => {
-	const header = $("[data-theme='dark']");
+	const heading1 = $("h1");
+	const heading1Elements = $$("[data-animate='from-bottom']");
+	const heroSection = document.getElementById("hero");
+	const scroll = $("[data-animate='after']");
 
-	const bgContainer = $("[data-animate='color-switch']");
-	const bgContainerClass = bgContainer.className
-		.split(" ")
-		.filter((cssClass) => cssClass.startsWith("bg-"))[0];
+	scrollDownAnimate(scroll, heroSection);
 
-	const heroSection = $("#hero");
-
-	const observerOptions: IntersectionObserverInit = {
+	const heading1ObserverOptions: IntersectionObserverInit = {
 		rootMargin: "",
-		threshold: 0.9,
+		threshold: 0.7,
 	};
 
-	const observerCallback: IntersectionObserverCallback = (
-		entries: IntersectionObserverEntry[],
-		observer: IntersectionObserver,
-	) => {
-		entries.forEach((entry) => {
-			if (entry.isIntersecting) {
-				if (!bgContainer.classList.contains(bgContainerClass)) {
-					bgContainer.classList.add(bgContainerClass, "dark");
-					if (header) header.classList.add("dark");
-				}
-			} else {
-				bgContainer.classList.remove(bgContainerClass, "dark");
-
-				if (header) header.classList.remove("dark");
-			}
-		});
-	};
-
-	const observer = new IntersectionObserver(observerCallback, observerOptions);
-	observer.observe(heroSection);
+	observerAnimation({
+		boundingElement: heading1,
+		targetElement: heading1Elements,
+	}).fromDown({
+		observerOptions: heading1ObserverOptions,
+		duration: 0.25,
+		delay: stagger(0.15),
+		easing: "ease-in-out",
+	});
 });

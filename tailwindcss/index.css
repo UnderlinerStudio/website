@@ -48,4 +48,9 @@
 		list-style-type: "— ";
 		@apply ml-5 pl-2;
 	}
+
+	li.dash {
+		list-style-type: "— ";
+		@apply ml-5 pl-2;
+	}
 }
