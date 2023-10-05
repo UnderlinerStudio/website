@@ -1,30 +1,6 @@
-<link
-	rel="preload"
-	href="/fonts/Gilroy/Gilroy-Regular.otf"
-	as="font"
-	crossorigin
-/>
-<link
-	rel="preload"
-	href="/fonts/Gilroy/Gilroy-RegularItalic.otf"
-	as="font"
-	crossorigin
-/>
-<link
-	rel="preload"
-	href="/fonts/Gilroy/Gilroy-Bold.otf"
-	as="font"
-	crossorigin
-/>
-<link
-	rel="preload"
-	href="/fonts/Gilroy/Gilroy-Black.otf"
-	as="font"
-	crossorigin
-/>
-
-<link rel="preload" as="style" href="/css/fonts.css" />
-<link rel="stylesheet" href="/css/fonts.css" type="text/css" />
+{{ $fontCSS := resources.Get "css/fonts.css" | fingerprint }}
+<link rel="preload" as="style" href="{{ $fontCSS.RelPermalink }}" />
+<link rel="stylesheet" href="{{ $fontCSS.RelPermalink }}" type="text/css" />
 
 {{ $css := resources.Get "css/tw.css" | fingerprint }}
 <link rel="preload" as="style" href="{{ $css.RelPermalink }}" />

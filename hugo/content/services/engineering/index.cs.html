@@ -4,89 +4,72 @@ description: ""
 bodybg: "bg-tealblue"
 ---
 
-<section
-	id="hero"
-	class="relative grid h-[90vh] items-center px-5 sm:grid-cols-12 sm:px-0"
->
-	<div class="flex flex-col justify-between pb-4 sm:col-start-2 sm:col-end-12">
+<section id="hero" class="base-grid relative h-[90vh] pt-32">
+	<div
+		class="col-start-1 col-end-13 flex flex-col justify-between pb-20 pt-[20vh] sm:col-start-2 sm:col-end-12"
+	>
 		<h1
-			class="text-5xl font-black uppercase sm:text-7xl md:text-8xl lg:text-9xl"
+			class="text-7xl font-black uppercase sm:mb-0 sm:mt-0 md:text-8xl lg:text-9xl"
 		>
 			Vývoj
 		</h1>
-		<p class="mt-20 max-w-2xl">
-			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
-			repudiandae quas sequi eius vel perferendis! Nulla nemo at sed doloribus
-			rem pariatur veniam dolorem quas. Ipsum ullam asperiores porro error.
+		<p class="max-w-2xl text-base md:text-lg">
+			We remain fast mooving and always looking whats next while remaining laser
+			focused on delivering stability great UX, performance, a11y, security.
 		</p>
-		{{< partial "scrollDownIndicator.html" >}}
 	</div>
+	{{< partial "scrollDownIndicator.html" >}}
 </section>
-<seciton id="pm" class="base-grid py-12 md:py-20">
+
+<seciton class="base-grid py-12 md:py-20">
 	<div
 		class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12 md:col-start-4 md:col-end-12"
 	>
 		<h2
 			class="text-4xl font-black uppercase sm:text-6xl md:text-7xl lg:text-8xl"
 		>
-			Produktový management
+			Definování cílů
 		</h2>
 		<div class="mt-6 max-w-2xl sm:mt-8 md:mt-10">
-			<p class="text-base text-neutral-300 md:text-xl lg:text-2xl">
-				Přistupování k produktům jako k vlastním je pro náš tým klíčové –
-				<span class="font-bold text-sunset">neděláme kompromisy</span>.
-				Soustředíme se na uživatele a na to, abychom dělali ty nelepší
-				rozhodnutí pro rozvoj produktu – protože to je náš hlavní úkol.
+			<p>
+				Identifikujeme potřeby produktu, přílezitosti pro růst a nastavíme jasný
+				směr. Postaráme se o to, aby cíle, které společně vytyčíme, byly v
+				souladu s vizí produktu. Usilujeme o to, aby váš produkt uspěl.
 			</p>
-			<ul
-				class="mt-8 grid grid-cols-1 text-sm leading-relaxed text-neutral-500 sm:mt-10 sm:grid-cols-2 md:mt-12 md:text-base"
-			>
-				<li class="dash">Průzkum trhu</li>
-				<li class="dash">Uživatelský výzkum</li>
-				<li class="dash">Nadefinování produktu</li>
-				<li class="dash">Rozvoj produktu</li>
-				<li class="dash">Projektový management</li>
-				<li class="dash">Uživatelské testování</li>
-			</ul>
 		</div>
 	</div>
 </seciton>
-<seciton id="web" class="base-grid py-12 md:items-end md:py-20">
+<seciton class="base-grid py-12 md:items-end md:py-20">
 	<div
 		class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12 md:col-start-5 md:col-end-12"
 	>
 		<h2
 			class="text-4xl font-black uppercase sm:text-6xl md:text-7xl lg:text-8xl"
 		>
-			Webové stránky & Aplikace
+			Tvorba designu a testování
 		</h2>
 		<div class="mt-6 max-w-2xl sm:mt-8 md:mt-10">
-			<p class="text-base text-neutral-300 md:text-xl lg:text-2xl">
-				Webové stránky navrhujeme tak, aby zaujaly vaše uživatele, klienty
-				a posílily identitu vaší značky. Porozumění tomu, co je motivuje, nám
-				umožňuje vytvářet ty nejúčinnější strategie a nejlepší zážitky.
+			<p>
+				Náš tým se zaměřuje na to, aby byl design funkční, správně komunikoval
+				cíle a identitu produktu a byl jednoduchý na sestavení. Sbíráme zpětnou
+				vazbu, testujeme a upravujeme řešení k dokonalosti.
 			</p>
-			<ul
-				class="mt-8 grid grid-cols-1 text-sm leading-relaxed text-neutral-500 sm:mt-10 sm:grid-cols-2 md:mt-12 md:text-base"
-			>
-				<li class="dash">React, Next, Astro</li>
-				<li class="dash">UX & UI Design</li>
-				<li class="dash">
-					Přístupnost
-					<span class="align-top text-[10px] leading-normal text-neutral-600"
-						>(A11y)</span
-					>
-				</li>
-				<li class="dash">Monitorování a vylepšování</li>
-
-				<li class="dash">SEO strategie</li>
-				<li class="dash">
-					Progresivní webové aplikace
-					<span class="align-top text-[10px] leading-normal text-neutral-600"
-						>(PWA)</span
-					>
-				</li>
-			</ul>
+		</div>
+	</div>
+</seciton>
+<seciton class="base-grid py-12 md:items-end md:py-20">
+	<div class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12">
+		<h2
+			class="text-4xl font-black uppercase sm:text-6xl md:text-7xl lg:text-8xl"
+		>
+			QA Testování
+		</h2>
+		<div class="mt-6 max-w-2xl sm:mt-8 md:mt-10">
+			<p>
+				Design neustále upravujeme a reagujeme na potřeby uživatelů.
+				Minimalizujeme riziko tím, že jsme v souladu s designovým procesem.
+				Iterujeme a validujeme. To nám pomáhá rychle reagovat.
+			</p>
 		</div>
 	</div>
 </seciton>

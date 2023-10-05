@@ -29,5 +29,5 @@
 
 {{ define "scripts" }}
 	{{ $serviceJS := resources.Get "ts/service.ts" | js.Build "js/service.js" | fingerprint }}
-	<script src="{{ $serviceJS.RelPermalink }}"></script>
+	<script src="{{ $serviceJS.RelPermalink }}" defer></script>
 {{ end }}

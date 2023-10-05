@@ -4,5 +4,5 @@
 
 {{ define "scripts" }}
 	{{ $aboutJS := resources.Get "ts/about.ts" | js.Build "js/about.js" | fingerprint }}
-	<script src="{{ $aboutJS.RelPermalink }}"></script>
+	<script src="{{ $aboutJS.RelPermalink }}" defer></script>
 {{ end }}
