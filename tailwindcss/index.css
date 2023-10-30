@@ -16,14 +16,23 @@
 	}
 	.base-grid {
 		@apply grid grid-cols-12;
-		@apply px-5 sm:px-0;
+		@apply px-4 md:px-0;
 	}
 	h1,
 	h2 {
-		@apply text-4xl leading-10 text-neutral-100 sm:text-5xl md:col-start-3 md:text-7xl xl:text-8xl;
+		@apply text-4xl leading-10 text-neutral-100 sm:text-5xl md:text-7xl xl:text-8xl;
 	}
 	p {
 		@apply text-lg leading-relaxed text-neutral-300 md:text-xl md:leading-loose;
+	}
+	img {
+		max-width: 100%;
+		height: auto;
+		vertical-align: middle;
+		font-style: italic;
+		background-repeat: no-repeat;
+		background-size: cover;
+		shape-margin: 0.75rem;
 	}
 }
 

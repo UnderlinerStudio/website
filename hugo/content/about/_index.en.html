@@ -10,7 +10,7 @@ name: "About"
 			class="text-2xl font-black uppercase text-neutral-100 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl"
 		>
 			<span
-				class="inline-block overflow-hidden whitespace-nowrap leading-tight"
+				class="inline-block overflow-hidden leading-tight whitespace-nowrap"
 			>
 				<span
 					data-animate="from-bottom"
@@ -20,7 +20,7 @@ name: "About"
 				>
 			</span>
 			<span
-				class="inline-block overflow-hidden whitespace-nowrap leading-tight"
+				class="inline-block overflow-hidden leading-tight whitespace-nowrap"
 			>
 				<span
 					class="block text-sunset"
@@ -32,11 +32,11 @@ name: "About"
 			</span>
 		</h1>
 	</div>
-	{{< partial "scrollDownIndicator.html" >}}
+	{{< scrollDownIndicator >}}
 </section>
-<section class="base-grid pt-12">
+<section class="pt-12 base-grid">
 	<div
-		class="col-start-3 col-end-12 mb-12 mt-16 max-w-4xl text-lg md:mt-44 md:text-2xl"
+		class="max-w-4xl col-start-3 col-end-12 mt-16 mb-12 text-lg md:mt-44 md:text-2xl"
 	>
 		<p>
 			We are
@@ -58,7 +58,7 @@ name: "About"
 		</p>
 	</div>
 </section>
-<section class="base-grid pt-32 md:pt-40">
+<section class="pt-32 base-grid md:pt-40">
 	<h2
 		class="col-start-1 col-end-13 text-2xl font-bold leading-tight text-neutral-100 sm:col-start-2 sm:col-end-12 md:text-5xl lg:text-7xl"
 	>
@@ -67,25 +67,25 @@ name: "About"
 		<span class="block text-sunset">No fuss</span>
 	</h2>
 	<p
-		class="col-start-1 col-end-13 ml-auto mt-4 max-w-xl text-left text-lg leading-normal text-neutral-300 sm:col-start-2 sm:col-end-12 md:text-3xl"
+		class="max-w-xl col-start-1 col-end-13 mt-4 ml-auto text-lg leading-normal text-left text-neutral-300 sm:col-start-2 sm:col-end-12 md:text-3xl"
 	>
 		We make
 		<span class="font-bold">functional & unique</span> produst in the
 		<span class="font-medium text-sunset">most uncomplicated way possible</span>
 	</p>
 	<div class="col-start-1 col-end-13 mt-12 sm:col-start-2 sm:col-end-12">
-		<h3 class="fill-neutral-500 text-sm uppercase text-neutral-500">
+		<h3 class="text-sm uppercase fill-neutral-500 text-neutral-500">
 			process
-			<span class="ml-1 inline-block h-2 w-2">
+			<span class="inline-block w-2 h-2 ml-1">
 				{{< partial "svg/arrow-right-down.svg" >}}
 			</span>
 		</h3>
 		<div
-			class="mt-12 grid grid-flow-row gap-8 text-neutral-100 sm:grid-cols-2 sm:grid-rows-2 sm:gap-0"
+			class="grid grid-flow-row gap-8 mt-12 text-neutral-100 sm:grid-cols-2 sm:grid-rows-2 sm:gap-0"
 		>
 			<div class="max-w-lg">
 				<h4 class="text-2xl font-bold">
-					<span class="align-top text-xs text-sunset">01</span>
+					<span class="text-xs align-top text-sunset">01</span>
 					Discovery
 				</h4>
 				<p class="mt-6 text-neutral-200">
@@ -101,7 +101,7 @@ name: "About"
 			</div>
 			<div class="max-w-lg sm:mt-36">
 				<h4 class="text-2xl font-bold">
-					<span class="align-top text-xs text-sunset">02</span>
+					<span class="text-xs align-top text-sunset">02</span>
 					Design
 				</h4>
 				<p class="mt-6">
@@ -118,7 +118,7 @@ name: "About"
 			</div>
 			<div class="max-w-lg">
 				<h4 class="text-2xl font-bold">
-					<span class="align-top text-xs text-sunset">03</span>
+					<span class="text-xs align-top text-sunset">03</span>
 					Engineering
 				</h4>
 				<p class="mt-6">
@@ -134,7 +134,7 @@ name: "About"
 			</div>
 			<div class="max-w-lg sm:mt-36">
 				<h4 class="text-2xl font-bold">
-					<span class="align-top text-xs text-sunset">04</span>
+					<span class="text-xs align-top text-sunset">04</span>
 					Maintanance & scaling
 				</h4>
 				<p class="mt-6">
@@ -152,17 +152,17 @@ name: "About"
 		</div>
 	</div>
 </section>
-<seciton class="base-grid pt-32">
+<seciton class="pt-32 base-grid">
 	<h2
 		class="col-start-1 col-end-13 text-4xl font-bold leading-tight text-neutral-100 sm:col-start-2 sm:col-end-12 sm:text-4xl md:text-5xl lg:text-7xl"
 	>
 		What you can expect
 	</h2>
 	<div
-		class="relative col-start-1 col-end-13 mt-12 grid-cols-3 sm:col-start-2 sm:col-end-12 lg:grid"
+		class="relative grid-cols-3 col-start-1 col-end-13 mt-12 sm:col-start-2 sm:col-end-12 lg:grid"
 	>
 		<div class="mr-[10%] flex max-w-lg py-8 sm:mr-auto sm:p-8 lg:mr-0">
-			<span class="align-top text-xs font-bold text-sunset">01</span>
+			<span class="text-xs font-bold align-top text-sunset">01</span>
 			<div class="ml-2">
 				<h3 class="text-xl font-bold uppercase sm:text-2xl lg:text-3xl">
 					Determination
@@ -176,7 +176,7 @@ name: "About"
 		<div
 			class="ml-[10%] flex max-w-lg py-8 sm:ml-auto sm:p-8 lg:ml-0 lg:mt-[30%]"
 		>
-			<span class="align-top text-xs font-bold text-sunset">02</span>
+			<span class="text-xs font-bold align-top text-sunset">02</span>
 			<div class="ml-2">
 				<h3 class="text-xl font-bold uppercase sm:text-2xl lg:text-3xl">
 					No BullShits
@@ -190,7 +190,7 @@ name: "About"
 		<div
 			class="mr-[10%] flex max-w-lg py-8 sm:mr-auto sm:p-8 md:ml-0 lg:mr-0 lg:mt-[10%]"
 		>
-			<span class="align-top text-xs font-bold text-sunset">03</span>
+			<span class="text-xs font-bold align-top text-sunset">03</span>
 			<div class="ml-2">
 				<h3 class="text-xl font-bold uppercase sm:text-2xl lg:text-3xl">
 					Open Mind

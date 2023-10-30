@@ -1,0 +1,35 @@
+{{ with .WorkPage }}
+	{{ $services := .Params.services }}
+	<figure>
+		<a href="{{ .RelPermalink }}" class="block">
+			<picture class="overflow-hidden rounded-lg ">
+				<source
+					srcset="{{ .RelPermalink }}/img/{{ .Params.cover }}.avif"
+					type="image/avif"
+				/>
+				<source
+					srcset="{{ .RelPermalink }}/img/{{ .Params.cover }}.webp"
+					type="image/webp"
+				/>
+				<img
+					loading="lazy"
+					src="{{ .RelPermalink }}/{{ .Params.cover }}.jpg"
+					alt
+				/>
+			</picture>
+		</a>
+		<figcaption class="mt-4 md:flex md:justify-between">
+			<a href="{{ .RelPermalink }}">
+				<h3 class="text-2xl font-black uppercase">
+					{{ .Params.project }}
+				</h3>
+			</a>
+			<span class="text-xs uppercase text-neutral-500">
+				{{ range $index, $element := $services }}
+					<!--prettier-ignore-->
+					{{ $element }}{{ if not (eq (add $index 1) (len $services)) }}, {{ end }}
+				{{ end }}
+			</span>
+		</figcaption>
+	</figure>
+{{ end }}

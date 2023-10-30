@@ -2,17 +2,21 @@
 	class="absolute inset-x-0 z-40 grid w-screen grid-cols-12 px-5 py-3 sm:px-0 sm:py-9"
 >
 	<div
-		class="h-10 col-span-3 col-start-1 justify-self-start sm:col-span-2 sm:col-start-2"
+		class="col-span-3 col-start-1 h-10 justify-self-start sm:col-span-2 sm:col-start-2"
 	>
 		<a
 			href="{{ ($.Site.GetPage `/`).RelPermalink }}"
-			class="fill-[#ebebeb] transition-colors hover:fill-sunset dark:fill-neutral-900"
+			class="fill-[#ebebeb] dark:fill-neutral-900"
 		>
-			{{ partial "svg/logo.svg" }}
+			{{ if .Page.Params.logoSingleColor }}
+				{{ partial "svg/logo-single-color.svg" }}
+			{{ else }}
+				{{ partial "svg/logo.svg" }}
+			{{ end }}
 		</a>
 	</div>
 	<nav
-		class="flex flex-col items-end col-start-4 col-end-13 gap-3 justify-self-end sm:col-end-12 sm:flex-row sm:items-center"
+		class="col-start-4 col-end-13 flex flex-col items-end gap-3 justify-self-end sm:col-end-12 sm:flex-row sm:items-center"
 	>
 		<ul class="flex gap-3 text-base text-neutral-300 sm:gap-5 md:text-xl">
 			{{ range $.Site.Menus.main }}
@@ -20,8 +24,11 @@
 					<li>
 						<a
 							class="{{ if eq $.Page.RelPermalink .URL }}
-								text-sunset
-							{{ end }} group font-bold hover:text-sunset-dark dark:text-neutral-900"
+								text-sunset after:bg-sunset
+							{{ else }}
+								after:bg-neutral-300
+							{{ end }}
+							group relative font-bold after:absolute after:bottom-[2px] after:left-0 after:h-[2px] after:w-full after:origin-right after:scale-x-0 after:transition-transform hover:after:origin-left hover:after:scale-x-100 dark:text-neutral-900 dark:after:bg-neutral-900"
 							href="{{ .URL }}"
 						>
 							{{ .Name }}
@@ -29,32 +36,19 @@
 								<span
 									class="{{ if eq $.Page.RelPermalink .URL }}
 										fill-sunset
-									{{ end }}inline-block h-3 w-3 dark:fill-neutral-900 fill-neutral-200 group-hover:fill-sunset-dark md:h-4 md:w-4"
-									>{{ partial "svg/logo-min.svg" }}</span
+									{{ end }} inline-block h-3 w-3 fill-neutral-200 dark:fill-neutral-900 md:h-4 md:w-4"
 								>
+									{{ if $.Page.Params.logoSingleColor }}
+										{{ partial "svg/logo-min-single-color.svg" }}
+									{{ else }}
+										{{ partial "svg/logo-min.svg" }}
+									{{ end }}
+								</span>
 							{{ end }}
 						</a>
 					</li>
 				{{ end }}
 			{{ end }}
 		</ul>
-
-		{{/*  <a
-			href="{{ range .Translations }}{{ .RelPermalink }}{{ end }}"
-			class="flex items-center gap-1 border-2 border-neutral-500 bg-neutral-800 p-[6px] text-sm font-medium outline-none sm:p-2 sm:text-base"
-		>
-			<span
-				class="{{ if eq .Page.Language.Lang `cs` }}
-					bg-neutral-200 text-neutral-900
-				{{ end }} inline-block aspect-square p-[2px] leading-none sm:p-1"
-				>cs</span
-			>
-			<span
-				class="{{ if eq .Page.Language.Lang `en` }}
-					bg-neutral-200 text-neutral-900
-				{{ end }} inline-block aspect-square p-[2px] leading-none sm:p-1"
-				>en</span
-			>
-		</a>  */}}
 	</nav>
 </header>

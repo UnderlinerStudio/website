@@ -1,0 +1,33 @@
+{{ define "header" }}
+	{{ $dark := "" }}
+	{{ $theme := "light" }}
+	{{ if .Page.Params.isdark }}
+		{{ $dark = "dark" }}
+		{{ $theme = "dark" }}
+	{{ end }}
+	<div data-theme="{{ $theme }}" class="{{ $dark }}">
+		{{ partial "header.html" . }}
+	</div>
+{{ end }}
+
+{{ define "main" }}
+	{{ $bodybg := "bg-neutral-900" }}
+	{{ if .Page.Params.bodybg }}
+		{{ $bodybg = .Page.Params.bodybg }}
+	{{ end }}
+	{{ $dark := "" }}
+	{{ if .Page.Params.isdark }}
+		{{ $dark = "dark" }}
+	{{ end }}
+	<div
+		class="{{ $bodybg }} {{ $dark }} transition-colors duration-200"
+		data-animate="color-switch"
+	>
+		{{ .Content }}
+	</div>
+{{ end }}
+
+{{ define "scripts" }}
+	{{ $caseStudyJS := resources.Get "ts/caseStudy.ts" | js.Build "js/caseStudy.js" | fingerprint }}
+	<script src="{{ $caseStudyJS.RelPermalink }}" defer></script>
+{{ end }}
