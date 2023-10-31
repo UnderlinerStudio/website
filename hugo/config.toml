@@ -4,7 +4,6 @@ enableEmoji = true
 timeZone = "Europe/Prague"
 defaultContentLanguage = "cs"
 languageCode = "cs"
-
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [languages]
@@ -66,6 +65,11 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   #       URL = "/en/contact/"
   #       weight = 99
 
-
 [minify]
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableXML = false
   minifyOutput = true

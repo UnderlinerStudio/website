@@ -19,9 +19,9 @@
 
 
 		<div id="cookie-consent" class="z-50"></div>
-		{{ $solidJS := resources.Get "js/CookieBanner/index.js" | fingerprint }}
+		{{ $solidJS := resources.Get "js/CookieBanner/index.js" | fingerprint | resources.Minify }}
 		<script src="{{ $solidJS.RelPermalink }}" defer></script>
-		{{ $indexJS := resources.Get "ts/index.ts" | js.Build "js/index.js" | fingerprint }}
+		{{ $indexJS := resources.Get "ts/index.ts" | js.Build "js/index.js" | fingerprint | resources.Minify }}
 		<script src="{{ $indexJS.RelPermalink }}" defer></script>
 		{{ block "scripts" . }}{{ end }}
 	</body>

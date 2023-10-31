@@ -106,6 +106,6 @@
 	</section>
 {{ end }}
 {{ define "scripts" }}
-	{{ $homeScript := resources.Get "ts/homepage.ts" | js.Build "js/homepage.js" | fingerprint }}
+	{{ $homeScript := resources.Get "ts/homepage.ts" | js.Build "js/homepage.js" | fingerprint | resources.Minify }}
 	<script src="{{ $homeScript.RelPermalink }}" defer></script>
 {{ end }}

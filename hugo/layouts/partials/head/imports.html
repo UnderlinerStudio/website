@@ -1,7 +1,7 @@
-{{ $fontCSS := resources.Get "css/fonts.css" | fingerprint }}
+{{ $fontCSS := resources.Get "css/fonts.css" | fingerprint | resources.Minify }}
 <link rel="preload" as="style" href="{{ $fontCSS.RelPermalink }}" />
 <link rel="stylesheet" href="{{ $fontCSS.RelPermalink }}" type="text/css" />
 
-{{ $css := resources.Get "css/tw.css" | fingerprint }}
+{{ $css := resources.Get "css/tw.css" | fingerprint | resources.Minify }}
 <link rel="preload" as="style" href="{{ $css.RelPermalink }}" />
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" />

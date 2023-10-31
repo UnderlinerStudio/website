@@ -3,6 +3,6 @@
 {{ end }}
 
 {{ define "scripts" }}
-	{{ $services := resources.Get "ts/servicesList.ts" | js.Build "js/services.js" | fingerprint }}
+	{{ $services := resources.Get "ts/servicesList.ts" | js.Build "js/services.js" | fingerprint | resources.Minify }}
 	<script src="{{ $services.RelPermalink }}" defer></script>
 {{ end }}

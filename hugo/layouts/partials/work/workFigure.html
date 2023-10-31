@@ -1,20 +1,27 @@
 {{ with .WorkPage }}
 	{{ $services := .Params.services }}
+	{{ $baseImage := imageConfig (print .RelPermalink .Params.cover ".jpg") }}
 	<figure>
-		<a href="{{ .RelPermalink }}" class="block">
+		<a
+			href="{{ .RelPermalink }}"
+			aria-label="Case study – {{ .Params.project }}"
+			class="block"
+		>
 			<picture class="overflow-hidden rounded-lg ">
 				<source
-					srcset="{{ .RelPermalink }}/img/{{ .Params.cover }}.avif"
+					srcset="{{ .RelPermalink }}img/{{ .Params.cover }}.avif"
 					type="image/avif"
 				/>
 				<source
-					srcset="{{ .RelPermalink }}/img/{{ .Params.cover }}.webp"
+					srcset="{{ .RelPermalink }}img/{{ .Params.cover }}.webp"
 					type="image/webp"
 				/>
 				<img
 					loading="lazy"
-					src="{{ .RelPermalink }}/{{ .Params.cover }}.jpg"
+					src="{{ .RelPermalink }}{{ .Params.cover }}.jpg"
 					alt
+					width="{{ $baseImage.Width }}"
+					height="{{ $baseImage.Height }}"
 				/>
 			</picture>
 		</a>

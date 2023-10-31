@@ -3,6 +3,6 @@
 {{ end }}
 
 {{ define "scripts" }}
-	{{ $aboutJS := resources.Get "ts/about.ts" | js.Build "js/about.js" | fingerprint }}
+	{{ $aboutJS := resources.Get "ts/about.ts" | js.Build "js/about.js" | fingerprint | resources.Minify }}
 	<script src="{{ $aboutJS.RelPermalink }}" defer></script>
 {{ end }}

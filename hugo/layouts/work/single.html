@@ -28,6 +28,6 @@
 {{ end }}
 
 {{ define "scripts" }}
-	{{ $caseStudyJS := resources.Get "ts/caseStudy.ts" | js.Build "js/caseStudy.js" | fingerprint }}
+	{{ $caseStudyJS := resources.Get "ts/caseStudy.ts" | js.Build "js/caseStudy.js" | fingerprint | resources.Minify }}
 	<script src="{{ $caseStudyJS.RelPermalink }}" defer></script>
 {{ end }}
