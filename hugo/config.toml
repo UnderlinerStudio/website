@@ -6,28 +6,51 @@ defaultContentLanguage = "cs"
 languageCode = "cs"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
+[params]
+  socialMedia = [
+    {name = "Facebook", url = "https://www.facebook.com/underlinerstudio"},
+    {name = "Instagram", url = "https://www.instagram.com/underliner_studio/"},
+    {name = "Dribbble", url = "https://dribbble.com/underliner-studio"},
+    {name = "X / Twitter", url = "https://twitter.com/underlinerstdio"},
+    {name = "LinkedIn", url = "https://www.linkedin.com/company/underliner-studio/"}
+  ]
+
 [languages]
   [languages.cs]
     languageName = "Čeština"
     weight = 1
     [languages.cs.menu]
       [[languages.cs.menu.main]]
+        identifier = "home"
+        name = "Home"
+        URL = "/"
+        weight = 1
+        [languages.cs.menu.main.params]
+          hidden = "true"
+      [[languages.cs.menu.main]]
         identifier = "about"
         name = "O nás"
         URL = "/about/"
-        weight = 1
+        weight = 2
       [[languages.cs.menu.main]]
         identifier = "why"
         name = "Proč"
         URL = "/why/"
-        weight = 2
+        weight = 3
         [languages.cs.menu.main.params]
           minlogo = "true"
       [[languages.cs.menu.main]]
         identifier = "service"
         name = "Služby"
         URL = "/services/"
-        weight = 3
+        weight = 4
+      # [[languages.cs.menu.main]]
+      #   identifier = "blog"
+      #   name = "Blog"
+      #   URL = "/blog/"
+      #   weight = 5
+      #   [languages.cs.menu.main.params]
+      #     hidden = "true"
       [[languages.cs.menu.main]]
         identifier = "contact"
         name = "Kontakt"

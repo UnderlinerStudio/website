@@ -1,0 +1,103 @@
+<div
+	id="dropdown"
+	class="absolute left-0 right-0 top-0 z-[1] overflow-hidden"
+	style="height: 0;"
+>
+	<div
+		class="absolute top-0 -z-1 h-screen w-screen bg-neutral-950"
+		style="height: 0;"
+		data-animate="dropdown-top-bg"
+	>
+		<div class="base-grid h-full w-full">
+			<div class="grid grid-cols-4 sm:col-start-2 sm:col-end-12">
+				<div class="hidden border-r border-neutral-800 md:block"></div>
+			</div>
+		</div>
+	</div>
+	<div
+		class="absolute top-0 -z-10 h-screen w-screen bg-neutral-800"
+		style="height: 0;"
+		data-animate="dropdown-bot-bg"
+	></div>
+	<div
+		data-animate="dropdown-nav"
+		class="base-grid relative h-full pt-20 md:pt-0"
+	>
+		<nav
+			class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12 md:grid md:grid-cols-4"
+		>
+			<ul class="hidden justify-center text-sm md:flex md:flex-col md:gap-8">
+				{{ range .Site.Params.socialMedia }}
+					<li class="overflow-hidden">
+						<a
+							href="{{ .url }}"
+							target="_blank"
+							data-animate="dropdown-social"
+							class="relative inline-block after:absolute after:bottom-[2px] after:left-0 after:h-px after:w-full after:origin-left after:scale-x-0 after:bg-neutral-200 after:transition-transform hover:after:scale-x-100"
+							style="transform: translateY(-100%);"
+							>{{ .name }}</a
+						>
+					</li>
+				{{ end }}
+			</ul>
+			<ul
+				class="flex flex-col justify-center gap-2 text-5xl md:col-span-2 md:ml-32 md:gap-4 md:text-7xl"
+			>
+				{{ range $.Site.Menus.main }}
+					<li class="overflow-hidden">
+						<a
+							data-animate="dropdown-link"
+							class="{{ if eq $.Page.RelPermalink .URL }}
+								text-neutral-200
+							{{ else }}
+								text-neutral-800
+							{{ end }}
+    							group relative inline-block font-bold leading-snug transition-colors hover:text-neutral-200"
+							href="{{ .URL }}"
+							style="transform: translateY(-100%);"
+						>
+							{{ .Name }}
+							{{ if eq .Params.minlogo "true" }}
+								<span
+									class="{{ if eq $.Page.RelPermalink .URL }}
+										fill-neutral-200
+									{{ else }}
+										fill-neutral-800
+									{{ end }} inline-block h-8 w-8  transition-colors group-hover:fill-neutral-200 md:h-12 md:w-12"
+								>
+									{{ if $.Page.Params.logoSingleColor }}
+										{{ partial "svg/logo-min-single-color.svg" }}
+									{{ else }}
+										{{ partial "svg/logo-min.svg" }}
+									{{ end }}
+								</span>
+							{{ end }}
+						</a>
+					</li>
+				{{ end }}
+			</ul>
+		</nav>
+		<div class="base-grid absolute inset-x-0 bottom-8">
+			<div class="md:col-start-2 md:col-end-12">
+				<div class="inline-block overflow-hidden">
+					<span
+						id="dropdown-email"
+						data-animate="dropdown-mail"
+						class="hidden cursor-pointer underline md:inline-block"
+						style="transform: translateY(100%);"
+					>
+						hello@underliner.studio
+					</span>
+					<a
+						data-animate="dropdown-mail"
+						href="mailto:hello@underliner.studio"
+						class="relative block text-lg text-neutral-300 underline md:hidden"
+						style="transform: translateY(100%);"
+					>
+						hello@underliner.studio
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

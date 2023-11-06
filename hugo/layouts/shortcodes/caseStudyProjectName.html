@@ -1,10 +1,14 @@
-<div class="fixed inset-x-0 top-0 z-30 w-full pt-12 base-grid" id="name">
-	<div class="overflow-hidden col-span-full md:col-start-2">
-		<span
-			class="block overflow-hidden text-lg font-black uppercase"
-			style="transform: translateY(var(--motion-translateY)); --motion-translateY: -100%;"
-		>
-			{{ .Get "name" }}
-		</span>
+<div
+	class="base-grid fixed inset-x-0 bottom-4 z-30 w-full px-0 pt-12"
+	id="name"
+>
+	<div class="relative md:col-start-1">
+		<div class="absolute left-0 md:right-0 ">
+			<div class="origin-top-left -rotate-90 overflow-hidden">
+				<span class="block text-sm font-black uppercase md:text-lg">
+					{{ .Get "name" }}
+				</span>
+			</div>
+		</div>
 	</div>
 </div>

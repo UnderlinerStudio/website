@@ -17,7 +17,7 @@ export default {
 				},
 			},
 			height: {
-				screen: ["100vh", "100svh"],
+				screen: ["100vh", "100dvh"],
 			},
 			zIndex: {
 				"-10": "-10",

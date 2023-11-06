@@ -1,11 +1,8 @@
 <section class="base-grid gap-4 gap-y-10 py-20 md:gap-10 md:py-32">
 	<h2
-		class="col-start-1 col-end-13 whitespace-nowrap fill-neutral-500 pb-5 text-right text-xl font-medium uppercase text-neutral-500 sm:text-3xl md:col-start-7 md:col-end-12 md:py-20"
+		class="col-start-1 col-end-13 whitespace-nowrap fill-neutral-500 pb-5 text-right text-xl font-medium uppercase text-neutral-500 md:col-start-7 md:col-end-12 md:py-20"
 	>
-		<span class="mr-4 inline-block h-6 w-6">
-			{{ partial "svg/arrow-left-down.svg" }}
-		</span>
-		{{ i18n "selected-projects" }}
+		/{{ i18n "selected-projects" }}
 	</h2>
 	<div class="col-start-1 col-end-13 md:col-start-2 md:col-end-7 md:-mt-20">
 		{{ partial "work/workFigure.html" (dict "WorkPage" ($.Site.GetPage "/work/adprint")) }}

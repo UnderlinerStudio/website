@@ -65,3 +65,30 @@
 		@apply ml-5 pl-2;
 	}
 }
+
+@layer utilities {
+	.scrollbar-hidden::-webkit-scrollbar {
+		display: none;
+	}
+	/* Hide scrollbar for IE, Edge and Firefox */
+	.scrollbar-hidden {
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+}
+
+.scrollable-wrapper {
+	padding-left: calc(100vw / 12);
+	padding-right: calc(100vw / 12);
+}
+
+.hamburger.toggled > div:first-child {
+	top: 2px;
+	transform: rotate(-45deg);
+	background-color: rgb(229 229 229);
+}
+.hamburger.toggled > div:last-child {
+	top: 2px;
+	transform: rotate(45deg);
+	background-color: rgb(229 229 229);
+}
