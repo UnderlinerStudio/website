@@ -4,13 +4,10 @@
 	>
 		/{{ i18n "selected-projects" }}
 	</h2>
-	<div class="col-start-1 col-end-13 md:col-start-2 md:col-end-7 md:-mt-20">
+	<div class="col-start-1 col-end-13 md:col-start-2 md:col-end-6 md:-mt-20">
 		{{ partial "work/workFigure.html" (dict "WorkPage" ($.Site.GetPage "/work/adprint")) }}
 	</div>
-	<div class="col-start-1 col-end-13 md:col-start-7 md:col-end-12">
-		{{ partial "work/workFigure.html" (dict "WorkPage" ($.Site.GetPage "/work/blokeleven")) }}
-	</div>
-	<div class="col-start-1 col-end-13 md:col-start-2 md:col-end-9">
+	<div class="col-start-1 col-end-13 md:col-start-7 md:col-end-12 md:mt-20">
 		{{ partial "work/workFigure.html" (dict "WorkPage" ($.Site.GetPage "/work/tridora")) }}
 	</div>
 </section>
