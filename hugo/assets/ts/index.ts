@@ -34,12 +34,12 @@ hamburger?.addEventListener("click", (e: MouseEvent) => {
 	// background
 	animate(
 		dropdown.querySelector("[data-animate='dropdown-top-bg']"),
-		hambToggled ? { height: [0, "100dvh"] } : { height: ["100dvh", 0] },
+		hambToggled ? { height: [0, "100vh"] } : { height: ["100vh", 0] },
 		{ duration: 0.4, easing: "ease-in-out", delay: 0.05 },
 	);
 	animate(
 		dropdown.querySelector("[data-animate='dropdown-bot-bg']"),
-		hambToggled ? { height: [0, "100dvh"] } : { height: ["100svh", 0] },
+		hambToggled ? { height: [0, "100vh"] } : { height: ["100vh", 0] },
 		{ duration: 0.4, easing: "ease-in-out" },
 	);
 
