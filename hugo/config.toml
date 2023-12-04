@@ -11,9 +11,13 @@ disableKinds = ["taxonomy"]
     {name = "Facebook", url = "https://www.facebook.com/underlinerstudio"},
     {name = "Instagram", url = "https://www.instagram.com/underliner_studio/"},
     {name = "Dribbble", url = "https://dribbble.com/underliner-studio"},
-    {name = "X / Twitter", url = "https://twitter.com/underlinerstdio"},
+    {name = "x.com", url = "https://twitter.com/underlinerstdio"},
     {name = "LinkedIn", url = "https://www.linkedin.com/company/underliner-studio/"}
   ]
+
+[permalinks]
+  categories = "/blog/:slug/"
+  posts = "/blog/:slug/"
 
 [languages]
   [languages.cs]
@@ -44,13 +48,13 @@ disableKinds = ["taxonomy"]
         name = "Služby"
         URL = "/services/"
         weight = 4
-      # [[languages.cs.menu.main]]
-      #   identifier = "blog"
-      #   name = "Blog"
-      #   URL = "/blog/"
-      #   weight = 5
-      #   [languages.cs.menu.main.params]
-      #     hidden = "true"
+      [[languages.cs.menu.main]]
+        identifier = "blog"
+        name = "Blog"
+        URL = "/blog/"
+        weight = 5
+        [languages.cs.menu.main.params]
+          hidden = "true"
       [[languages.cs.menu.main]]
         identifier = "contact"
         name = "Kontakt"

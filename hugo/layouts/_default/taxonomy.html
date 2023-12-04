@@ -1,11 +1,13 @@
+{{ define "header" }}
+	{{ partial "header.html" . }}
+{{ end }}
+
 {{ define "main" }}
 	{{ partial "blog/categoryNav.html" . }}
 	<section class="base-grid">
 		{{ $posts := where .Pages.ByDate "Draft" false }}
 		{{ $latestPost := first 1 $posts }}
-		{{ .Scratch.Set "isFirstPost" true }}
 		{{ range $index, $context := $latestPost }}
-			<hr class="in-grid" />
 			{{ partial "blog/articlePreview.html" (dict "context" $context "isFirst" true) }}
 		{{ end }}
 

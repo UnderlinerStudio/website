@@ -1,0 +1,33 @@
+<div class="base-grid grid-flow-row pt-[72px] sm:pt-[120px]">
+	<hr class="in-grid" />
+	<nav
+		class="col-start-1 col-end-13 overflow-x-scroll py-5 md:col-start-2 md:col-end-12 md:py-7"
+	>
+		<ul class="flex gap-10">
+			<li>
+				<a
+					class="{{ if eq $.Page.RelPermalink (print (relLangURL `/`) `blog/`) }}
+						underline
+					{{ end }} cursor-pointer text-xs font-medium uppercase hover:underline"
+					href="{{ relLangURL `/` }}blog/"
+				>
+					{{ i18n "all" }}
+				</a>
+			</li>
+			{{ range $key, $value := .Site.Taxonomies.categories }}
+				{{ $activePageLinkClass := "" }}
+				{{ if eq $.Page.RelPermalink  (print (relLangURL "/") "blog/" $key "/" ) }}
+					{{ $activePageLinkClass = "underline" }}
+				{{ end }}
+				<li>
+					<a
+						class="{{ $activePageLinkClass }} cursor-pointer text-xs font-medium uppercase hover:underline"
+						href="{{ relLangURL `/` }}blog/{{ $key }}"
+					>
+						{{ $key }}
+					</a>
+				</li>
+			{{ end }}
+		</ul>
+	</nav>
+</div>
