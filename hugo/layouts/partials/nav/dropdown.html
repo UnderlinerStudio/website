@@ -65,11 +65,7 @@
 										fill-neutral-800
 									{{ end }} inline-block h-8 w-8  transition-colors group-hover:fill-neutral-200 md:h-12 md:w-12"
 								>
-									{{ if $.Page.Params.logoSingleColor }}
-										{{ partial "svg/logo-min-single-color.svg" }}
-									{{ else }}
-										{{ partial "svg/logo-min.svg" }}
-									{{ end }}
+									{{ partial "svg/logo-min.svg" }}
 								</span>
 							{{ end }}
 						</a>

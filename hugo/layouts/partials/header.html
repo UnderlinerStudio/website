@@ -8,11 +8,7 @@
 			href="{{ ($.Site.GetPage `/`).RelPermalink }}"
 			class="w-max fill-[#ebebeb] dark:fill-neutral-900"
 		>
-			{{ if .Page.Params.logoSingleColor }}
-				{{ partial "svg/logo-single-color.svg" }}
-			{{ else }}
-				{{ partial "svg/logo.svg" }}
-			{{ end }}
+			{{ partial "svg/logo.svg" }}
 		</a>
 	</div>
 	<div
