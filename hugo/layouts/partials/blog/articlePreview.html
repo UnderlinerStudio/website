@@ -29,12 +29,10 @@
 						href="{{ relLangURL `/` }}blog/{{ $element }}"
 						class="hover:underline"
 					>
-						{{ $element }}
-					</a>
-					{{ if not (eq (add $index 1) (len $categories)) }}
-						,&nbsp;
-					{{ end }}
+						{{ $element }}</a
+					>{{ if not (eq (add $index 1) (len $categories)) }},&nbsp;{{ end }}
 				{{ end }}
+
 			</p>
 			<p class="text-xs uppercase">
 				<soan class="text"> ⋅</soan>
