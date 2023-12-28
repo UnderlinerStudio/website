@@ -27,6 +27,10 @@
 	</div>
 {{ end }}
 
+{{ define "footer" }}
+	{{ partial "footer.html" . }}
+{{ end }}
+
 {{ define "scripts" }}
 	{{ $serviceJS := resources.Get "ts/service.ts" | js.Build "js/service.js" | fingerprint | resources.Minify }}
 	<script src="{{ $serviceJS.RelPermalink }}" defer></script>

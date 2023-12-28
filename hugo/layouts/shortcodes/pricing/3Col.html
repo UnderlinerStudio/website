@@ -1,0 +1,20 @@
+<div
+	id="pricing"
+	class="base-grid scrollbar-hidden snap-x snap-mandatory overflow-x-scroll py-10"
+>
+	<div class="col-start-1 col-end-13 md:col-start-2 md:col-end-12">
+		<div
+			class="mx-auto grid w-max grid-cols-3 gap-3 lg:mx-0 lg:w-auto lg:max-w-none lg:gap-8"
+		>
+			{{ .Inner }}
+		</div>
+	</div>
+</div>
+<script>
+	const carousel = document.getElementById("pricing");
+	const carouselItemWidth = carousel.children[0].offsetWidth;
+	function scrollToItem(index) {
+		carousel.scrollLeft = index * carouselItemWidth;
+	}
+	window.onload = () => scrollToItem(1);
+</script>

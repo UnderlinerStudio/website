@@ -19,8 +19,11 @@
 
 
 		<div id="cookie-consent" class="z-50"></div>
-		{{ $solidJS := resources.Get "js/CookieBanner/index.js" | fingerprint | resources.Minify }}
-		<script src="{{ $solidJS.RelPermalink }}" defer></script>
+		{{ $solidJS := resources.GetMatch "js/solid/web-*.js" }}
+		<script type="module" src="{{ $solidJS.RelPermalink }}" defer></script>
+		{{ $cookieBanner := resources.Get "js/solid/cookieBanner.js" | fingerprint }}
+		<script type="module" src="{{ $cookieBanner.RelPermalink }}" defer></script>
+		{{ partial "toaster" }}
 		{{ $indexJS := resources.Get "ts/index.ts" | js.Build "js/index.js" | fingerprint | resources.Minify }}
 		<script src="{{ $indexJS.RelPermalink }}" defer></script>
 		{{ block "scripts" . }}{{ end }}

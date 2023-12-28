@@ -1,0 +1,166 @@
+{{ $formName := .Get "name" }}
+<form
+	id="contact-form"
+	data-name="lead"
+	name="{{ $formName }}"
+	method="POST"
+	netlify-honeypot="bot-field"
+	netlify
+>
+	<div class="base-grid">
+		<div
+			class="col-start-1 col-end-13 grid grid-cols-1 gap-x-6 gap-y-8 text-neutral-100 sm:col-start-2 sm:col-end-12 md:col-start-3 md:col-end-11 md:grid-cols-2 lg:col-start-4 lg:col-end-9"
+		>
+			<p class="hidden">
+				<label>
+					Don’t fill this out if you’re human: <input name="bot-field" />
+				</label>
+			</p>
+			<div class="col-span-full">
+				<label for="fullname" class="text-xs uppercase"
+					>{{ i18n "form.fullname.label" }}</label
+				>
+				<div class="relative mt-1">
+					<input
+						class="w-full rounded-none border border-transparent bg-neutral-800 py-2 pl-3 pr-4 transition-colors duration-300 hover:bg-neutral-700 focus:border-neutral-600 focus-visible:outline-none"
+						type="text"
+						name="fullname"
+						id="fullname"
+						required
+						aria-required="true"
+						aria-invalid="false"
+					/>
+					{{/* error message */}}
+					<div
+						class="absolute bottom-0 w-full translate-y-full transform text-left italic text-red-600"
+					>
+						<span class="hidden w-full text-sm" data-validation-empty="true">
+							{{ i18n "form.name.error.empty" }}
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-span-full">
+				<label for="email" class="text-xs uppercase"
+					>{{ i18n "form.email.label" }}</label
+				>
+				<div class="relative mt-1">
+					<input
+						class="w-full rounded-none border border-transparent bg-neutral-800 py-2 pl-3 pr-4 transition-colors duration-300 hover:bg-neutral-700 focus:border-neutral-600 focus-visible:outline-none"
+						type="text"
+						name="email"
+						id="email"
+						required
+						aria-required="true"
+						aria-invalid="false"
+					/>
+					{{/* error message */}}
+					<div
+						class="absolute bottom-0 w-full translate-y-full transform text-left italic text-red-600"
+					>
+						<span class="hidden w-full text-sm" data-validation-empty="true">
+							{{ i18n "form.email.error.empty" }}
+						</span>
+						<span class="hidden w-full text-sm" data-validation-format="true">
+							{{ i18n "form.email.error.format" }}
+						</span>
+					</div>
+				</div>
+			</div>
+			<div>
+				<label for="phone" class="text-xs uppercase">
+					{{ i18n "form.phone.label" }}
+					<span class="align-top text-[10px] text-neutral-400">
+						&nbsp;({{ i18n "form.optional" }})
+					</span>
+				</label>
+				<div class="relative mt-1">
+					<input
+						class="w-full rounded-none border border-transparent bg-neutral-800 py-2 pl-3 pr-4 transition-colors duration-300 hover:bg-neutral-700 focus:border-neutral-600 focus-visible:outline-none"
+						type="text"
+						name="phone"
+						id="phone"
+						aria-required="false"
+						aria-invalid="false"
+					/>
+					{{/* error message */}}
+					<div
+						class="absolute bottom-0 w-full translate-y-full transform text-left italic text-red-600"
+					>
+						<span class="hidden w-full text-sm" data-validation-format="true">
+							{{ i18n "form.email.error.format" }}
+						</span>
+					</div>
+				</div>
+			</div>
+			<div>
+				<label for="company" class="text-xs uppercase">
+					{{ i18n "form.company.label" }}
+					<span class="align-top text-[10px] text-neutral-400">
+						&nbsp;({{ i18n "form.optional" }})
+					</span>
+				</label>
+				<div class="relative mt-1">
+					<input
+						class="w-full rounded-none border border-transparent bg-neutral-800 py-2 pl-3 pr-4 transition-colors duration-300 hover:bg-neutral-700 focus:border-neutral-600 focus-visible:outline-none"
+						type="text"
+						name="company"
+						id="company"
+						aria-required="false"
+						aria-invalid="false"
+					/>
+				</div>
+			</div>
+			<div class="col-span-full">
+				<label for="goals" class="text-xs uppercase"
+					>{{ i18n "form.goals.label" }}
+					<span class="align-top text-[10px] text-neutral-400">
+						&nbsp;({{ i18n "form.optional" }})
+					</span>
+				</label>
+				<div class="relative mt-1">
+					<textarea
+						class="w-full rounded-none border border-transparent bg-neutral-800 py-2 pl-3 pr-4 transition-colors duration-300 hover:bg-neutral-700 focus:border-neutral-600 focus-visible:outline-none"
+						type="text"
+						name="goals"
+						id="goals"
+						rows="3"
+						autocomplete="off"
+					></textarea>
+					{{/* error message */}}
+					<div
+						class="absolute bottom-0 w-full translate-y-full transform text-left italic text-red-600"
+					>
+						<span class="hidden w-full text-sm" data-validation-empty="true">
+							{{ i18n "form.message.goals.empty" }}
+						</span>
+					</div>
+				</div>
+			</div>
+			<button
+				type="submit"
+				data-toast-error="{{ i18n `form.toast.error` }}"
+				data-toast-success="{{ i18n `form.toast.success` }}"
+				class="col-span-full border border-neutral-600 bg-neutral-800 fill-neutral-500 py-3 transition-colors hover:bg-neutral-700 hover:fill-neutral-50 hover:text-neutral-50 focus:border-neutral-600 focus-visible:outline-none"
+			>
+				<div class="relative inline-block">
+					<span class="invisible absolute -left-4 top-1 inline-block h-3 w-3">
+						{{ partial "svg/Checkmark.svg" . }}
+					</span>
+					{{ i18n "form.button" }}
+				</div>
+			</button>
+			<p class="col-span-full text-sm text-neutral-400">
+				{{ i18n "form.legal.text" }}
+				{{ $privacyURL := ($.Site.GetPage "privacy-policy").RelPermalink }}
+				<a
+					href="{{ $privacyURL }}"
+					class="text-neutral-300 underline hover:text-neutral-200"
+					>{{ i18n "form.legal.link-text" }}</a
+				>.
+			</p>
+		</div>
+	</div>
+</form>
+{{ $contactScript := resources.Get "ts/contactLead.ts" | js.Build "js/contactLead.js" | fingerprint | resources.Minify }}
+<script src="{{ $contactScript.RelPermalink }}" defer></script>

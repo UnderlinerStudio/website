@@ -1,5 +1,7 @@
 import { animate, stagger } from "motion";
 import { copyContent, scrollToTop } from "./utils";
+import { listen as quicklinkListen } from "quicklink";
+import { $$ } from "./selector";
 
 const scrollToTopButton = document.getElementById("scrolltotop");
 scrollToTopButton?.addEventListener("click", scrollToTop);
@@ -9,10 +11,18 @@ if (dropdownEmail)
 	dropdownEmail.addEventListener("click", (e: MouseEvent) => {
 		copyContent(e);
 		const target = e.target as HTMLElement;
+		// @ts-ignore
+		toast.success(target.dataset.toast);
 	});
 
 const hamburger = document.getElementById("hamburger");
 const dropdown = document.getElementById("dropdown");
+const logohome = document.getElementById("logohome");
+
+const focusableElements = $$(
+	'a, button, input, select, textarea, [tabindex]:not([tabindex="-1"])',
+);
+
 const dropdownLinks = dropdown.querySelectorAll(
 	"[data-animate='dropdown-link']",
 );
@@ -25,7 +35,13 @@ hamburger?.addEventListener("click", (e: MouseEvent) => {
 	document.body.classList.toggle("overflow-hidden");
 
 	hambToggled = !hambToggled;
+	dropdown.classList.toggle("hidden");
 	dropdown.style.height = hambToggled ? "100dvh" : "0";
+
+	focusableElements.forEach((el) => {
+		if (!dropdown.contains(el) && el !== hamburger && el !== logohome)
+			el.tabIndex = hambToggled ? -1 : 0;
+	});
 
 	//@ts-ignore
 	dropdown.querySelector("[data-animate='dropdown-nav']").style.visibility =
@@ -63,4 +79,10 @@ hamburger?.addEventListener("click", (e: MouseEvent) => {
 		{ y: ["100%", "0"] },
 		{ duration: 0.5, easing: "ease-in-out", delay: 0.4 },
 	);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+	quicklinkListen({
+		ignores: [(uri) => uri.includes("#"), (uri) => uri.includes("/blog/")],
+	});
 });

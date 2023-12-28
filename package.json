@@ -14,20 +14,23 @@
 		"build": "npm run build:tailwind & npm run build:solid && npm run build:hugo"
 	},
 	"devDependencies": {
-		"@tailwindcss/typography": "^0.5.9",
-		"@types/node": "^18.15.11",
+		"@tailwindcss/typography": "^0.5.10",
+		"@types/node": "^18.19.3",
 		"concurrently": "^8.0.1",
-		"prettier": "^2.8.7",
+		"prettier": "^2.8.8",
 		"prettier-plugin-go-template": "^0.0.13",
-		"prettier-plugin-tailwindcss": "^0.2.6",
-		"tailwindcss": "^3.3.0",
-		"typescript": "^5.0.2",
-		"vite": "^4.2.1",
-		"vite-plugin-solid": "^2.6.1"
+		"prettier-plugin-tailwindcss": "^0.2.8",
+		"tailwindcss": "^3.3.6",
+		"typescript": "^5.3.3",
+		"vite": "^4.5.1",
+		"vite-plugin-solid": "^2.8.0"
 	},
 	"dependencies": {
-		"motion": "^10.15.5",
-		"solid-js": "^1.6.16",
-		"zod": "^3.21.4"
+		"@netlify/functions": "^2.4.1",
+		"motion": "^10.16.4",
+		"quicklink": "^2.3.0",
+		"solid-js": "^1.8.7",
+		"solid-toast": "^0.5.0",
+		"zod": "^3.22.4"
 	}
 }

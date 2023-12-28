@@ -1,0 +1,30 @@
+<div class="grid grid-cols-4 items-center gap-6">
+	<a
+		href="https://x.com/intent/tweet?url={{ .Permalink | urlize }}"
+		target="_blank"
+		class="h-4 w-4 cursor-pointer fill-neutral-100 transition-colors hover:fill-sunset"
+	>
+		{{ partial "svg/brands/x-com.svg" . }}
+	</a>
+	<a
+		href="https://www.facebook.com/sharer.php?u={{ .Permalink | urlize }}"
+		target="_blank"
+		class="h-4 w-4 cursor-pointer fill-neutral-100 transition-colors hover:fill-sunset"
+	>
+		{{ partial "svg/brands/facebook.svg" . }}
+	</a>
+	<a
+		href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink | urlize }}"
+		target="_blank"
+		class="h-5 w-5 cursor-pointer fill-neutral-100 transition-colors hover:fill-sunset"
+	>
+		{{ partial "svg/brands/linkedin.svg" . }}
+	</a>
+	<button
+		data-copy-content="{{ .Permalink | urlize }}"
+		onclick="(() => {const link = this.getAttribute('data-copy-content');navigator.clipboard.writeText(link);toast.success('Odkaz zkopírován');})()"
+		class="h-4 w-4 fill-neutral-100 transition-colors hover:fill-sunset"
+	>
+		{{ partial "svg/link.svg" . }}
+	</button>
+</div>

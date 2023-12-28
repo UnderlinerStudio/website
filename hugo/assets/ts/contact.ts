@@ -1,15 +1,14 @@
 import { copyContent } from "./utils";
 import { z } from "zod";
 import { $ } from "./selector";
-import { Toast } from "./toast";
 
 const copyElement = document.getElementById("copyitem");
 if (copyElement)
 	copyElement.addEventListener("click", (e: MouseEvent) => {
 		copyContent(e);
 		const target = e.target as HTMLElement;
-
-		Toast(target.dataset.toast, 1500, "success");
+		// @ts-ignore
+		toast.success(target.dataset.toast);
 	});
 
 const phoneRegex = /^((\+420)? ?[1-9][0-9]{2} ?[0-9]{3} ?[0-9]{3}){0,1}$/;
@@ -147,12 +146,14 @@ function handleSubmit(event: Event) {
 			);
 			button.querySelector("span").classList.remove("invisible");
 			button.disabled = true;
-			Toast(button.dataset["toast-success"], 1500, "success");
+			// @ts-ignore
+			toast.success(button.dataset["toast-success"]);
 			console.log("Form successfully submitted");
 		})
 		.catch((error) => {
 			const button = $("button[type='submit']") as HTMLButtonElement;
 			console.error(error);
-			Toast(button.dataset["toast-error"], 1500, "success");
+			// @ts-ignore
+			toast.error(button.dataset["toast-error"]);
 		});
 }

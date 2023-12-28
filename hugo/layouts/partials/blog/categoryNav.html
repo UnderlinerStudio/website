@@ -16,7 +16,7 @@
 			</li>
 			{{ range $key, $value := .Site.Taxonomies.categories }}
 				{{ $activePageLinkClass := "" }}
-				{{ if eq $.Page.RelPermalink  (print (relLangURL "/") "blog/" $key "/" ) }}
+				{{ if eq $.Page.RelPermalink (print (relLangURL "/") "blog/" $key "/" ) }}
 					{{ $activePageLinkClass = "underline" }}
 				{{ end }}
 				<li>
@@ -30,4 +30,5 @@
 			{{ end }}
 		</ul>
 	</nav>
+	<hr class="in-grid" />
 </div>
