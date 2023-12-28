@@ -43,12 +43,12 @@
 	}
 
 	.custom-scroll::-webkit-scrollbar {
-		@apply h-full w-1 rounded-full;
+		@apply w-1 h-full rounded-full;
 		@apply bg-neutral-800;
 	}
 
 	.checkbox-switch {
-		@apply invisible h-0 w-0;
+		@apply invisible w-0 h-0;
 	}
 
 	.prose a {
@@ -57,12 +57,18 @@
 
 	li.dash {
 		list-style-type: "— ";
-		@apply ml-5 pl-2;
+		@apply pl-2 ml-5;
 	}
 
 	li.dash {
 		list-style-type: "— ";
-		@apply ml-5 pl-2;
+		@apply pl-2 ml-5;
+	}
+	hr {
+		@apply border-neutral-700;
+	}
+	hr.in-grid {
+		@apply col-start-1 col-end-13 md:col-start-2 md:col-end-12;
 	}
 }
 
