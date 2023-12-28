@@ -10,17 +10,17 @@ Prvním krokem pro kvalitní web je vytvoření kvalitního zadání. Pro to je 
 
 A proč teda vlastně potřebujete znát názvosloví webařů?
 
-Při zadávání a tvorbě webu se setkáte se spoustou pojmů, které firma nebo jednotlivec bude používat. Pro to, aby konverzace mezi vámi a vaším dodavatelem byla co nejednodušší a nejsrozumitelnější je alespoň některé pojmy znát.
+Při zadávání a tvorbě webu se setkáte se spoustou pojmů, které firma nebo jednotlivec bude používat. Pro to, aby konverzace mezi vámi a vaším dodavatelem byla co nejjednodušší a nejsrozumitelnější je dobré alespoň některé pojmy znát.
 
-Pojmy, které využívají designéři, webaři nebo marketéři se vám také mohou hodit, pokud si vlastní web budete chtít sestavit sami. Lépe pochopíte co hledáte, jaké prvky používáte, jak se orientovat v nástrojích pro tvorbu webových stránek a na co se potřebujete soustředit při jejich tvorbě.
+Pojmy, které využívají designéři, webaři nebo marketéři se vám také mohou hodit, pokud si vlastní web budete chtít sestavit sami. Lépe pochopíte co hledáte, jaké prvky používáte, jak se orientovat v nástrojích pro tvorbu webových stránek a na co se při jejich tvorbě potřebujete soustředit.
 
-- [Design terminologie](#design-terminologie)
-- [Marketing](#marketing)
-- [Produkt](#produkt)
+- [Designová terminologie](#designová-terminologie)
+- [Terminologie marketérů](#terminologie-marketérů)
+- [Produktové názvosloví](#prosuktové-názvosloví)
 - [Technické názvosloví](#technické-názvosloví)
-- [Proces](#proces)
+- [Procesní terminologie](#procesní-terminologie)
 
-## Design terminologie
+## Designová terminologie
 
 **ABOVE THE FOLD** – na webu hero sekce – termín je převzaný z části novin konkrétně z horní části novin, která je vidět před přeložením. Na webu jde o část stránky, která je vidět po načtení.
 
@@ -48,7 +48,7 @@ Pojmy, které využívají designéři, webaři nebo marketéři se vám také m
 
 **UX** – User Experience – uživatelská zkušenost. Jedna z nejdůležitějších součástí designu webových stránek nebo jakéhokoli digitálního produktu. Je to design zaměřený na interakce uživatele s rozhraním. Jeho úkol je aby tyto interakce byly co nejpřirozenější a nejjednodušší.
 
-## Marketing
+## Terminologie marketérů
 
 **KONVERZE** – stav, kdy zákazník/návštěvník provede požadovanou akci (například odeslání poptávkového formuláře nebo objednání zboží).
 
@@ -70,7 +70,7 @@ Pojmy, které využívají designéři, webaři nebo marketéři se vám také m
 
 **PERSONA** – marketingová persona je popis zákazníka jako modelového uživatele služby, webu nebo aplikace. Pomáhá s pochopením zákazníka, jeho motivace a toho co hledá.
 
-## Produkt
+## Produktové názvosloví
 
 **KPI** – Key Performance Indicators – klíčové výkonnostní metriky nebo ukazatele. KPI se používají k měření úspěchu při dosahování cílů jako měření ekonomických cílů, měření růstu, výkon reklamních kampaní a podobně.
 
@@ -130,7 +130,7 @@ Pojmy, které využívají designéři, webaři nebo marketéři se vám také m
 
 **HOSTING** – služba, která umožňuje umístit a uchovat webovou stránku nebo aplikaci na internetu. Je to pronájem úložiště, které je neustále připojené k internetu a je dostupné z určité adresy.
 
-## Proces
+## Procesní terminologie
 
 **WATERFALL** – vodopádové metodiky – metoda vývoje softwaru, který probíhá ve fázích nebo v dlouhých blocích. Každá fáze má svou návaznost. Takový vývoj je časově náročný a teprve na konci celého vývojového cyklu. Ten může trvat několik měsíců nebo i více.
 
