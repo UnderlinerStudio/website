@@ -12,6 +12,6 @@
   comand = "npm run build"
   publish = "dist"
   [build.environment]
-    HUGO_VERSION = "0.120.1"
+    HUGO_VERSION = "0.121.1"
 [functions]
   directory = "functions/"

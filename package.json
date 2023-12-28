@@ -11,7 +11,7 @@
 		"dev:hugo": "cd ./hugo && hugo server -D",
 		"build:hugo": "cd ./hugo && hugo",
 		"dev": "concurrently --names 'TAILWIND,SOLID,HUGO' -c 'cyan,blue,green'  'npm run dev:tailwind' 'npm run start:solid' 'npm run dev:hugo'",
-		"build": "npm run build:tailwind & npm run build:solid && npm run build:hugo"
+		"build": "npm run build:tailwind && npm run build:solid && npm run build:hugo"
 	},
 	"devDependencies": {
 		"@tailwindcss/typography": "^0.5.10",
