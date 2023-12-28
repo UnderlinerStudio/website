@@ -3,6 +3,7 @@
 	{{ if ne .Params.Draft true }}
 	<url>
 		<loc>{{.Permalink}}</loc>
+		<changefreq>daily</changefreq>
 	</url>
 	{{ end }}
 	{{ end }}
