@@ -8,7 +8,6 @@ disableKinds = ["taxonomy"]
 
 [params]
   socialMedia = [
-    {name = "Facebook", url = "https://www.facebook.com/underlinerstudio"},
     {name = "Instagram", url = "https://www.instagram.com/underliner_studio/"},
     {name = "Dribbble", url = "https://dribbble.com/underliner-studio"},
     {name = "x.com", url = "https://twitter.com/underlinerstdio"},
@@ -18,6 +17,12 @@ disableKinds = ["taxonomy"]
 [permalinks]
   categories = "/blog/:slug/"
   posts = "/blog/:slug/"
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 2
+    ordered = false
+    startLevel = 2
 
 [languages]
   [languages.cs]

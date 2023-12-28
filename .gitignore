@@ -19,7 +19,7 @@ $RECYCLE.BIN/
 .DS_Store
 .env
 
-hugo/assets/js/CookieBanner
+hugo/assets/js/solid
 
 
 # Local Netlify folder

@@ -43,12 +43,12 @@
 	}
 
 	.custom-scroll::-webkit-scrollbar {
-		@apply w-1 h-full rounded-full;
+		@apply h-full w-1 rounded-full;
 		@apply bg-neutral-800;
 	}
 
 	.checkbox-switch {
-		@apply invisible w-0 h-0;
+		@apply invisible h-0 w-0;
 	}
 
 	.prose a {
@@ -57,18 +57,68 @@
 
 	li.dash {
 		list-style-type: "— ";
-		@apply pl-2 ml-5;
+		@apply ml-5 pl-2;
 	}
 
-	li.dash {
-		list-style-type: "— ";
-		@apply pl-2 ml-5;
-	}
 	hr {
 		@apply border-neutral-700;
 	}
 	hr.in-grid {
 		@apply col-start-1 col-end-13 md:col-start-2 md:col-end-12;
+	}
+
+	pre code {
+		@apply whitespace-pre;
+		@apply !px-0;
+	}
+
+	.blog-prose {
+		@apply prose prose-invert w-full;
+		@apply prose-h2:mb-6 prose-h2:mt-7 prose-h2:text-2xl prose-h2:font-bold md:prose-h2:text-3xl;
+		@apply prose-h3:mb-6 prose-h3:mt-7 prose-h3:text-xl md:prose-h3:text-2xl;
+		@apply prose-h4:mb-4 prose-h4:mt-5 prose-h4:text-lg md:prose-h4:text-lg;
+		@apply prose-p:mb-8 prose-p:text-sm prose-p:leading-[1.75] prose-p:text-neutral-400 md:prose-p:text-base md:prose-p:leading-[1.75];
+		@apply prose-li:mb-3 prose-li:mt-0 prose-li:text-sm prose-li:text-neutral-400 prose-li:marker:text-sunset md:prose-li:text-base;
+		@apply prose-ul:mb-8;
+		@apply prose-ol:mb-8;
+		@apply prose-pre:max-w-full prose-pre:overflow-auto prose-pre:whitespace-pre;
+		@apply prose-code:overflow-x-scroll prose-code:rounded prose-code:bg-neutral-950 prose-code:px-[6px] prose-code:py-1 prose-code:font-mono prose-code:text-xs prose-code:font-normal prose-code:text-neutral-300;
+		@apply prose-strong:text-neutral-100;
+		@apply prose-a:not-italic prose-a:text-neutral-100 prose-a:decoration-sunset prose-a:transition-colors hover:prose-a:text-sunset-dark prose-a:hover:decoration-sunset-dark;
+	}
+
+	#TableOfContents ul {
+		@apply mt-1 text-neutral-200;
+	}
+	#TableOfContents li {
+		list-style-type: "— ";
+		@apply ml-5 pl-2;
+		@apply transform transition-all duration-300 ease-in-out hover:text-neutral-50;
+	}
+	#TableOfContents li a {
+		@apply relative inline-block;
+		@apply after:absolute after:bottom-[2px] after:left-0 after:h-px after:w-full after:origin-left after:scale-x-0 after:bg-neutral-50 after:transition-transform;
+		@apply hover:text-neutral-50 hover:after:scale-x-100;
+	}
+	#TableOfContents li:has(a:hover) {
+		@apply translate-x-1;
+	}
+
+	.button {
+		@apply inline-block h-11 w-full px-5 text-base font-bold uppercase sm:h-14 sm:px-8;
+	}
+	.button--small {
+		@apply h-10;
+	}
+
+	.button > div {
+		@apply flex h-full w-full items-center justify-center text-xs sm:text-sm;
+	}
+	.button_sunset {
+		@apply bg-sunset-dark text-white hover:bg-sunset;
+	}
+	.button_outline {
+		@apply border-2 border-neutral-700 bg-transparent text-white hover:border-neutral-500;
 	}
 }
 

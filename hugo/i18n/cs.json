@@ -9,6 +9,10 @@
 			"label": "Příjmení",
 			"error": { "empty": "Pole nesmí být prázdné" }
 		},
+		"fullname": {
+			"label": "Jméno a příjmení",
+			"error": { "empty": "Pole nesmí být prázdné" }
+		},
 		"email": {
 			"label": "Email",
 			"error": {
@@ -29,6 +33,10 @@
 		},
 		"message": {
 			"label": "Zpráva",
+			"error": { "empty": "Pole nesmí být prázdné" }
+		},
+		"goals": {
+			"label": "Cíle/KPI",
 			"error": { "empty": "Pole nesmí být prázdné" }
 		},
 		"button": "Odeslat",
@@ -53,5 +61,6 @@
 	},
 	"scroll-down": "Posuňte dolů",
 	"all": "Vše",
-	"latestPosts": "nejnovější příspěvky"
+	"latestPosts": "nejnovější příspěvky",
+	"toc": "obsah"
 }

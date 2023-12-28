@@ -8,7 +8,7 @@ import { getCookie, setConsentCookies } from "@s-src/utils/Cookies";
 type Data = typeof consentData;
 export type LangData = Data["cs"];
 
-export const App = () => {
+export const ConsentApp = () => {
 	const html = document.querySelector("html");
 	const cookieBtn = document.getElementById("cookie-f-button");
 	let lang = "cs";
