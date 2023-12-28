@@ -25,7 +25,7 @@ Hlavní výhodou SEO je to, že se jedná o organické hodnocení. To znamená,
 Pokud se budeme bavit o tom, jak optimalizovat stránku pro vyhledávání na Googlu, tak existují 3 hlavní oblasti, které je nutné řešit: **On‑page SEO _(SEO na stránce)_**, **off‑page SEO _(SEO mimo stránku)_** a **technické SEO**.
 
 - **On-page SEO** je process optimalizace jednotlivých stránek, zlepšování jejich pozice ve vyhledávačích a získávání kvalifikovanější návštěvnosti.
-- **On-page SEO** se zaměřuje na zvyšování důvěryhodnosti webu pro vyhledávače a budování odazů z jiných stránek.
+- **Off-page SEO** se zaměřuje na zvyšování důvěryhodnosti webu pro vyhledávače a budování odkazů z jiných stránek.
 - **Technické SEO** je proces tvorby kvalitní struktury webových stránek a technického řešení webových stránek jako je rychlost načítání stránek, přizpůsobení pro telefony, strukturovaná data nebo zabezpečení.
 
 ## Proč je SEO tak důležité?
