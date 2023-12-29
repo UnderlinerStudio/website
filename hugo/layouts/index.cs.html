@@ -1,6 +1,40 @@
 {{ define "head" }}
 	<meta http-equiv="Cache-Control" content="no-store" />
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Organization",
+			"name": "Underliner Studio",
+			"url": "https://underliner.studio",
+			"logo": "https://underliner.studio/logo.jpg",
+			"foundingDate": "2022",
+			"mainEntityOfPage": "https://underliner.studio",
+			"founder": [
+				{ "@type": "Person", "name": "Jan Vítů" },
+				{ "@type": "Person", "name": "Simona Filová" }
+			],
+			"email": "hello@underliner.studio",
+			"legalName": "Underliner studio s.r.o.",
+			"sameAs": [
+				"https://www.instagram.com/underliner_studio/",
+				"https://twitter.com/underlinerstdio",
+				"https://www.linkedin.com/company/underliner-studio/",
+				"https://www.facebook.com/underlinerstudio/"
+			],
+			"contactPoint": [
+				{
+					"@type": "ContactPoint",
+					"contactType": "customer service",
+					"areaServed": "Czechia",
+					"availableLanguage": ["Czech", "English"],
+					"email": "hello@underliner.studio"
+				}
+			]
+		}
+	</script>
 {{ end }}
+
 {{ define "main" }}
 	{{ partial "homeHero.html" . }}
 	<section class="base-grid py-20 md:py-32">
@@ -106,6 +140,7 @@
 		</div>
 	</section>
 {{ end }}
+
 {{ define "scripts" }}
 	{{ $homeScript := resources.Get "ts/homepage.ts" | js.Build "js/homepage.js" | fingerprint | resources.Minify }}
 	<script src="{{ $homeScript.RelPermalink }}" defer></script>

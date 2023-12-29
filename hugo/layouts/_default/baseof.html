@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language }}">
-	{{ partial "head.html" . }}
+	<head>
+		{{ partial "head.html" . }}
+		{{ block "head" . }}{{ end }}
+	</head>
 	<body class="overflow-x-hidden bg-neutral-900">
 		{{ partial "analytics/gtmBody.html" . }}
 
