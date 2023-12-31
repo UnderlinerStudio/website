@@ -1,6 +1,6 @@
 {{ $isMain := .Get "isMain" | default false }}
 {{ $wrapperClass := "w-[312px] snap-center lg:w-auto transition-colors" }}
-{{ $outlineClass := "rounded-3xl p-8 xl:p-10" }}
+{{ $outlineClass := "p-8 xl:p-10" }}
 {{ $buttonClass := "button button--small mt-6" }}
 {{ if $isMain }}
 	{{ $outlineClass = add $outlineClass  " h-full bg-neutral-950/20 ring-2 ring-sunset hover:bg-neutral-950/40" }}
