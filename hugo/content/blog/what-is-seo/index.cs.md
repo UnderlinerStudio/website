@@ -6,35 +6,37 @@ date: 2023-12-18
 categories: ["seo"]
 ---
 
-Jak to, že když vyhledáváte informace, produkty nebo služby online _(třeba na Googlu)_, tak se některé stránky zobrazují jako první ve vyhledávači? **Je to díky SEO** – Optimalizaci pro vyhledávače (anglicy Search Engine Optimization). Ale SEO není pouze o tom být vidět jako první ve vyhledávání, SEO je o tom, být nejrelevantnější a nejhodnotnější možností pro vyhledávací dotazy uživatelů.
+Jak to, že když vyhledáváte informace, produkty nebo služby online _(třeba na Googlu)_, tak se některé stránky zobrazují jako první ve vyhledávači? **Je to díky SEO** – optimalizaci pro vyhledávače (anglicky Search Engine Optimization). SEO není pouze o tom být vidět jako první ve vyhledávání, ale o tom být nejrelevantnější a nejhodnotnější možností pro vyhledávací dotazy uživatelů.
 
-Díky vyšší pozici ve výsledcích vyhledávání se zvedá vaše viditelnost, návštěvnost, ale i důvěryhodnost pro vaše potenciální zákazníky.
+Díky vyšší pozici ve výsledcích vyhledávání se zvedá vaše viditelnost, návštěvnost, i důvěryhodnost pro vaše potenciální zákazníky.
 
-Kvalitní SEO a jeho optimalizace se postará o to, že budete na internetu vidět v organických (neplacených) výsledcích vyhledávání. SEO vám také zajistí zvýšení a zkvalitnění návštěvnosti vašich webových stránek. Zjednodušeně SEO slouží pro získání více návštěvníků, kteří se skutečně zajímají o to, co na webu nabízíte.
+Kvalitní SEO a jeho optimalizace zajistí, že budete na internetu vidět v organických (neplacených) výsledcích vyhledávání. SEO vám také zvýší a zkvalitní návštěvnost vašich webových stránek. Zjednodušeně SEO slouží pro získání více návštěvníků, kteří se skutečně zajímají o to, co na webu nabízíte.
 
 Pokud nemáte vyřešené SEO přicházíte o velké množství návštěvníků a potenciálních zákazníků, kteří používají internetové vyhledávače _(jako Google, Seznam, Bing nebo Yahoo)_.
 
 ## Co je to SEO?
 
-SEO (Search Engine Optimization) optimalizace pro vyhledávače je proces, který pomáhá webům umisťovat se výše v organických výsledcích vyhledávání ve vyhledávačích (napč. Google). To vám pomůže zvýšit návštěvnost vašich webových.
+SEO (Search Engine Optimization) optimalizace je proces, který pomáhá webům umisťovat se výše v organických výsledcích vyhledávání ve vyhledávačích (např. Google). Kvalitní SEO marketing vám pomůže zvýšit návštěvnost vašich webových stránek.
 
-Hlavní výhodou SEO je to, že se jedná o organické hodnocení. To znamená, že narozdíl od placené reklamy (jako PPC) pro to, aby vás vyhledávače zobrazovali nemusíte platit.
+Hlavní výhodou SEO je to, že se jedná o organické hodnocení. To znamená, že aby vás vyhledavače zobrazovali, nemusíte platit (na rozdíl od PPC reklamy).
 
 ### Klíčové součásti SEO
 
 Pokud se budeme bavit o tom, jak optimalizovat stránku pro vyhledávání na Googlu, tak existují 3 hlavní oblasti, které je nutné řešit: **On‑page SEO _(SEO na stránce)_**, **off‑page SEO _(SEO mimo stránku)_** a **technické SEO**.
 
-- **On-page SEO** je process optimalizace jednotlivých stránek, zlepšování jejich pozice ve vyhledávačích a získávání kvalifikovanější návštěvnosti.
+- **On-page SEO** je optimalizace jednotlivých stránek, zlepšování jejich pozice ve vyhledávačích a získávání kvalifikovanější návštěvnosti.
 - **Off-page SEO** se zaměřuje na zvyšování důvěryhodnosti webu pro vyhledávače a budování odkazů z jiných stránek.
-- **Technické SEO** je proces tvorby kvalitní struktury webových stránek a technického řešení webových stránek jako je rychlost načítání stránek, přizpůsobení pro telefony, strukturovaná data nebo zabezpečení.
+- **Technické SEO** se zabývá strukturou webových stránek a technickým řešením webových stránek jako je rychlost načítání stránek, přizpůsobení pro telefony, strukturovaná data nebo zabezpečení.
 
 ## Proč je SEO tak důležité?
 
-Za organické výsledky na rozdíl od placené reklamy (SEA - PPC) neplatíte. Stejně tak ani neplatíte za pozici ve vyhledávání.
+Na rozdíl od placené reklamy (SEA - PPC), za organické výsledky neplatíte. Stejně tak ani neplatíte za pozici ve vyhledávání.
+
+SEO vám pomůže přinést nové návštěvníky pomocí organického vyhledávání a bez nutnosti platit za reklamu. Navíc 94 % prokliků ve vyhledávačích vede na organické výsledky.
 
 Placená reklama vám sice dovolí být zobrazení nad organickými výsledky a prvních pozicích. Ale pokud přestanete za reklamu platit, tak stejně jak rychle vám návštěvy webu přibyly, tak stejně rychle vám návštěvy klesnou.
 
-Vyhledávače jsou také největším zdrojem návštěv webů, kde tvoří téměř 60 % návštěv webů.
+Podle dat z [backlinko.com](https://backlinko.com/seo-stats) jsou největším zdrojem návštěv webů vyhledávače, kde tvoří téměř 60 % návštěv webů.
 
 - Stránky na 1. pozici ve vyhledávači Google získávají přibližně 32 % všech prokliků
 - Prvních 5 organických výsledků získávají 67,6 % všech kliknutí
@@ -52,7 +54,7 @@ Pokud půjdeme do detailu, tak SEO marketing je velice komplexní a skládá se
 - **Off-page SEO**
 - **Technické SEO**
 
-Nečekejte, že se výsledky dostaví okamžitě. Nějakou dobu bude trvat než vaše strategie zafunguje a než Google a jiné společnosti zaindexují vaše změny. V některých případech to může trvat měsíce někdy týdny nebo i hodiny.
+Nečekejte, že se výsledky dostaví okamžitě. Nějakou dobu bude trvat než vaše strategie zafunguje a než Google a jiné společnosti zaindexují vaše změny. V některých případech to může trvat měsíce, někdy týdny nebo i hodiny.
 
 ### Analýza klíčových slov
 
@@ -68,7 +70,7 @@ Nejlepší SEO strategie zahrnují konstantní obnovování analýzy klíčovýc
 
 Asi jste slyšeli nebo narazili na spojení: _"Obsah je král"_. Pokud jste na toto spojení nenarazili, tak to zjednodušeně znamená, že obsah a jeho kvalita je hlavní metrika pro umístění ve výsledcích vyhledávání.
 
-To je hlavně kvůli tomu, že jeden z cílů Googlu je "[Přinášet co nejrelevantnější a nejspolehlivější informace](https://www.google.cz/search/howsearchworks/our-approach/)". Pokud teda chcete, aby se vaše stránky umisťovaly na prvních pozicích, tak je důležité soustředit se na kvalitu vašeho obsahu.
+To je hlavně kvůli tomu, že jeden z cílů Googlu je _[Přinášet co nejrelevantnější a nejspolehlivější informace](https://www.google.cz/search/howsearchworks/our-approach/)_. Pokud teda chcete, aby se vaše stránky umisťovaly na prvních pozicích, tak je důležité soustředit se na kvalitu vašeho obsahu.
 
 Obsah má 3 hlavní komponenty, na které je důležité se zaměřit: kvalita, důvod vyhledávání a to, jak je obsah aktuální.
 
@@ -88,16 +90,16 @@ Do toho patří i tvorba obsahu, struktura kódu, pochopení uživatelů nebo j
 
 #### Struktura obsahu
 
-Pokud jste ve vysoce konkurenčním prostředí, tak tvořit kvalitní obsah nestačí. Stejně jako dělání kvalitního obsahu, tak je i důležité zaměřit se na to, jak lidé obsah vyhledávají, proč ho vyhledávají a to zahrnout do napsaného obsahu.
+Pokud jste ve vysoce konkurenčním prostředí, tak tvořit kvalitní obsah nestačí. Stejně důležité jako kvalitní obsah je jak lidé obsah vyhledávají a proč obsah vyhledávají.
 
 Zároveň nedává smysl kopírovat obsah, který se umisťuje na prvních příčkách. Vždy je potřeba přidat něco unikátního a dokázat vlastní odbornost nebo zkušenost.
 
-**Ve zkratce je důležité se zaměřit na tyto oblasti:**
+**Ve zkratce je důležité zaměřit se na tyto oblasti:**
 
 - Tvorba obsahu i podle toho co uživatelé hledají a co chtějí vědět
 - V obsahu nabídněte něco unikátního ať už unikátní pohled nebo konkrétní zkušenost
-- Dokažte vlastní odbornost nebo zkušenost
-- Používejte smysluplné prolinkování, jak externí, tak interní
+- Dokázat vlastní odbornost nebo zkušenost
+- Použití smysluplného prolinkování, jak externích linků, tak interních
 
 #### Struktura kódu
 
@@ -140,7 +142,7 @@ Samozřejmě `viewport` meta značka není tak důležitá pro to, aby prohlíž
 
 ### Off-page SEO
 
-Oproti on-page SEO, které se stará o optimalizaci jednotlivých stránek, off-page SEO (SEO mimo stránky) je oblast, která se stará o zvyšování reputace a důvěryhodnosti stránek.
+Oproti on-page SEO, které se stará o optimalizaci jednotlivých stránek, off-page SEO (SEO mimo stránky) je oblast, která se zaměřuje o zvyšování reputace a důvěryhodnosti stránek.
 
 Je to jeden z nejsložitějších kroků v celém SEO procesu, protože zahrnuje vybudování prolinkování s relevantním a kvalitním obsahem, který vytvořil někdo jiný, na jiných webových stránkách. Budování takzvaných **Backlinků**.
 
@@ -191,11 +193,13 @@ Soubor **robots.txt** zase slouží k tomu, aby vyhledávače věděli které s
 
 #### Technické řešení webových stránek
 
-Jednou z **klíčových součástí je i výkon stránek** a to, jakým způsobem jsou technicky postavené a jaké technologie používá může ovlivnit to, jak se lidé na vašich stránkách chovají.
+Jednou z **klíčových součástí je i výkon stránek**. To, jakým způsobem jsou webové stránky technicky postavené a jaké technologie využívají může ovlivnit jak se lidé na vašich stránkách chovají.
 
-Vaší pozici totiž mohou ovlivnit i data od reálných uživatelů. Jako rychlost načítání stránky nebo Core Web Vitals, UX a responzivní design. Takže pokud máte například vysoký **_Bounce Rate - míra okamžitého opuštění_** (větší než 60 %), tak se ve vyhledávačích začnete zobrazovat na nižších pozicích.
+Vaší pozici totiž mohou ovlivnit i data od reálných uživatelů. Jako rychlost načítání webu nebo Core Web Vitals, UX stránek a responzivní design.
 
-Pro zvýšení výkonu stránek můžete při nejmenším udělat to, že veškeré soubory, které si uživatel stahuje do prohlížeče _(jako html, css nebo javascriptové soubory)_ jsou minifikované. Další soubory které je dobré minifikovat jsou obrázky. U obrázků je dobré využívat nové formáty, které jsou optimalizované pro web jako je **_webp_** nebo **_avif_**
+Pro zvýšení výkonu stránek můžete při nejmenším udělat to, že veškeré soubory, které si uživatel stahuje do prohlížeče _(jako html, css nebo javascriptové soubory)_ jsou minifikované. To znamená, že tyto soubory jsou očištěny o nepotřebné znaky a je z nich vytvořen nejmenší možný soubor.
+
+Další soubory které je dobré optimalizovat jsou borázky, které mohou být hodně velké a díky tomu jejic stahování může výrazně zpomalit váš web. Pro optimalizaci obrázků je dobré využívat nové formáty (**_webp_** nebo **_avif_**), které jsou optimalizované pro web.
 
 Pro vyhledávače je stejně důležité trvalé _(status kód `301`)_ nebo dočasé _(status kód `302`)_ přesměrování aktuálně nedostupných stránek.
 
@@ -224,7 +228,7 @@ Při tvorbě struktury stránek se musíte zaměřit na uživatele a jeho potř
 
 ## Tipy jak zlepšit vaše SEO
 
-Ne vždy máte možnost ovlivnit každý aspekt, který ovlivňuje SEO. Co ale můžete ovlivnit je kvalita obsahu, struktura obsahu, struktura stránek použitelnost stránek na mobilních zařízeních nebo vhodně vybrané popisky.
+Ne vždy máte možnost ovlivnit každý aspekt, který ovlivňuje SEO. Co ale můžete ovlivnit je kvalita obsahu, struktura obsahu, struktura stránek použitelnost stránek na mobilních zařízeních nebo vhodně vybrané popisky. S tím komplikovanějším vám můžeme [pomoct](/services/seo/).
 
 ### 1. Pište kvalitní obsah
 
