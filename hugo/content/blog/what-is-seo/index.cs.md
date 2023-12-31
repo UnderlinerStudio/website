@@ -1,7 +1,7 @@
 ---
 draft: false
-title: "Co je to SEO a proč je to must‑have pro každý web"
-description: "Vytvořte kvalitní SEO základ pro váš web. Objevte klíčové kroky pro zvýšení návštěvnosti, lepší pozici ve vyhledávačích a výkonnost vašich stránek."
+title: "Co je to SEO a proč je to must‑have pro každý web"
+description: "Vytvořte kvalitní SEO základ pro váš web. Objevte klíčové kroky pro zvýšení návštěvnosti, lepší pozici ve vyhledávačích a výkonnost vašich stránek."
 date: 2023-12-18
 categories: ["seo"]
 ---
@@ -32,11 +32,11 @@ Pokud se budeme bavit o tom, jak optimalizovat stránku pro vyhledávání na G
 
 Na rozdíl od placené reklamy (SEA - PPC), za organické výsledky neplatíte. Stejně tak ani neplatíte za pozici ve vyhledávání.
 
-SEO vám pomůže přinést nové návštěvníky pomocí organického vyhledávání a bez nutnosti platit za reklamu. Navíc 94 % prokliků ve vyhledávačích vede na organické výsledky.
+SEO vám pomůže přinést nové návštěvníky pomocí organického vyhledávání a bez nutnosti platit za reklamu. Navíc 94 % prokliků ve vyhledávačích vede na organické výsledky.
 
 Placená reklama vám sice dovolí být zobrazení nad organickými výsledky a prvních pozicích. Ale pokud přestanete za reklamu platit, tak stejně jak rychle vám návštěvy webu přibyly, tak stejně rychle vám návštěvy klesnou.
 
-Podle dat z [backlinko.com](https://backlinko.com/seo-stats) jsou největším zdrojem návštěv webů vyhledávače, kde tvoří téměř 60 % návštěv webů.
+Podle dat z [backlinko.com](https://backlinko.com/seo-stats) jsou největším zdrojem návštěv webů vyhledávače, kde tvoří téměř 60 % návštěv webů.
 
 - Stránky na 1. pozici ve vyhledávači Google získávají přibližně 32 % všech prokliků
 - Prvních 5 organických výsledků získávají 67,6 % všech kliknutí
@@ -90,7 +90,7 @@ Do toho patří i tvorba obsahu, struktura kódu, pochopení uživatelů nebo j
 
 #### Struktura obsahu
 
-Pokud jste ve vysoce konkurenčním prostředí, tak tvořit kvalitní obsah nestačí. Stejně důležité jako kvalitní obsah je jak lidé obsah vyhledávají a proč obsah vyhledávají.
+Pokud jste ve vysoce konkurenčním prostředí, tak tvořit kvalitní obsah nestačí. Stejně důležité jako kvalitní obsah je jak lidé obsah vyhledávají a proč obsah vyhledávají.
 
 Zároveň nedává smysl kopírovat obsah, který se umisťuje na prvních příčkách. Vždy je potřeba přidat něco unikátního a dokázat vlastní odbornost nebo zkušenost.
 
@@ -197,9 +197,9 @@ Jednou z **klíčových součástí je i výkon stránek**. To, jakým způsob
 
 Vaší pozici totiž mohou ovlivnit i data od reálných uživatelů. Jako rychlost načítání webu nebo Core Web Vitals, UX stránek a responzivní design.
 
-Pro zvýšení výkonu stránek můžete při nejmenším udělat to, že veškeré soubory, které si uživatel stahuje do prohlížeče _(jako html, css nebo javascriptové soubory)_ jsou minifikované. To znamená, že tyto soubory jsou očištěny o nepotřebné znaky a je z nich vytvořen nejmenší možný soubor.
+Pro zvýšení výkonu stránek můžete při nejmenším udělat to, že veškeré soubory, které si uživatel stahuje do prohlížeče _(jako html, css nebo javascriptové soubory)_ jsou minifikované. To znamená, že tyto soubory jsou očištěny o nepotřebné znaky a je z nich vytvořen nejmenší možný soubor.
 
-Další soubory které je dobré optimalizovat jsou borázky, které mohou být hodně velké a díky tomu jejic stahování může výrazně zpomalit váš web. Pro optimalizaci obrázků je dobré využívat nové formáty (**_webp_** nebo **_avif_**), které jsou optimalizované pro web.
+Další soubory které je dobré optimalizovat jsou borázky, které mohou být hodně velké a díky tomu jejic stahování může výrazně zpomalit váš web. Pro optimalizaci obrázků je dobré využívat nové formáty (**_webp_** nebo **_avif_**), které jsou optimalizované pro web.
 
 Pro vyhledávače je stejně důležité trvalé _(status kód `301`)_ nebo dočasé _(status kód `302`)_ přesměrování aktuálně nedostupných stránek.
 
@@ -228,7 +228,7 @@ Při tvorbě struktury stránek se musíte zaměřit na uživatele a jeho potř
 
 ## Tipy jak zlepšit vaše SEO
 
-Ne vždy máte možnost ovlivnit každý aspekt, který ovlivňuje SEO. Co ale můžete ovlivnit je kvalita obsahu, struktura obsahu, struktura stránek použitelnost stránek na mobilních zařízeních nebo vhodně vybrané popisky. S tím komplikovanějším vám můžeme [pomoct](/services/seo/).
+Ne vždy máte možnost ovlivnit každý aspekt, který ovlivňuje SEO. Co ale můžete ovlivnit je kvalita obsahu, struktura obsahu, struktura stránek použitelnost stránek na mobilních zařízeních nebo vhodně vybrané popisky. S tím komplikovanějším vám můžeme [pomoct](/services/seo/).
 
 ### 1. Pište kvalitní obsah
 
