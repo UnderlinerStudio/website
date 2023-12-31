@@ -51,10 +51,6 @@
 		@apply invisible h-0 w-0;
 	}
 
-	.prose a {
-		@apply italic decoration-red-500;
-	}
-
 	li.dash {
 		list-style-type: "— ";
 		@apply ml-5 pl-2;
@@ -84,7 +80,7 @@
 		@apply prose-pre:max-w-full prose-pre:overflow-auto prose-pre:whitespace-pre;
 		@apply prose-code:overflow-x-scroll prose-code:rounded prose-code:bg-neutral-950 prose-code:px-[6px] prose-code:py-1 prose-code:font-mono prose-code:text-xs prose-code:font-normal prose-code:text-neutral-300;
 		@apply prose-strong:text-neutral-100;
-		@apply prose-a:not-italic prose-a:text-neutral-100 prose-a:decoration-sunset prose-a:transition-colors hover:prose-a:text-sunset-dark prose-a:hover:decoration-sunset-dark;
+		@apply prose-a:font-normal prose-a:text-neutral-200 prose-a:decoration-neutral-200 prose-a:transition-colors hover:prose-a:text-sunset-dark hover:prose-a:decoration-sunset-dark;
 	}
 
 	#TableOfContents ul {
