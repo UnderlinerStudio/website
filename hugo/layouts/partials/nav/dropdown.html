@@ -27,7 +27,7 @@
 			class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12 md:grid md:grid-cols-4"
 		>
 			<ul class="hidden justify-center text-sm md:flex md:flex-col md:gap-8">
-				{{ range .Site.Params.socialMedia }}
+				{{ range $.Site.Params.socialMedia }}
 					<li class="overflow-hidden">
 						<a
 							href="{{ .url }}"
@@ -52,7 +52,7 @@
 							{{ else }}
 								text-neutral-800
 							{{ end }}
-    							group relative inline-block font-bold leading-snug transition-colors hover:text-neutral-200"
+    						group relative inline-block font-bold leading-snug transition-colors hover:text-neutral-200"
 							href="{{ .URL }}"
 							style="transform: translateY(-100%);"
 						>
