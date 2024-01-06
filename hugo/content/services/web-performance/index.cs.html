@@ -19,15 +19,15 @@ description: "¨Optimalizujte svůj web a udržte si více návštěvníků. Vá
 				Zajistíme, že váš web bude opravdu rychlý.
 			</p>
 			<div
-				class="grid grid-cols-2 gap-5 mt-6 sm:w-max sm:grid-flow-col sm:gap-10"
+				class="mt-6 grid grid-cols-2 gap-5 sm:w-max sm:grid-flow-col sm:gap-10"
 			>
 				<div>
 					<a
 						href="/contact"
-						class="inline-block w-full px-5 text-base font-bold text-white uppercase h-11 bg-sunset-dark hover:bg-sunset sm:h-14 sm:px-8"
+						class="inline-block h-11 w-full bg-sunset-dark px-5 text-base font-bold uppercase text-white hover:bg-sunset sm:h-14 sm:px-8"
 					>
 						<div
-							class="flex items-center justify-center w-full h-full text-xs sm:text-sm"
+							class="flex h-full w-full items-center justify-center text-xs sm:text-sm"
 						>
 							Kontakt
 						</div>
@@ -36,10 +36,10 @@ description: "¨Optimalizujte svůj web a udržte si více návštěvníků. Vá
 				<div>
 					<a
 						href="#service"
-						class="inline-block w-full px-3 text-base font-bold text-white uppercase bg-transparent border-2 h-11 border-neutral-700 hover:border-neutral-500 sm:h-14 sm:px-8"
+						class="inline-block h-11 w-full border-2 border-neutral-700 bg-transparent px-3 text-base font-bold uppercase text-white hover:border-neutral-500 sm:h-14 sm:px-8"
 					>
 						<div
-							class="flex items-center justify-center w-full h-full text-xs sm:text-sm"
+							class="flex h-full w-full items-center justify-center text-xs sm:text-sm"
 						>
 							Chci rychlý web
 						</div>
@@ -50,7 +50,7 @@ description: "¨Optimalizujte svůj web a udržte si více návštěvníků. Vá
 	</div>
 	{{< scrollDownIndicator align="left" >}}
 </section>
-<section class="py-10 base-grid md:py-32">
+<section class="base-grid py-10 md:py-32">
 	<div
 		class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12 md:col-start-4 md:col-end-12"
 	>
@@ -60,7 +60,7 @@ description: "¨Optimalizujte svůj web a udržte si více návštěvníků. Vá
 			Pomůžeme vám být nejrychlejší.
 		</h2>
 		<div
-			class="max-w-2xl mt-6 mb-12 space-y-4 text-lg sm:mt-12 sm:space-y-8 sm:text-xl md:mt-10 md:text-2xl"
+			class="mb-12 mt-6 max-w-2xl space-y-4 text-lg sm:mt-12 sm:space-y-8 sm:text-xl md:mt-10 md:text-2xl"
 		>
 			<p>
 				Identifikujeme slabá místa, nastavíme měření a optimalizujeme výkon.
@@ -72,10 +72,10 @@ description: "¨Optimalizujte svůj web a udržte si více návštěvníků. Vá
 				<ul
 					class="grid grid-flow-row grid-cols-2 gap-2 text-sm text-neutral-400 sm:text-base"
 				>
-					<li class="pl-2 dash">Měření rychlosti</li>
-					<li class="pl-2 dash">Manažerské reportování</li>
-					<li class="pl-2 dash">Spolupráci s vývojáři</li>
-					<li class="pl-2 dash">Konzultace a školení</li>
+					<li class="dash pl-2">Měření rychlosti</li>
+					<li class="dash pl-2">Manažerské reportování</li>
+					<li class="dash pl-2">Spolupráci s vývojáři</li>
+					<li class="dash pl-2">Konzultace a školení</li>
 				</ul>
 			</div>
 		</div>
@@ -90,7 +90,7 @@ description: "¨Optimalizujte svůj web a udržte si více návštěvníků. Vá
 			>
 				Rychlost webu trápí všechny
 			</h2>
-			<p class="max-w-2xl mt-6 mb-12 md:mt-10">
+			<p class="mb-12 mt-6 max-w-2xl md:mt-10">
 				Rychlost webu může pomoci zlepšit váš business,
 				<strong>zvýšit návštěvnost</strong> a <strong>zlepšit konverze</strong>.
 				Pomůžeme vám zlepšit rychlost vašeho webu.
@@ -105,6 +105,7 @@ description: "¨Optimalizujte svůj web a udržte si více návštěvníků. Vá
 	>}}
 	{{< pricing/pricingCard
 		isMain=true
+		isColored=true
 		itemName="Speed sprint" description="V krátkém čase vám pomůžeme vylepšit některou z metrik rychlosti." price="25.000 Kč"
 		link="#contact-form|Sjednat schůzku"
 		list="Test rychlosti|Zlepšení jedné rychlostní metriky|Reportování a měření|Vypracování návodu k optimalizaci pro vývojáře|Konzultace"
@@ -117,22 +118,22 @@ description: "¨Optimalizujte svůj web a udržte si více návštěvníků. Vá
 	{{< /pricing/3Col >}}
 
 
-	<div class="pt-24 base-grid md:pt-32" id="how">
+	<div class="base-grid pt-24 md:pt-32" id="how">
 		<div class="col-start-1 col-end-13 mt-12 md:col-start-2 md:col-end-12">
 			<h3
-				class="text-xl font-medium uppercase fill-neutral-500 text-neutral-500 sm:text-3xl"
+				class="fill-neutral-500 text-xl font-medium uppercase text-neutral-500 sm:text-3xl"
 			>
 				Jak zlepšujeme výkon webů
-				<span class="inline-block w-4 h-4 ml-1 sm:h-6 sm:w-6">
+				<span class="ml-1 inline-block h-4 w-4 sm:h-6 sm:w-6">
 					{{< partial "svg/arrow-right-down.svg" >}}
 				</span>
 			</h3>
 			<div
-				class="grid grid-flow-row gap-16 mt-12 text-neutral-100 md:gap-12 lg:grid-cols-2 lg:grid-rows-2 lg:gap-0 lg:gap-x-8"
+				class="mt-12 grid grid-flow-row gap-16 text-neutral-100 md:gap-12 lg:grid-cols-2 lg:grid-rows-2 lg:gap-0 lg:gap-x-8"
 			>
 				<div class="max-w-lg">
 					<h4 class="text-2xl font-bold">
-						<span class="text-xs align-top text-sunset">01</span>
+						<span class="align-top text-xs text-sunset">01</span>
 						Sbíráme data
 					</h4>
 					<p class="mt-6 text-base text-neutral-300 md:text-lg">
@@ -142,7 +143,7 @@ description: "¨Optimalizujte svůj web a udržte si více návštěvníků. Vá
 				</div>
 				<div class="max-w-lg lg:mt-24">
 					<h4 class="text-2xl font-bold">
-						<span class="text-xs align-top text-sunset">02</span>
+						<span class="align-top text-xs text-sunset">02</span>
 						Optimalizujeme a upravujeme
 					</h4>
 					<p class="mt-6 text-base text-neutral-300 md:text-lg">
@@ -153,7 +154,7 @@ description: "¨Optimalizujte svůj web a udržte si více návštěvníků. Vá
 				</div>
 				<div class="max-w-lg">
 					<h4 class="text-2xl font-bold">
-						<span class="text-xs align-top text-sunset">03</span>
+						<span class="align-top text-xs text-sunset">03</span>
 						Měříme
 					</h4>
 					<p class="mt-6 text-base text-neutral-300 md:text-lg">
@@ -177,7 +178,7 @@ description: "¨Optimalizujte svůj web a udržte si více návštěvníků. Vá
 				Nenecháme vaše návštěvníky odejít
 			</h2>
 			<div
-				class="max-w-2xl mt-6 mb-12 space-y-4 text-lg sm:mt-12 sm:space-y-8 sm:text-xl md:mt-10 md:text-2xl"
+				class="mb-12 mt-6 max-w-2xl space-y-4 text-lg sm:mt-12 sm:space-y-8 sm:text-xl md:mt-10 md:text-2xl"
 			>
 				<p>
 					Výkon webu ovlivňuje míru okamžitého opuštění vašich stránek. Nenechte

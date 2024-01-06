@@ -1,40 +1,62 @@
 {{ $isMain := .Get "isMain" | default false }}
+{{ $isColored := .Get "isColored" | default false }}
+{{ $isCentered := .Get "isCentered"  | default false }}
 {{ $wrapperClass := "w-[312px] snap-center lg:w-auto transition-colors" }}
 {{ $outlineClass := "p-8 xl:p-10" }}
 {{ $buttonClass := "button button--small mt-6" }}
 {{ if $isMain }}
-	{{ $outlineClass = add $outlineClass  " h-full bg-neutral-950/20 ring-2 ring-sunset hover:bg-neutral-950/40" }}
+	{{ $outlineClass = add $outlineClass  " h-full bg-neutral-950/20 ring-2 hover:bg-neutral-950/40" }}
 	{{ $buttonClass = add $buttonClass " button_sunset" }}
 {{ else }}
 	{{ $wrapperClass = add $wrapperClass " py-8" }}
 	{{ $outlineClass = add $outlineClass " ring-1 ring-neutral-200 hover:bg-neutral-950/30 bg-neutral-950/10" }}
 	{{ $buttonClass = add $buttonClass " button_outline " }}
 {{ end }}
+{{ if $isColored }}
+	{{ $outlineClass = add $outlineClass  " ring-sunset" }}
+	{{ $buttonClass = add $buttonClass " button_sunset" }}
+{{ else }}
+	{{ $outlineClass = add $outlineClass " ring-neutral-200" }}
+{{ end }}
+
+{{ if $isCentered }}
+	{{ $wrapperClass = add $wrapperClass " text-center" }}
+{{ end }}
 
 
-<div class="{{ $wrapperClass }}">
+<div
+	class="{{ $wrapperClass }} {{ if $isCentered }}
+		text-center
+	{{ end }}"
+>
 	<div class="{{ $outlineClass }}">
-		<div class="flex items-center justify-between gap-x-4">
-			<h3
-				id="tier-freelancer"
-				class="text-lg font-semibold leading-8 text-neutral-100"
-			>
-				{{ .Get "itemName" }}
-			</h3>
-		</div>
+		<h3
+			id="tier-freelancer"
+			class="text-lg font-semibold leading-8 text-neutral-100"
+		>
+			{{ .Get "itemName" }}
+		</h3>
 		<p class="mt-4 text-sm leading-6 text-neutral-300">
 			{{ .Get "description" }}
 		</p>
 		{{ $priceKind := .Get "priceKind" | default "fixed" }}
 		{{ if eq $priceKind "fixed" }}
-			<p class="mt-6 flex items-baseline gap-x-1">
+			<p
+				class="{{ if $isCentered }}
+					justify-center
+				{{ end }} mt-6 flex items-baseline gap-x-1"
+			>
 				<span class="text-sm font-semibold leading-6 text-neutral-400">Od</span>
 				<span class="text-4xl font-bold tracking-tight text-neutral-200"
 					>{{ .Get "price" }}</span
 				>
 			</p>
 		{{ else }}
-			<p class="mt-6 flex items-baseline gap-x-1">
+			<p
+				class="{{ if $isCentered }}
+					justify-center
+				{{ end }} mt-6 flex items-baseline gap-x-1"
+			>
 				<span class="text-sm font-semibold leading-6 text-neutral-400">Od</span>
 				<span class="text-4xl font-bold tracking-tight text-neutral-200"
 					>{{ .Get "price" }}</span
@@ -54,21 +76,23 @@
 				<div>{{ index $linkData 1 }}</div>
 			</a>
 		{{ end }}
-		<ul
-			role="list"
-			class="mt-8 space-y-3 text-sm leading-6 text-neutral-400 xl:mt-10"
-		>
-			{{ with .Get "list" }}
-				{{ $listItems := split . "|" }}
-				{{ range $listItems }}
-					<li class="flex gap-x-3">
-						<div class="h-5 w-5 flex-none fill-sunset">
-							{{ partial "svg/check-light.svg" . }}
-						</div>
-						{{ . }}
-					</li>
+		{{ if .Get "list" }}
+			<ul
+				role="list"
+				class="mt-8 space-y-3 text-sm leading-6 text-neutral-400 xl:mt-10"
+			>
+				{{ with .Get "list" }}
+					{{ $listItems := split . "|" }}
+					{{ range $listItems }}
+						<li class="flex gap-x-3">
+							<div class="h-5 w-5 flex-none fill-sunset">
+								{{ partial "svg/check-light.svg" . }}
+							</div>
+							{{ . }}
+						</li>
+					{{ end }}
 				{{ end }}
-			{{ end }}
-		</ul>
+			</ul>
+		{{ end }}
 	</div>
 </div>
