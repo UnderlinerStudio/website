@@ -1,0 +1,134 @@
+<section class="base-grid bg-neutral-950/20 py-20 md:py-32">
+	<div class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12">
+		<h2
+			class="max-w-3xl text-3xl font-black sm:text-5xl md:text-5xl lg:text-7xl"
+		>
+			Časté dotazy
+		</h2>
+		<div>
+			<dl class="mt-10 space-y-6 divide-y divide-white/10">
+				<div class="pt-6">
+					<button
+						class="faq-dropdown flex w-full items-center justify-between text-left text-neutral-100"
+						aria-controls="faq-0"
+						aria-expanded="false"
+					>
+						<dt class="text-base font-semibold leading-7">
+							<h3>Kolik webové stránky stojí?</h3>
+						</dt>
+						<div
+							class="chevron-down h-3 w-3 transform fill-neutral-100 transition-transform"
+						>
+							{{ partial "svg/chevron-down.svg" . }}
+						</div>
+					</button>
+					<dd class="overflow-hidden pr-12" style="height: 0px;" id="faq-0">
+						<p class="mt-2 h-max text-base leading-7 text-neutral-300">
+							Web stojí jako auto. Záleží co od něj potřebujete. Můžete chtít
+							jednoduchý prezentační web na poptávky nebo komplexní web, který
+							sám odbavuje objednávky a velkou část prodejního procesu řeší za
+							vás.
+						</p>
+					</dd>
+				</div>
+
+				<div class="pt-6">
+					<button
+						class="faq-dropdown flex w-full items-start justify-between text-left text-neutral-100"
+						aria-controls="faq-1"
+						aria-expanded="false"
+					>
+						<dt class="text-base font-semibold leading-7">
+							<h3>Jak dlouho trvá udělat web?</h3>
+						</dt>
+						<div
+							class="chevron-down h-3 w-3 transform fill-neutral-100 transition-transform"
+						>
+							{{ partial "svg/chevron-down.svg" . }}
+						</div>
+					</button>
+					<dd class="overflow-hidden pr-12" style="height: 0px;" id="faq-1">
+						<p class="mt-2 text-base leading-7 text-neutral-300">
+							Záleží na požadavcích a funkcích. Menší projekty většinou trvají
+							~2 měsíce. Větší projekty 3-4 měsíce.
+						</p>
+					</dd>
+				</div>
+
+				<div class="pt-6">
+					<button
+						class="faq-dropdown flex w-full items-start justify-between text-left text-neutral-100"
+						aria-controls="faq-2"
+						aria-expanded="false"
+					>
+						<dt class="text-base font-semibold leading-7">
+							<h3>Potřebuji mít do detailu zpracované zadání?</h3>
+						</dt>
+						<div
+							class="chevron-down h-3 w-3 transform fill-neutral-100 transition-transform"
+						>
+							{{ partial "svg/chevron-down.svg" . }}
+						</div>
+					</button>
+					<dd class="overflow-hidden pr-12" style="height: 0px;" id="faq-2">
+						<p class="mt-2 text-base leading-7 text-neutral-300">
+							Kvalitní zadání je polovina úspěchu, ale pro to, aby bylo opravdu
+							kvalitní, je potřeba ho vytvářet ve spolupráci se zhotovitelem
+							webu. Pro začátek stačí brief.
+						</p>
+					</dd>
+				</div>
+
+				<div class="pt-6">
+					<button
+						class="faq-dropdown flex w-full items-start justify-between text-left text-neutral-100"
+						aria-controls="faq-3"
+						aria-expanded="false"
+					>
+						<dt class="text-base font-semibold leading-7">
+							<h3>Postaráte se o můj web po jeho zhotovení?</h3>
+						</dt>
+						<div
+							class="chevron-down h-3 w-3 transform fill-neutral-100 transition-transform"
+						>
+							{{ partial "svg/chevron-down.svg" . }}
+						</div>
+					</button>
+					<dd class="overflow-hidden pr-12" style="height: 0px;" id="faq-3">
+						<p class="mt-2 text-base leading-7 text-neutral-300">
+							Ano, na začátku realizace webu na míru se můžeme dohodnout na
+							podepsání SLA (Service Level Agreement), který zastřešuje správu
+							předaného webu.
+						</p>
+					</dd>
+				</div>
+
+				<div class="pt-6">
+					<button
+						class="faq-dropdown flex w-full items-start justify-between text-left text-neutral-100"
+						aria-controls="faq-4"
+						aria-expanded="false"
+					>
+						<dt class="text-base font-semibold leading-7">
+							<h3>Zařídíte mi i marketing?</h3>
+						</dt>
+						<div
+							class="chevron-down h-3 w-3 transform fill-neutral-100 transition-transform"
+						>
+							{{ partial "svg/chevron-down.svg" . }}
+						</div>
+					</button>
+					<dd class="overflow-hidden pr-12" style="height: 0px;" id="faq-4">
+						<p class="mt-2 text-base leading-7 text-neutral-300">
+							Ano. Postaráme se o vaši online komunikaci, nastavíme reklamu na
+							sociálních sítích a placenou reklamu ve vyhledávači. Umíme
+							vymyslet strategii a postarat se o její provedení.
+						</p>
+					</dd>
+				</div>
+			</dl>
+		</div>
+	</div>
+</section>
+{{ $faqScript := resources.Get "ts/faq.ts" | js.Build "js/faq.js" | fingerprint | resources.Minify }}
+<script src="{{ $faqScript.RelPermalink }}" defer></script>

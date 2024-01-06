@@ -121,6 +121,10 @@
 	.button_outline {
 		@apply border-2 border-neutral-700 bg-transparent text-white hover:border-neutral-500;
 	}
+
+	.faq-dropdown.faq--toggled .chevron-down {
+		@apply -rotate-180;
+	}
 }
 
 @layer utilities {
