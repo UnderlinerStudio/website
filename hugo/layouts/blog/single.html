@@ -85,11 +85,13 @@
 
 		<div class="base-grid">
 			<aside class="mt-5 hidden lg:col-start-2 lg:col-end-4 lg:block">
-				<span class="text-xs uppercase text-neutral-500">
-					#{{ i18n "toc" . }}
-				</span>
-				{{ .TableOfContents }}
-				<hr class="mb-6 mr-4 mt-4 border-neutral-700" />
+				{{ if ne .Params.noTOC true }}
+					<span class="text-xs uppercase text-neutral-500">
+						#{{ i18n "toc" . }}
+					</span>
+					{{ .TableOfContents }}
+					<hr class="mb-6 mr-4 mt-4 border-neutral-700" />
+				{{ end }}
 				<div class="flex flex-col items-start justify-center gap-4">
 					<div>
 						<p class="text-xs uppercase text-neutral-400">
