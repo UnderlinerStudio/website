@@ -1,8 +1,9 @@
 ---
 draft: false
-title: "Co je to SEO a proč je to must‑have pro každý web"
+title: "Co je to SEO: optimalizace webu pro vyhledávače"
 description: "Vytvořte kvalitní SEO základ pro váš web. Objevte klíčové kroky pro zvýšení návštěvnosti, lepší pozici ve vyhledávačích a výkonnost vašich stránek."
 date: 2023-12-18
+lastMod: 2024-01-07
 categories: ["seo"]
 ---
 
@@ -16,21 +17,37 @@ Pokud nemáte vyřešené SEO, přicházíte o velké množství návštěvník
 
 ## Co je to SEO?
 
-SEO (Search Engine Optimization) optimalizace je proces zlepšování obsahu a struktury webových stránek. Pomáhá zvyšovat jejich viditelnost, relevantnost a umístění v organických výsledcích vyhledávání (např. Google).
+SEO (Search Engine Optimization) optimalizace je proces zlepšování obsahu a struktury webových stránek. Pomáhá zvyšovat jejich viditelnost, relevantnost a umístění v organických výsledcích vyhledávání (např. Google).
 
 Hlavní výhoda SEO je jeho zaměření na organické hodnocení. To znamená, že nemusíte platit (na rozdíl od PPC reklamy), aby vás vyhledávače zobrazovaly.
 
 ### Klíčové součásti SEO
 
-Pro optimalizaci stránek ve vyhledávači Google existují 3 hlavní oblasti, které je nutné řešit: on‑page SEO _(SEO na stránce)_, off‑page SEO _(SEO mimo stránku)_ a technické SEO.
+Pro optimalizaci stránek ve vyhledávači Google existují 3 hlavní oblasti, které je nutné řešit: on‑page SEO _(SEO na stránce)_, off‑page SEO _(SEO mimo stránku)_ a technické SEO.
 
 - **On-page SEO** je optimalizace jednotlivých stránek, zlepšování jejich pozice ve vyhledávačích a získávání kvalifikovanější návštěvnosti.
 - **Off-page SEO** se zaměřuje na zvyšování důvěryhodnosti webu pro vyhledávače a budování odkazů z jiných stránek.
 - **Technické SEO** se zabývá strukturou a technickým řešením webových stránek, jako je rychlost načítání stránek, přizpůsobení pro telefony, strukturovaná data nebo zabezpečení.
 
+## Jak SEO funguje?
+
+V každém vyhledávači trochu jinak. Ale přesný popis toho, jak internetové vyhledávače fungují, je tajemství. Kdyby totiž každý věděl, jak vyhledávače fungují, tak by tvořili přesně takový obsah, aby jejich stránka byla na prvních pozicích. Tím bychom přišli o relevantnost výsledků vyhledávání.
+
+Díky dlohodobému pozorování, měření a náznaků od Googlu nám ale pomohly lépe pochopit jak internetové vyhledavače fungují a jaký je jejich _"oblíbený"_ obsah.
+
+SEO se neustále vyvijí. Google i jiné společnosti neustále upravují algoritmy, pro vyhledavače a snaží se maximalizovat relevantnost výsledků. Nejvýznamnější algoritmus pro vyhledávače je **PageRank**, kterým Google nastavil standard pro vyhledavače. Tento algoritmus tvoří absolutní základ toho, jak Google v dnešní době zobrazuje výsledky vyhledávání.
+
+### PageRank: základ vyhledávání, který redefinoval pravidla
+
+PageRank je v dnešní době základem vyhledávání na Googlu. Tento algoritmus je matematický vzorec, který měří kvalitu stránek, podle relevance odkazů, které na stránku odkazují.
+
+PageRank, tak nadefinoval oblast SEO známou jako linkbuilding (budování sítě odkazů).
+
+V minulosti, kdy SEO bylo v začátcích a vyhledavače teprve vznikaly byl tento algoritmus pro SEO nejdůležitější. Dnes je PageRang součástí mnoha jiných algoritmů, které využívají umělou inteligenci a strojové učení.
+
 ## Proč je SEO tak důležité?
 
-SEO vám na rozdíl od placené reklamy (SEA) pomůže přinést více kvalifikovaných návštěv. Navíc 94 % prokliků ve vyhledávačích vede na organické výsledky.
+SEO vám na rozdíl od placené reklamy (SEA – Search Engine Advertising) pomůže přinést více kvalifikovaných návštěv. Navíc 94 % prokliků ve vyhledávačích vede na organické výsledky.
 
 Placená reklama vám sice dovolí zobrazovat se nad organickými výsledky a být na prvních pozicích, ale jen do doby, než přestanete za reklamu platit.
 
@@ -42,6 +59,14 @@ Podle dat z [backlinko.com](https://backlinko.com/seo-stats) jsou největším 
 
 Dobře optimalizované SEO vám tedy přinese pomalejší, ale stabilní nárůst návštěv.
 
+## Rozdíl mezi SEO a PPC
+
+SEO i PPC reklama patří do SEM (marketing ve vyhledávání). Obě tyto oblasti mají svou roli a je dobré je kombinovat.
+
+Jak jsme psali výše, SEO vám pomáhá zlepšit pozici ve vyhledávačích nebo také v organickém vyhledávání.
+
+PPC reklamy (Pay Per Click česky Platba za kliknutí) je forma internetové reklamy, za kterou inzerent platí až po kliknutí uživatele. Nejčastější typy PPC reklam jsou vyhledávací PPC reklama a banerová PPC reklama. Vyhledávací PPC reklama se zobrazuje jako několik prvních výsledků ve vyhledávači. Banerová PPC reklama pak funguje jako grafické bannery na některých internetových stránkách.
+
 ## Základy SEO marketingu
 
 Pokud půjdeme do detailu, SEO marketing je velice komplexní a skládá se z mnoha oblastí a komponent. Mezi hlavní patří:
@@ -52,11 +77,11 @@ Pokud půjdeme do detailu, SEO marketing je velice komplexní a skládá se z 
 - **Off-page SEO**
 - **Technické SEO**
 
-Nečekejte, že se výsledky dostaví okamžitě. Nějakou dobu bude trvat, než vaše strategie zafunguje a než Google a jiné společnosti zaindexují vaše změny V některých případech to může trvat hodiny, dny nebo týdny. Doba se odvíjí od velikosti webu a jeho autority.
+Nečekejte, že se výsledky dostaví okamžitě. Nějakou dobu bude trvat, než vaše strategie zafunguje a než Google a jiné společnosti zaindexují vaše změny V některých případech to může trvat hodiny, dny nebo týdny. Doba se odvíjí od velikosti webu a jeho autority.
 
 ### Analýza klíčových slov
 
-Klíčová slova jsou absolutním základem SEO strategie. Pokud nikdo nevyhledává, o čem píšete, nemůžete získat organickou návštěvnost. Proto je důležité dělat analýzy klíčových slov. Pokud je neuděláte, jdete do vysokého rizika a výsledek se nemusí dostavit.
+Klíčová slova jsou absolutním základem SEO strategie. Pokud nikdo nevyhledává, o čem píšete, nemůžete získat organickou návštěvnost. Proto je důležité dělat analýzy klíčových slov. Pokud je neuděláte, jdete do vysokého rizika a výsledek se nemusí dostavit.
 
 Ale žádný strach, analýza klíčových slov (alespoň v základní formě) není raketová věda a můžete se jí naučit.
 
@@ -80,7 +105,7 @@ Obsah má 3 hlavní komponenty: kvalita, důvod vyhledávání a aktuálnost o
 
 ### On-page SEO
 
-On-page SEO (nebo SEO na stránce) je proces optimalizace individuálních stránek. Soustředí se na snadnější porozumění obsahu a pochopení jeho struktury Googlem a ostatními vyhledávači.
+On-page SEO (nebo SEO na stránce) je proces optimalizace individuálních stránek. Soustředí se na snadnější porozumění obsahu a pochopení jeho struktury Googlem a ostatními vyhledávači.
 
 On-page SEO se také zabývá tvorbou obsahu, strukturou kódu, pochopením uživatelů a využitím **_meta značek_**.
 
@@ -95,7 +120,7 @@ Zároveň nedává smysl kopírovat obsah, který se umisťuje na prvních pří
 - Tvořte obsah i podle toho, co uživatelé hledají a co chtějí vědět.
 - V obsahu nabídněte něco unikátního, ať už váš pohled nebo konkrétní zkušenost.
 - Dokažte vlastní odbornost nebo zkušenost.
-- Použijte smysluplné prolinkování externích i interních linků.
+- Použijte smysluplné prolinkování externích i interních linků.
 
 #### Struktura kódu
 
@@ -105,7 +130,7 @@ Prvním velkým tématem je sémantické HTML. To je kód, který lépe popisuje
 
 Stejně tak důležité je udržet správnou posloupnost nadpisů, kde by každá stránka měla mít jeden nadpis první úrovně `<h1>` a následně využívat nadpisy 2. až 6. úrovně `<h2>...<h6>` pro rozdělení obsahu.
 
-Pokud používáte obrázky, mohou vám pomoci v organickém vyhledávání. Google totiž využívá data i z obrázků, jako jsou **název souboru** nebo **popis obrázku**. Google také dovoluje vyhledávat pomocí obrázků, takže se klidně může stát, že někdo navštíví vaši stránku právě díky tomuto typu vyhledávání.
+Pokud používáte obrázky, mohou vám pomoci v organickém vyhledávání. Google totiž využívá data i z obrázků, jako jsou **název souboru** nebo **popis obrázku**. Google také dovoluje vyhledávat pomocí obrázků, takže se klidně může stát, že někdo navštíví vaši stránku právě díky tomuto typu vyhledávání.
 
 Proto je dobré na vašem webu používat popisné názvy obrázků a používat popisy obrázků:
 
@@ -189,7 +214,7 @@ Soubor **robots.txt** zase slouží k tomu, aby vyhledávače věděly, které 
 
 Jednou z **klíčových součástí technického SEO je výkon stránek**. To, jakým způsobem jsou webové stránky technicky postavené a jaké technologie využívají, může ovlivnit, jak se lidé na vašich stránkách chovají.
 
-Vaší pozici totiž mohou ovlivnit i data od reálných uživatelů. Jako rychlost načítání webu nebo Core Web Vitals a UX stránek.
+Vaší pozici totiž mohou ovlivnit i data od reálných uživatelů. Jako rychlost načítání webu nebo Core Web Vitals a UX stránek.
 
 Pro zvýšení výkonu stránek můžete při nejmenším udělat to, že veškeré soubory, které si uživatel stahuje do prohlížeče _(jako html, css nebo javascriptové soubory)_, budou minifikované. To znamená, že jsou očištěny o nepotřebné znaky a je z nich vytvořen nejmenší možný soubor.
 
@@ -197,7 +222,7 @@ Dalšími soubory, které je dobré optimalizovat, jsou obrázky. Mohou být hod
 
 Pro vyhledávače je stejně důležité trvalé _(status kód `301`)_ nebo dočasné _(status kód `302`)_ přesměrování aktuálně nedostupných stránek.
 
-#### Strukturovaná data a Open Graph
+#### Strukturovaná data a Open Graph
 
 Strukturovaná data slouží k popisu obsahu stránek a umí zajistit speciální formát zobrazení ve vyhledávačích Google, takzvané ["Rich Snippets".](https://developers.google.com/search/docs/appearance/structured-data/search-gallery)
 
@@ -220,9 +245,33 @@ Máte prolinkované stránky smysluplně a srozumitelně pro uživatele? Navazu
 
 Při tvorbě struktury stránek se musíte zaměřit na uživatele a jeho potřeby. Díky tomu dosáhnete vašich business cílů, zvýšíte návštěvnost vašich stránek a pravděpodobně získáte nové klienty.
 
+## SEO nástroje
+
+SEO je hlavně o datech a úspěšné SEO strategie se na data soustředí. Pro vytvoření úspěšné SEO strategie je potřeba vyhodnocovat dosptupná data o vyhledávání a průběžně vyhodnocovat zapracované změny na vašem webu. K tomu můžete použít velké množství nástrojů.
+
+### Google Search Console
+
+Velmi užitečný bezplatný nástroj, který vám nesmí chybět. Pomáhá monitorovat hledané výrazy, prokliky, pozici ve vyhledávání a imprese (počet zobrazeních ve vyhledávačích). Google Search Console ale není jen nástroj pro monitorování. Můžete požádat google o indexaci vašich stránek, vložit odkaz na soubor sitemap (mapu stránek). Další výhodou tohoto nástroje je, že vás upozorní na problémy s indexací nebo problémy s mobilní verzí webu.
+
+### Google Analytics
+
+Nejznámnější a asi nejpoužívanější nástroj na monitorování webových stránek na světě. Zobrazuje statistiky vašich stránek, to jak uživatelé interagují s obsahem, jak dlouho uživatelé stráví na vašich stránkách a pomáhá vám měřit i konverze.
+
+### Google keyword Planner
+
+Tento nástroj je ideální pro hledání nových klíčových slov a návrhů na reklamní kampaně. Poskytuje data o objemu vyhledávání a konkurenceschopnosti klíčových slov, což je klíčové pro plánování efektivních SEO a PPC kampaní.
+
+### Ahrefs
+
+Ahrefs se specializuje na analýzu zpětných odkazů a strategii klíčových slov. Nabízí detailní pohled na zpětné odkazy (backlinky) vaší stránky a pomůže vám identifikovat klíčová slova, na která by se měl zaměřit váš obsah.
+
+### Moz Pro
+
+Moz Pro nabízí nástroje pro sledování klíčových slov, analýzu zpětných odkazů a audit stránek. Tento nástroj je užitečný pro identifikaci SEO příležitostí a sledování výkonu vašeho webu.
+
 ## Tipy, jak zlepšit vaše SEO
 
-Ne vždy máte možnost ovlivnit každý aspekt, který ovlivňuje SEO. Co ale můžete ovlivnit jsou kvalita a struktura obsahu, struktura stránek, použitelnost stránek na mobilních zařízeních nebo vhodně vybrané popisky. S tím komplikovanějším vám můžeme [pomoct.](/services/seo/)
+Ne vždy máte možnost ovlivnit každý aspekt, který ovlivňuje SEO. Co ale můžete ovlivnit jsou kvalita a struktura obsahu, struktura stránek, použitelnost stránek na mobilních zařízeních nebo vhodně vybrané popisky. S tím komplikovanějším vám můžeme [pomoct.](/services/seo/)
 
 ### 1. Pište kvalitní obsah
 
@@ -248,7 +297,7 @@ Značka `description` slouží jako popis stránky. Zahrňte do ní co nejreleva
 
 Stránky optimalizujte pro telefony. Používejte cache a minimalizujte počet dat potřebných pro načtení funkční verze stránek.
 
-Soustřeďte se na to, aby váš design byl v první řadě zaměřený na mobilní zařízení.
+Soustřeďte se na to, aby váš design byl v první řadě zaměřený na mobilní zařízení.
 
 Všechna data a obrázky minifikujte a optimalizujte. Obrázky můžete optimalizovat snadno pomocí různých nástrojů. My doporučujeme aplikaci [Squoosh,](https://squoosh.app) a pokud potřebujete optimalizovat `.png` obrázky, tak [Tinypng.](https://tinypng.com)
 
