@@ -5,6 +5,7 @@ description: "Vytvořte kvalitní SEO základ pro váš web. Objevte klíčové 
 date: 2023-12-18
 lastMod: 2024-01-07
 categories: ["seo"]
+og: "cover.webp"
 ---
 
 Jak to, že když vyhledáváte informace, produkty nebo služby online _(třeba na Googlu)_, tak se některé stránky zobrazují jako první ve vyhledávači? **Je to díky SEO** – optimalizaci pro vyhledávače (anglicky Search Engine Optimization). SEO není pouze o tom být vidět jako první ve vyhledávání, ale o tom být nejrelevantnější a nejhodnotnější možností pro vyhledávací dotazy uživatelů.

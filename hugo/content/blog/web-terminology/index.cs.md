@@ -4,6 +4,7 @@ title: "Webová terminologie"
 description: "Prvním krok pro kvalitní web je vytvoření kvalitního zadání. Proto je potřeba komunikovat s odborníky v jejich řeči. Naučte se základní terminologii odborníků."
 date: 2023-12-11
 categories: ["Produkt", "Web"]
+og: "cover.webp"
 ---
 
 Prvním krokem pro kvalitní web je vytvoření kvalitního zadání. Pro to je ale důležité pochopit základní terminologii, kterou webaři používají.
