@@ -7,7 +7,7 @@
 			"description": "{{.Description}}",
 			"author": [{"@type":"Person","name":"Jan Vítů"}],
 			"datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z" }}",
-			"dateModified": "{{ .Date.Format "2006-01-02T15:04:05Z" }}",
+			"dateModified": "{{if .Params.lastMod}}{{ .Params.lastMod.Format "2006-01-02T15:04:05Z" }}{{else}}{{ .Date.Format "2006-01-02T15:04:05Z" }}{{end}}",
 			"publisher" : {
 				"@type": "Organization",
 				"name": "Underliner Studio",

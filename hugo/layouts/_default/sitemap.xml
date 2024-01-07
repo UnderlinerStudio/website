@@ -3,6 +3,9 @@
 	{{ if ne .Params.Draft true }}
 	<url>
 		<loc>{{.Permalink}}</loc>
+		{{if .Params.lastMod}}
+		<lastmod>{{.Params.lastMod.Format "2006-01-02"}}</lastmod>
+		{{ end }}
 		<changefreq>daily</changefreq>
 	</url>
 	{{ end }}
