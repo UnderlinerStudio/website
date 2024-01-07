@@ -6,8 +6,6 @@
 	{{ $ogImagePath = print $.Page.Permalink $.Page.Params.og }}
 	{{ $ogImage = imageConfig (print $.Page.RelPermalink $.Page.Params.og) }}
 {{ end }}
-
-
 <meta property="og:url" content="{{ $.Page.Permalink }}" />
 <meta property="og:image" content="{{ $ogImagePath }}" />
 <meta property="og:image:alt" content="Underliner Studio web" />
