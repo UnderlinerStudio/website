@@ -66,7 +66,7 @@ SEO i PPC reklama patří do SEM (marketing ve vyhledávání). Obě tyto oblas
 
 Jak jsme psali výše, SEO vám pomáhá zlepšit pozici ve vyhledávačích nebo také v organickém vyhledávání.
 
-PPC reklamy (Pay Per Click česky Platba za kliknutí) je forma internetové reklamy, za kterou inzerent platí až po kliknutí uživatele. Nejčastější typy PPC reklam jsou vyhledávací PPC reklama a banerová PPC reklama. Vyhledávací PPC reklama se zobrazuje jako několik prvních výsledků ve vyhledávači. Banerová PPC reklama pak funguje jako grafické bannery na některých internetových stránkách.
+PPC reklamy (Pay Per Click česky Platba za kliknutí) je forma internetové reklamy, za kterou zaplatíte až po kliknutí uživatele. Nejčastější typy PPC reklam jsou vyhledávací PPC reklama a banerová PPC reklama. **Vyhledávací PPC reklama** se zobrazuje jako několik prvních výsledků ve vyhledávači. **Banerová PPC reklama** pak funguje jako grafické bannery na některých internetových stránkách.
 
 ## Základy SEO marketingu
 
