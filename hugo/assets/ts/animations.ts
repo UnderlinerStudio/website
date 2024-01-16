@@ -7,11 +7,7 @@ import {
 	stagger,
 } from "motion";
 
-export const homeGridReveal = (
-	aboutLink: HTMLElement,
-	elements: NodeListOf<ChildNode>,
-) => {
-	animate(aboutLink, { opacity: [0, 1] }, { duration: 0.5, delay: 0.5 });
+export const homeGridReveal = (elements: NodeListOf<ChildNode>) => {
 	elements.forEach((el: HTMLElement, index) => {
 		animate(
 			el,
@@ -21,13 +17,9 @@ export const homeGridReveal = (
 	});
 };
 
-export const homeGridRevealReverse = (
-	aboutLink: HTMLElement,
-	elements: NodeListOf<ChildNode>,
-) => {
+export const homeGridRevealReverse = (elements: NodeListOf<ChildNode>) => {
 	const arrElements = Array.from(elements).reverse();
 
-	animate(aboutLink, { opacity: [1, 0] }, { duration: 0.5 });
 	arrElements.forEach((el: HTMLElement, index) => {
 		animate(
 			el,

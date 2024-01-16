@@ -19,6 +19,9 @@ export default {
 			height: {
 				screen: ["100svh"],
 			},
+			minHeight: {
+				screen: "100svh",
+			},
 			zIndex: {
 				"-10": "-10",
 				"-1": "-1",

@@ -20,7 +20,14 @@
 	}
 	h1,
 	h2 {
-		@apply text-4xl leading-10 text-neutral-100 sm:text-5xl md:text-7xl xl:text-8xl;
+		@apply leading-10 text-neutral-100;
+		@apply tracking-tight;
+	}
+	h2 {
+		@apply text-3xl sm:text-5xl md:text-7xl xl:text-8xl;
+	}
+	h1 {
+		font-size: clamp(1.85rem, 8vw, 7rem);
 	}
 	p {
 		@apply text-lg leading-relaxed text-neutral-300 md:text-xl md:leading-loose;
@@ -38,8 +45,8 @@
 
 @layer components {
 	.hero-grid {
-		@apply grid grid-cols-3 grid-rows-5 lg:grid-cols-5 lg:grid-rows-3;
-		@apply h-[60vh];
+		@apply grid grid-cols-5 grid-rows-3;
+		@apply w-[100%];
 	}
 
 	.custom-scroll::-webkit-scrollbar {
@@ -56,8 +63,12 @@
 		@apply ml-5 pl-2;
 	}
 
-	.underlined {
+	/* .underlined {
 		@apply after:absolute after:bottom-[2px] after:left-0 after:h-px after:w-full after:origin-left after:scale-x-0 after:bg-neutral-50 after:transition-transform;
+		@apply hover:after:scale-x-100;
+	} */
+	.underlined {
+		@apply bg-gradient-to-r from-neutral-200 to-neutral-200 bg-[length:0%_1px] bg-[0_100%]	bg-no-repeat transition-[background-size] hover:bg-[length:100%_1px];
 		@apply hover:after:scale-x-100;
 	}
 
@@ -74,7 +85,7 @@
 	}
 
 	.blog-prose {
-		@apply prose prose-invert w-full;
+		@apply prose prose-neutral prose-invert w-full;
 		@apply prose-h2:mb-6 prose-h2:mt-7 prose-h2:text-2xl prose-h2:font-bold md:prose-h2:text-3xl;
 		@apply prose-h3:mb-6 prose-h3:mt-7 prose-h3:text-xl md:prose-h3:text-2xl;
 		@apply prose-h4:mb-4 prose-h4:mt-5 prose-h4:text-lg md:prose-h4:text-lg;
@@ -86,6 +97,7 @@
 		@apply prose-code:overflow-x-scroll prose-code:rounded prose-code:bg-neutral-950 prose-code:px-[6px] prose-code:py-1 prose-code:font-mono prose-code:text-xs prose-code:font-normal prose-code:text-neutral-300;
 		@apply prose-strong:text-neutral-100;
 		@apply prose-a:font-normal prose-a:text-neutral-200 prose-a:decoration-neutral-200 prose-a:transition-colors hover:prose-a:text-sunset-dark hover:prose-a:decoration-sunset-dark;
+		@apply prose-blockquote:border-neutral-200;
 	}
 
 	#TableOfContents ul {
@@ -93,11 +105,12 @@
 	}
 	#TableOfContents li {
 		list-style-type: "— ";
-		@apply ml-5 pl-2;
+		@apply dash;
+		@apply pl-2;
 		@apply transform transition-all duration-300 ease-in-out hover:text-neutral-50;
 	}
 	#TableOfContents li a {
-		@apply relative inline-block;
+		@apply relative;
 		@apply underlined;
 		@apply hover:text-neutral-50;
 	}
@@ -135,6 +148,10 @@
 	.scrollbar-hidden {
 		-ms-overflow-style: none; /* IE and Edge */
 		scrollbar-width: none; /* Firefox */
+	}
+
+	.wrap-balance {
+		text-wrap: balance;
 	}
 }
 

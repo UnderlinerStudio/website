@@ -1,14 +1,23 @@
 <div class="base-grid absolute inset-x-0 bottom-4">
 	{{ $alignment := "" }}
+	{{ $gridWidth := "" }}
 	{{ if .Get "align" }}
 		{{ $alignment = .Get "align" }}
 	{{ end }}
+	{{ if .Get "gridWidth" }}
+		{{ $gridWidth = .Get "gridWidth" }}
+	{{ end }}
+
 	{{ $mobileclass := "justify-normal" }}
+	{{ $gridColStart := "sm:col-start-3" }}
 	{{ if ne $alignment "left" }}
 		{{ $mobileclass = "justify-center" }}
 	{{ end }}
+	{{ if eq $gridWidth "full" }}
+		{{ $gridColStart = "sm:col-start-2" }}
+	{{ end }}
 	<div
-		class="{{ $mobileclass }} col-start-1 col-end-13 flex overflow-hidden sm:col-start-3 sm:col-end-12 sm:justify-normal"
+		class="{{ $mobileclass }} {{ $gridColStart }} col-start-1 col-end-13 flex overflow-hidden sm:col-end-12 sm:justify-normal"
 	>
 		<span
 			class="text-xs uppercase dark:text-neutral-900"

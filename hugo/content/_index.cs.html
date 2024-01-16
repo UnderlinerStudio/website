@@ -3,10 +3,52 @@ title: "Underliner studio"
 description: "Posouváme značky na další level. Jsme experti na design a vývoj digitálních produktů. Děláme webové stránky i aplikace. Pomůžeme vám v onlinu vyniknout."
 ---
 
-{{< homeHero >}}
+<section
+	id="hero"
+	class="base-grid relative h-screen w-screen snap-start snap-normal items-center pt-8 sm:pt-0"
+>
+	<div class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12">
+		<h1 class="font-black uppercase leading-tight">
+			<span class="block">
+				<span class="relative flex items-center gap-[3vw]">
+					<span>Designujeme</span>
+					<span class="inline-block h-[1em] w-full flex-grow bg-sunset"></span>
+				</span>
+			</span>
+			<span class="block">
+				<span class="flex items-center gap-[3vw]">
+					<span class="inline-block h-[1em] flex-grow  bg-tealblue"></span>
+					<span>vyvíjíme</span>
+				</span>
+			</span>
+			<span class="block">
+				<span class="flex items-center gap-[3vw]">
+					<span>& posilujeme</span>
+					<span class="inline-block h-[1em] flex-grow  bg-ronchi"></span>
+				</span>
+			</span>
+			<span>digitální produkty</span>
+		</h1>
+		{{< homeGrid >}}
+		<div class="relative mt-8 flex items-start gap-8 sm:hidden">
+			<p class="wrap-balace text-sm font-medium text-neutral-200">
+				Posouváme hranice digitálních produktů. Vytváříme aplikace, designy
+				& kampaně, které prolamují limity.
+			</p>
+			<a
+				href="/about"
+				class="after:scale-x-1 relative w-max whitespace-nowrap text-2xl font-black uppercase text-neutral-100 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-left after:bg-white after:transition-transform hover:after:origin-right hover:after:scale-x-0"
+			>
+				O NÁS
+			</a>
+		</div>
+	</div>
+
+	{{< scrollDownIndicator gridWidth="full" align="left" >}}
+</section>
 <section class="base-grid py-20 md:py-32">
 	<div class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12">
-		<h1 class="font-black uppercase">
+		<h2 class="font-black uppercase" data-animate="h2-from-bottom">
 			<span class="inline-block overflow-hidden whitespace-nowrap">
 				<span
 					class="block leading-tight"
@@ -25,7 +67,7 @@ description: "Posouváme značky na další level. Jsme experti na design a výv
 					na <span class="text-sunset">další level</span>
 				</span>
 			</span>
-		</h1>
+		</h2>
 	</div>
 	<div
 		data-animate="fade-in"
