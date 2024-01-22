@@ -20,7 +20,7 @@
 	}
 	h1,
 	h2 {
-		@apply leading-10 text-neutral-100;
+		@apply leading-tight text-neutral-100;
 		@apply tracking-tight;
 	}
 	h2 {
@@ -50,17 +50,17 @@
 	}
 
 	.custom-scroll::-webkit-scrollbar {
-		@apply h-full w-1 rounded-full;
+		@apply w-1 h-full rounded-full;
 		@apply bg-neutral-800;
 	}
 
 	.checkbox-switch {
-		@apply invisible h-0 w-0;
+		@apply invisible w-0 h-0;
 	}
 
 	li.dash {
 		list-style-type: "— ";
-		@apply ml-5 pl-2;
+		@apply pl-2 ml-5;
 	}
 
 	/* .underlined {
@@ -85,7 +85,7 @@
 	}
 
 	.blog-prose {
-		@apply prose prose-neutral prose-invert w-full;
+		@apply w-full prose prose-neutral prose-invert;
 		@apply prose-h2:mb-6 prose-h2:mt-7 prose-h2:text-2xl prose-h2:font-bold md:prose-h2:text-3xl;
 		@apply prose-h3:mb-6 prose-h3:mt-7 prose-h3:text-xl md:prose-h3:text-2xl;
 		@apply prose-h4:mb-4 prose-h4:mt-5 prose-h4:text-lg md:prose-h4:text-lg;
@@ -107,7 +107,7 @@
 		list-style-type: "— ";
 		@apply dash;
 		@apply pl-2;
-		@apply transform transition-all duration-300 ease-in-out hover:text-neutral-50;
+		@apply transition-all duration-300 ease-in-out transform hover:text-neutral-50;
 	}
 	#TableOfContents li a {
 		@apply relative;
@@ -119,20 +119,20 @@
 	}
 
 	.button {
-		@apply inline-block h-11 w-full px-5 text-base font-bold uppercase sm:h-14 sm:px-8;
+		@apply inline-block w-full px-5 text-base font-bold uppercase h-11 sm:h-14 sm:px-8;
 	}
 	.button--small {
 		@apply h-10;
 	}
 
 	.button > div {
-		@apply flex h-full w-full items-center justify-center text-xs sm:text-sm;
+		@apply flex items-center justify-center w-full h-full text-xs sm:text-sm;
 	}
 	.button_sunset {
-		@apply bg-sunset-dark text-white hover:bg-sunset;
+		@apply text-white bg-sunset-dark hover:bg-sunset;
 	}
 	.button_outline {
-		@apply border-2 border-neutral-700 bg-transparent text-white hover:border-neutral-500;
+		@apply text-white bg-transparent border-2 border-neutral-700 hover:border-neutral-500;
 	}
 
 	.faq-dropdown.faq--toggled .chevron-down {

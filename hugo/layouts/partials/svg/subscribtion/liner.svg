@@ -1,0 +1,60 @@
+<svg width="100%" height="100%" viewBox="0 0 1200 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <mask id="mask0_1481_13978" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-1" y="-18" width="1202"
+    height="1218">
+    <line x1="-1" y1="51" x2="1201" y2="51" stroke="#737373" stroke-width="18" />
+    <line x1="-1" y1="111" x2="1201" y2="111" stroke="#737373" stroke-width="18" />
+    <line x1="-1" y1="171" x2="1201" y2="171" stroke="#737373" stroke-width="18" />
+    <line x1="-1" y1="231" x2="1201" y2="231" stroke="#737373" stroke-width="18" />
+    <line x1="-1" y1="291" x2="1201" y2="291" stroke="#737373" stroke-width="18" />
+    <line x1="-1" y1="351" x2="1201" y2="351" stroke="#737373" stroke-width="18" />
+    <line x1="-1" y1="411" x2="1201" y2="411" stroke="#737373" stroke-width="18" />
+    <line x1="-1" y1="471" x2="1201" y2="471" stroke="#737373" stroke-width="18" />
+    <line x1="-1" y1="531" x2="1201" y2="531" stroke="#737373" stroke-width="18" />
+    <line x1="-1" y1="591" x2="1201" y2="591" stroke="#737373" stroke-width="18" />
+    <line x1="-1" y1="651" x2="1201" y2="651" stroke="#737373" stroke-width="18" />
+    <line x1="-1" y1="711" x2="1201" y2="711" stroke="#737373" stroke-width="18" />
+    <line x1="-1" y1="771" x2="1201" y2="771" stroke="#737373" stroke-width="18" />
+    <line x1="-1" y1="831" x2="1201" y2="831" stroke="#737373" stroke-width="18" />
+    <line x1="-1" y1="891" x2="1201" y2="891" stroke="#737373" stroke-width="18" />
+    <line x1="-1" y1="951" x2="1201" y2="951" stroke="#737373" stroke-width="18" />
+    <line x1="-1" y1="1011" x2="1201" y2="1011" stroke="#737373" stroke-width="18" />
+    <line x1="-1" y1="1071" x2="1201" y2="1071" stroke="#737373" stroke-width="18" />
+    <line x1="-1" y1="1131" x2="1201" y2="1131" stroke="#737373" stroke-width="18" />
+    <line x1="-1" y1="1191" x2="1201" y2="1191" stroke="#737373" stroke-width="18" />
+  </mask>
+  <g mask="url(#mask0_1481_13978)">
+    <circle cx="600" cy="600" r="500" fill="#D9D9D9" />
+  </g>
+  <mask id="mask1_1481_13978" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-1" y="-18" width="1202"
+    height="1218">
+    <line x1="-1" y1="51" x2="1201" y2="51" stroke="white" stroke-width="18" />
+    <line x1="-1" y1="111" x2="1201" y2="111" stroke="white" stroke-width="18" />
+    <line x1="-1" y1="171" x2="1201" y2="171" stroke="white" stroke-width="18" />
+    <line x1="-1" y1="231" x2="1201" y2="231" stroke="white" stroke-width="18" />
+    <line x1="-1" y1="291" x2="1201" y2="291" stroke="white" stroke-width="18" />
+    <line x1="-1" y1="351" x2="1201" y2="351" stroke="white" stroke-width="18" />
+    <line x1="-1" y1="411" x2="1201" y2="411" stroke="white" stroke-width="18" />
+    <line x1="-1" y1="471" x2="1201" y2="471" stroke="white" stroke-width="18" />
+    <line x1="-1" y1="531" x2="1201" y2="531" stroke="white" stroke-width="18" />
+    <line x1="-1" y1="591" x2="1201" y2="591" stroke="white" stroke-width="18" />
+    <line x1="-1" y1="651" x2="1201" y2="651" stroke="white" stroke-width="18" />
+    <line x1="-1" y1="711" x2="1201" y2="711" stroke="white" stroke-width="18" />
+    <line x1="-1" y1="771" x2="1201" y2="771" stroke="white" stroke-width="18" />
+    <line x1="-1" y1="831" x2="1201" y2="831" stroke="white" stroke-width="18" />
+    <line x1="-1" y1="891" x2="1201" y2="891" stroke="white" stroke-width="18" />
+    <line x1="-1" y1="951" x2="1201" y2="951" stroke="white" stroke-width="18" />
+    <line x1="-1" y1="1011" x2="1201" y2="1011" stroke="white" stroke-width="18" />
+    <line x1="-1" y1="1071" x2="1201" y2="1071" stroke="white" stroke-width="18" />
+    <line x1="-1" y1="1131" x2="1201" y2="1131" stroke="white" stroke-width="18" />
+    <line x1="-1" y1="1191" x2="1201" y2="1191" stroke="white" stroke-width="18" />
+  </mask>
+  <g mask="url(#mask1_1481_13978)">
+    <circle cx="600" cy="600" r="500" fill="url(#paint0_linear_1481_13978)" />
+  </g>
+  <defs>
+    <linearGradient id="paint0_linear_1481_13978" x1="1100" y1="1100" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8BD1C" />
+      <stop offset="1" stop-color="#F8BD1C" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+</svg>

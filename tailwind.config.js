@@ -25,6 +25,8 @@ export default {
 			zIndex: {
 				"-10": "-10",
 				"-1": "-1",
+				// prettier-ignore
+				"1": "1",
 			},
 		},
 	},

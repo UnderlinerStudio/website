@@ -19,7 +19,7 @@ observerAnimation({
 	targetElement: heading1Elements,
 }).fromDown({
 	observerOptions: heading1ObserverOptions,
-	duration: 0.3,
+	duration: 0.5,
 	delay: stagger(0.15),
-	easing: "ease-in-out",
+	easing: "ease-out",
 });

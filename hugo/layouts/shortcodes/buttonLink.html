@@ -1,0 +1,14 @@
+{{ $type := .Get "type" | default "fill" }}
+{{ $isSmall := .Get "isSmall" | default false }}
+{{ $href := .Get "href" | default "#" }}
+{{ $buttonClass := "button_sunset" }}
+{{ if eq $type "outline" }}
+	{{ $buttonClass = "button_outline" }}
+{{ end }}
+
+
+<a href="{{ $href }}" class="button">
+	<div>
+		{{ .Inner }}
+	</div>
+</a>
