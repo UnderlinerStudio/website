@@ -1,8 +1,8 @@
 <header
-	class="fixed inset-x-0 z-40 grid w-screen grid-cols-12 items-center px-5 pt-3 sm:px-0 sm:pt-9"
+	class="fixed inset-x-0 z-40 grid items-center w-screen grid-cols-12 px-5 pt-3"
 >
 	<div
-		class="z-10 col-span-3 col-start-1 h-10 justify-self-start sm:col-span-2 sm:col-start-2"
+		class="z-10 h-10 col-span-3 col-start-1 justify-self-start sm:col-span-2 sm:col-start-2"
 	>
 		<a
 			href="{{ ($.Site.GetPage `/`).RelPermalink }}"
@@ -13,7 +13,7 @@
 		</a>
 	</div>
 	<div
-		class="col-start-4 col-end-13 grid grid-flow-col items-center justify-end gap-4 sm:col-end-12"
+		class="grid items-center justify-end grid-flow-col col-start-4 col-end-13 gap-4 sm:col-end-12"
 	>
 		{{ partial "nav/listNav.html" . }}
 		{{ partial "hamburger.html" . }}

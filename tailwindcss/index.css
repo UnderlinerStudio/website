@@ -30,7 +30,7 @@
 		font-size: clamp(1.85rem, 8vw, 7rem);
 	}
 	p {
-		@apply text-lg leading-relaxed text-neutral-300 md:text-xl md:leading-loose;
+		@apply text-base leading-relaxed text-neutral-300 md:text-lg md:leading-loose;
 	}
 	img {
 		max-width: 100%;
