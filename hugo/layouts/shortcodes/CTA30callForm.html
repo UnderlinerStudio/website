@@ -1,13 +1,13 @@
-<section class="base-grid bg-neutral-950/20 py-20 md:py-28">
+<section class="py-20 base-grid bg-neutral-950/20 md:py-28">
 	<div
-		class="col-start-1 col-end-13 grid grid-flow-row grid-cols-1 gap-16 md:col-start-2 md:col-end-12 md:gap-16 xl:grid-cols-2"
+		class="grid grid-flow-row grid-cols-1 col-start-1 col-end-13 gap-16 md:col-start-2 md:col-end-12 md:gap-16 xl:grid-cols-2"
 	>
 		<div>
-			<h2 class="text-3xl font-black sm:text-4xl">
-				{{ .Get "heading" | default `Zarezervujte si 30 minutovou konzultaci <span class="text-sunset">zdarma</span>` | safeHTML }}
+			<h2 class="text-[clamp(1.40rem,6vw,2.25rem)] font-black">
+				{{ .Get "heading" | default `Zarezervujte si 30 minutovou<br /> konzultaci <span class="text-sunset">zdarma</span>` | safeHTML }}
 			</h2>
 			<div
-				class="mb-12 mt-6 max-w-2xl space-y-4 text-lg sm:mt-12 sm:space-y-8 sm:text-xl md:mt-10 md:text-2xl"
+				class="max-w-2xl mt-6 mb-12 space-y-4 text-lg sm:mt-12 sm:space-y-8 sm:text-xl md:mt-10 md:text-2xl"
 			>
 				<p>
 					{{ .Get "paragraph" | safeHTML }}
@@ -29,12 +29,12 @@
 						</label>
 					</p>
 					<div class="relative flex-grow">
-						<label for="call-mail" class="absolute -top-5 text-xs uppercase"
+						<label for="call-mail" class="absolute text-xs uppercase -top-5"
 							>{{ i18n "form.email.label" }}</label
 						>
 						<div class="relative">
 							<input
-								class="w-full rounded-none border border-transparent bg-neutral-800 py-2 pl-3 pr-4 transition-colors duration-300 hover:bg-neutral-700 focus:border-neutral-600 focus-visible:outline-none"
+								class="w-full py-2 pl-3 pr-4 transition-colors duration-300 border border-transparent rounded-none bg-neutral-800 hover:bg-neutral-700 focus:border-neutral-600 focus-visible:outline-none"
 								type="email"
 								name="call-mail"
 								id="call-mail"
@@ -44,7 +44,7 @@
 							/>
 							{{/* error message */}}
 							<div
-								class="absolute bottom-0 w-full translate-y-full transform text-left italic text-red-600"
+								class="absolute bottom-0 w-full italic text-left text-red-600 transform translate-y-full"
 							>
 								<span
 									class="hidden w-full text-sm"
@@ -65,7 +65,7 @@
 						type="submit"
 						data-toast-error="{{ i18n `form.toast.error` }}"
 						data-toast-success="{{ i18n `form.toast.success` }}"
-						class="border border-neutral-600 px-5 py-2 text-sm font-bold text-neutral-50 transition-colors hover:bg-sunset sm:px-8 "
+						class="px-5 py-2 text-sm font-bold transition-colors border border-neutral-600 text-neutral-50 hover:bg-sunset sm:px-8 "
 					>
 						<div class="relative inline-block uppercase">
 							{{ i18n "form.button" }}

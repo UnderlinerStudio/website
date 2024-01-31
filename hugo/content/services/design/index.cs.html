@@ -1,6 +1,6 @@
 ---
 title: "Design | Underliner studio"
-description: ""
+description: "Design pro náročné výzvy, které pomáhají organizacím vynikonout."
 bodybg: "bg-sunset"
 isdark: true
 ---
@@ -10,13 +10,13 @@ isdark: true
 		class="col-start-1 col-end-13 flex flex-col justify-between pb-20 pt-[20vh] sm:col-start-3 sm:col-end-12"
 	>
 		<h1
-			class="text-7xl font-black uppercase dark:text-neutral-900 sm:mb-0 sm:mt-0 md:text-8xl lg:text-9xl"
+			class="font-black uppercase text-7xl dark:text-neutral-900 sm:mb-0 sm:mt-0 md:text-8xl lg:text-9xl"
 		>
 			Design
 		</h1>
 		<p class="max-w-2xl text-base dark:text-neutral-900 md:text-lg">
 			Design není jen vizuál, design má svou funkci. Každý pixel, každý prvek
-			a každá interakce s uživatelem musí být co nejpřirozenější a musí mít svůj
+			a každá interakce s uživatelem musí být co nejpřirozenější a musí mít svůj
 			důvod. Neděláme efekty, co zdobí hromadu ničeho, ale design, který
 			funguje.
 		</p>
@@ -24,71 +24,465 @@ isdark: true
 	{{< scrollDownIndicator align="left" >}}
 </section>
 
-<section class="base-grid py-12 md:py-28">
+<section class="py-12 base-grid md:py-28">
 	<div
-		class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12 md:col-start-4 md:col-end-12"
+		class="grid col-start-1 col-end-13 sm:col-start-2 sm:col-end-12 lg:grid-cols-2"
 	>
-		<h2
-			class="text-4xl font-black uppercase sm:text-6xl md:text-7xl lg:text-8xl"
-		>
-			Poznáváme
-		</h2>
-		<div class="mt-6 max-w-2xl sm:mt-8 md:mt-10">
-			<p>
-				Identifikujeme potřeby uživatelů, zjistíme z čeho mají obavy, co jim na
-				produktu vadí a co se jim naopak líbí. Uděláme všechny potřebné analýzy
-				pro to, aby výsledek měl ten nejlepší základ.
-			</p>
+		<div class="order-2 mx-auto mt-4 w-[80%] lg:order-1 lg:mt-0">
+			{{< partial "svg/assets/design.svg" >}}
+		</div>
+		<div class="order-1 lg:order-2">
+			<h2 class="text-[clamp(2.25rem,5vw,4rem)] font-black uppercase">
+				Více než jen vizuál
+			</h2>
+			<div class="max-w-2xl mt-6 space-y-5 sm:mt-8 md:mt-10">
+				<p>
+					Když se řekne slovo design každý si představí to jak věci vypadají,
+					ale jen o tom design není.
+					<span class="font-medium text-neutral-50"
+						>Design je pro nás víc než jen vizuál.</span
+					>
+					Design je process navrhování a tvorby produktů, systémů, řešení potřeb
+					uživatelů a businessu.
+				</p>
+				<p>
+					Návrhem aplikací, webů nebo tiskovin pomáháme značkám komunikovat
+					jeich podstatu a přilákat ty správné klienty.
+				</p>
+
+				<div class="mt-8 sm:mt-10 md:mt-12">
+					<p class="text-base text-neutral-400">Pomůžeme vám s:</p>
+					<ul
+						class="grid grid-cols-1 mt-2 text-sm leading-relaxed text-neutral-500 sm:grid-cols-2 md:text-base"
+					>
+						<li class="dash">UI & UX</li>
+						<li class="dash">Brandingem</li>
+						<li class="dash">Designem tiskovin</li>
+						<li class="dash">Ověřením & testováním designu</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
-<section class="base-grid py-12 md:py-28">
-	<div
-		class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12 md:col-start-5 md:col-end-12"
-	>
-		<h2
-			class="text-4xl font-black uppercase sm:text-6xl md:text-7xl lg:text-8xl"
-		>
-			Definujeme
-		</h2>
-		<div class="mt-6 max-w-2xl sm:mt-8 md:mt-10">
-			<p>
-				Projdeme všechny analýzy, jejich výsledky, a snažíme se identifikovat
-				počáteční problém. Prioritizujeme problémy, které mají velký dopad na
-				vaše cíle.
+{{< CTA30callForm
+	name="discovery-free-call"
+	paragraph=`Ve <strong>30 minutách</strong> vám pomůžeme nadefinovat váš produkt.
+	<strong>Domluvte si s námi online konzultaci <span class="text-sunset">zdarma.</span></strong>
+	Vyplňte vaši emailovou adresu a my se vám do 24 hodin ozveme.`
+>}}
+<div class="grid gap-8 sm:grid-cols-2">
+	<div>
+		<div class="relative inline-block mb-4">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				height="1em"
+				viewBox="0 0 512 512"
+				class="relative z-10 w-8 h-8 fill-neutral-50"
+			>
+				<path
+					d="M32 256C32 132.3 132.3 32 256 32c56.1 0 107.4 20.6 146.7 54.7l-34.1 34.1C338.1 95.3 298.8 80 256 80c-72.2 0-134.2 43.5-161.3 105.6L124 198.4c22.2-50.9 73-86.4 132-86.4c34 0 65.2 11.8 89.9 31.5l-34.3 34.3C295.9 166.6 276.7 160 256 160c-53 0-96 43-96 96s43 96 96 96s96-43 96-96H320c0 35.3-28.7 64-64 64s-64-28.7-64-64s28.7-64 64-64c11.9 0 23 3.2 32.5 8.9l-43.8 43.8L233.4 256 256 278.6l11.3-11.3 224-224L502.6 32 480 9.4 468.7 20.7 425.4 64C380.2 24.2 320.9 0 256 0C114.6 0 0 114.6 0 256S114.6 512 256 512s256-114.6 256-256H480c0 123.7-100.3 224-224 224S32 379.7 32 256zM313.6 388l12.8 29.3C388.5 390.2 432 328.2 432 256H400c0 59-35.5 109.8-86.4 132zM124 313.6L94.7 326.4c17.7 40.6 50.3 73.2 90.9 90.9L198.4 388c-33.2-14.5-59.9-41.2-74.4-74.4zM120 256a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM256 440a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"
+				/>
+			</svg>
+			<div
+				class="absolute z-0 rounded-full -bottom-1 -right-1 h-7 w-7 bg-sunset"
+			></div>
+		</div>
+		<h3 class="text-xl font-bold">Upřesníme si představu o projektu</h3>
+		<div class="mt-4 space-y-3">
+			<p class="text-base text-neutral-400">
+				Upřesníme si vaši představu a možnosti. Zjistíme základní informace
+				o vás vaší firmě. Jaké podklady máte a jaké ne.
 			</p>
 		</div>
 	</div>
+	<div>
+		<div class="relative inline-block mb-4">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				height="1em"
+				class="relative z-10 w-8 h-8 fill-neutral-50"
+				viewBox="0 0 512 512"
+			>
+				<path
+					d="M48 56V32H0V56 456v24H24 488h24V432H488 48V56zm296 72H320v48h24 54.1L304 270.1l-79-79-17-17-17 17-80 80-17 17L128 321.9l17-17 63-63 79 79 17 17 17-17 111-111V264v24h48V264 152 128H456 344z"
+				/>
+			</svg>
+			<div class="absolute z-0 -bottom-1 -right-1 h-7 w-7 bg-sunset"></div>
+		</div>
+		<h3 class="text-xl font-bold">Navrhneme jak vám můžeme pomoct</h3>
+		<div class="mt-4">
+			<p class="text-base text-neutral-400">
+				Navrhneme možné řešení a pomůžeme vám naplánovat realizaci. Vytvoříme
+				hrubý odhad a nastíníme proces a plán.
+			</p>
+		</div>
+	</div>
+</div>
+{{< /CTA30callForm >}}
+<section class="overflow-hidden base-grid py-28 md:py-32">
+	<div class="relative col-start-1 col-end-13 sm:col-start-2 sm:col-end-12">
+		<h2 class="max-w-4xl text-[clamp(2.25rem,5vw,4.5rem)] font-black uppercase">
+			Inovujeme, navrhujeme a ověřujeme
+		</h2>
+		<div class="max-w-2xl mt-6 sm:mt-8 md:mt-10">
+			<p>
+				Úzce spolupracujeme s produktovým týmem na tom, aby byl náš výsledek
+				dokonlaý. Vymýšlíme nové nápady a validujeme je. Vybíráme pouze ty
+				nejlepší a ty, které přežijí testování. Design podle jeho výsledků
+				upravujeme a vylepšujeme.
+			</p>
+		</div>
+		<div
+			class="absolute inset-x-0 -bottom-28 -z-1 w-full opacity-60 lg:inset-x-auto lg:right-0 lg:top-1/4 lg:w-[30vw] lg:transform"
+		>
+			<svg
+				width="100%"
+				height="100%"
+				viewBox="0 0 699 500"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M217 0L433.506 125V375L217 500L0.493652 375V125L217 0Z"
+					fill="url(#paint0_linear_1570_109)"
+				/>
+				<path
+					d="M217 0L433.506 125V375L217 500L0.493652 375V125L217 0Z"
+					fill="url(#paint1_linear_1570_109)"
+				/>
+				<path
+					d="M482 0L698.506 125V375L482 500L265.494 375V125L482 0Z"
+					fill="url(#paint2_linear_1570_109)"
+				/>
+				<mask
+					id="mask0_1570_109"
+					style="mask-type:alpha"
+					maskUnits="userSpaceOnUse"
+					x="261"
+					y="51"
+					width="178"
+					height="407"
+				>
+					<line
+						x1="263.25"
+						y1="154.969"
+						x2="436.455"
+						y2="54.9689"
+						stroke="white"
+						stroke-width="7"
+					/>
+					<line
+						x1="263.25"
+						y1="184.969"
+						x2="436.455"
+						y2="84.9689"
+						stroke="white"
+						stroke-width="7"
+					/>
+					<line
+						x1="263.25"
+						y1="214.969"
+						x2="436.455"
+						y2="114.969"
+						stroke="white"
+						stroke-width="7"
+					/>
+					<line
+						x1="263.25"
+						y1="244.969"
+						x2="436.455"
+						y2="144.969"
+						stroke="white"
+						stroke-width="7"
+					/>
+					<line
+						x1="263.25"
+						y1="274.969"
+						x2="436.455"
+						y2="174.969"
+						stroke="white"
+						stroke-width="7"
+					/>
+					<line
+						x1="263.25"
+						y1="304.969"
+						x2="436.455"
+						y2="204.969"
+						stroke="white"
+						stroke-width="7"
+					/>
+					<line
+						x1="263.25"
+						y1="334.969"
+						x2="436.455"
+						y2="234.969"
+						stroke="white"
+						stroke-width="7"
+					/>
+					<line
+						x1="263.25"
+						y1="364.969"
+						x2="436.455"
+						y2="264.969"
+						stroke="white"
+						stroke-width="7"
+					/>
+					<line
+						x1="263.25"
+						y1="394.969"
+						x2="436.455"
+						y2="294.969"
+						stroke="white"
+						stroke-width="7"
+					/>
+					<line
+						x1="263.25"
+						y1="424.969"
+						x2="436.455"
+						y2="324.969"
+						stroke="white"
+						stroke-width="7"
+					/>
+					<line
+						x1="263.25"
+						y1="454.969"
+						x2="436.455"
+						y2="354.969"
+						stroke="white"
+						stroke-width="7"
+					/>
+				</mask>
+				<g mask="url(#mask0_1570_109)">
+					<path
+						fill-rule="evenodd"
+						clip-rule="evenodd"
+						d="M349.5 76.499L433.506 125V375L349.5 423.501L265.494 375V125L349.5 76.499Z"
+						fill="url(#paint3_linear_1570_109)"
+					/>
+					<path
+						fill-rule="evenodd"
+						clip-rule="evenodd"
+						d="M349.5 76.499L433.506 125V375L349.5 423.501L265.494 375V125L349.5 76.499Z"
+						fill="url(#paint4_linear_1570_109)"
+					/>
+				</g>
+				<defs>
+					<linearGradient
+						id="paint0_linear_1570_109"
+						x1="217"
+						y1="0"
+						x2="217"
+						y2="500"
+						gradientUnits="userSpaceOnUse"
+					>
+						<stop stop-color="#E5E5E5" />
+						<stop offset="1" stop-color="#E5E5E5" stop-opacity="0" />
+					</linearGradient>
+					<linearGradient
+						id="paint1_linear_1570_109"
+						x1="217"
+						y1="0"
+						x2="217"
+						y2="500"
+						gradientUnits="userSpaceOnUse"
+					>
+						<stop stop-color="#262626" />
+						<stop offset="1" stop-color="#262626" stop-opacity="0.1" />
+					</linearGradient>
+					<linearGradient
+						id="paint2_linear_1570_109"
+						x1="482"
+						y1="0"
+						x2="482"
+						y2="500"
+						gradientUnits="userSpaceOnUse"
+					>
+						<stop stop-color="#DF625A" />
+						<stop offset="1" stop-color="#DF625A" stop-opacity="0" />
+					</linearGradient>
+					<linearGradient
+						id="paint3_linear_1570_109"
+						x1="349.5"
+						y1="-1.00005"
+						x2="349.5"
+						y2="509.5"
+						gradientUnits="userSpaceOnUse"
+					>
+						<stop stop-color="#E5E5E5" />
+						<stop offset="1" stop-color="#E5E5E5" stop-opacity="0" />
+					</linearGradient>
+					<linearGradient
+						id="paint4_linear_1570_109"
+						x1="349.5"
+						y1="1.49995"
+						x2="349.5"
+						y2="511.5"
+						gradientUnits="userSpaceOnUse"
+					>
+						<stop stop-color="#262626" />
+						<stop offset="1" stop-color="#262626" stop-opacity="0.1" />
+					</linearGradient>
+				</defs>
+			</svg>
+		</div>
+	</div>
 </section>
-<section class="base-grid py-12 md:py-28">
+
+<section
+	class="relative overflow-hidden base-grid bg-neutral-950/40 py-28 md:py-32"
+>
 	<div class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12">
-		<h2
-			class="text-4xl font-black uppercase sm:text-6xl md:text-7xl lg:text-8xl"
-		>
-			Vytváříme
+		<h2 class="max-w-3xl text-[clamp(2.25rem,5vw,4.5rem)] font-black uppercase">
+			Dodržujeme designérský process...
 		</h2>
-		<div class="mt-6 max-w-2xl sm:mt-8 md:mt-10">
-			<p>
-				Brainstormujeme nápady a vymýšlíme řešení identifikovaných problémů.
-				Načrtáváme, prototypujeme a experimentujeme. Generujeme co nejvíce
-				nápadů a sbíráme zpětnou vazbu.
-			</p>
+		<p class="max-w-2xl mt-8">
+			Držíme se designerského procesu a díky tomu minimalizujeme rizika
+			neůspšchu projektu. Inetujeme a validujeme – to nám pomáhá vytvářet
+			funkční nepřehlédnutelné designy.
+		</p>
+		<div class="grid gap-10 mt-16 md:mt-28 lg:grid-cols-2 lg:gap-28">
+			<div class="col-span-2 lg:ml-32">
+				<h3 class="text-[clamp(1.75rem,4vw,2.5rem)] font-medium">
+					<span
+						class="text-base text-transparent bg-neutral-100 bg-gradient-to-br from-sunset/40 to-sunset bg-clip-text align-super md:text-2xl"
+						>01</span
+					>
+					Poznáváme
+				</h3>
+				<div class="max-w-xl mt-6">
+					<p class="text-base text-neutral-400 md:text-lg">
+						Identifikujeme potřeby uživatelů, zjistíme z čeho mají obavy, co jim
+						na produktu vadí a co se jim naopak líbí. Uděláme všechny potřebné
+						analýzy pro to, aby výsledek měl ten nejlepší základ.
+					</p>
+				</div>
+			</div>
+			<div class="col-span-2 md:ml-28 lg:ml-0">
+				<h3 class="text-[clamp(1.75rem,4vw,2.5rem)] font-medium">
+					<span
+						class="text-base text-transparent bg-neutral-100 bg-gradient-to-br from-sunset/40 to-sunset bg-clip-text align-super md:text-2xl"
+						>02</span
+					>
+					Definujeme
+				</h3>
+				<div class="max-w-xl mt-6">
+					<p class="text-base text-neutral-400 md:text-lg">
+						Projdeme všechny analýzy, jejich výsledky, a snažíme se
+						identifikovat počáteční problém. Prioritizujeme problémy, které mají
+						velký dopad na vaše cíle.
+					</p>
+				</div>
+			</div>
+			<div class="col-span-2 lg:ml-32">
+				<h3 class="text-[clamp(1.75rem,4vw,2.5rem)] font-medium ">
+					<span
+						class="text-base text-transparent bg-neutral-100 bg-gradient-to-br from-sunset/40 to-sunset bg-clip-text align-super md:text-2xl"
+						>03</span
+					>
+					Vytváříme
+				</h3>
+				<div class="max-w-xl mt-6">
+					<p class="text-base text-neutral-400 md:text-lg">
+						Brainstormujeme nápady a vymýšlíme řešení identifikovaných problémů.
+						Načrtáváme, prototypujeme a experimentujeme. Generujeme co nejvíce
+						nápadů a sbíráme zpětnou vazbu.
+					</p>
+				</div>
+			</div>
+			<div class="col-span-2 md:ml-28 lg:ml-0">
+				<h3 class="text-[clamp(1.75rem,4vw,2.5rem)] font-medium">
+					<span
+						class="text-base text-transparent bg-neutral-100 bg-gradient-to-br from-sunset/40 to-sunset bg-clip-text align-super md:text-2xl"
+						>04</span
+					>
+					Doručujeme
+				</h3>
+				<div class="max-w-xl mt-6">
+					<p class="text-base text-neutral-400 md:text-lg">
+						Vybereme ta nejlepší řešení, pracujeme na nich a testujeme je.
+						Vyhovující řešení implementujeme do produktu a monitorujeme jeho
+						dopady na potřeby uživatelů a vaše cíle.
+					</p>
+				</div>
+			</div>
+			<div
+				class="absolute right-0 top-[25%] -z-1 h-[70%] translate-x-1/2 transform lg:right-[8vw] lg:translate-x-0"
+			>
+				<svg
+					width="100%"
+					height="100%"
+					viewBox="0 0 601 1201"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<defs>
+						<linearGradient id="gradient" x1="50%" x2="50%" y1="0%" y2="100%">
+							<stop offset="0%" stop-color="#DF625A" stop-opacity="0.8" />
+							<stop offset="100%" stop-color="#DF625A" stop-opacity="0.3" />
+						</linearGradient>
+					</defs>
+					<path
+						d="M320.826 15.3441L585.1 279.62C596.427 290.947 596.427 309.313 585.1 320.641L328.581 577.161C322.36 583.382 318.937 591.867 319.101 600.664C319.257 609.043 322.655 617.036 328.581 622.962L585.497 879.88C596.825 891.207 596.825 909.573 585.497 920.901L321.223 1185.18C309.895 1196.5 291.53 1196.5 280.202 1185.18L15.9278 920.901C4.60018 909.573 4.60018 891.207 15.9278 879.879L272.446 623.36C278.668 617.138 282.09 608.653 281.927 599.857C281.771 591.477 278.373 583.485 272.446 577.558L15.5304 320.641C4.20281 309.313 4.20281 290.947 15.5304 279.62L279.805 15.3441C291.132 4.01644 309.498 4.01644 320.826 15.3441Z"
+						stroke="#f5f5f5"
+						opacity="0.3"
+						stroke-width="13.1762"
+					/>
+					<path
+						d="M320.826 15.3441L585.1 279.62C596.427 290.947 596.427 309.313 585.1 320.641L328.581 577.161C322.36 583.382 318.937 591.867 319.101 600.664C319.257 609.043 322.655 617.036 328.581 622.962L585.497 879.88C596.825 891.207 596.825 909.573 585.497 920.901L321.223 1185.18C309.895 1196.5 291.53 1196.5 280.202 1185.18L15.9278 920.901C4.60018 909.573 4.60018 891.207 15.9278 879.879L272.446 623.36C278.668 617.138 282.09 608.653 281.927 599.857C281.771 591.477 278.373 583.485 272.446 577.558L15.5304 320.641C4.20281 309.313 4.20281 290.947 15.5304 279.62L279.805 15.3441C291.132 4.01644 309.498 4.01644 320.826 15.3441Z"
+						stroke="url(#gradient)"
+						stroke-width="13.1762"
+					/>
+				</svg>
+			</div>
 		</div>
 	</div>
 </section>
-<section class="base-grid py-12 md:py-28">
-	<div class="col-start-1 col-end-13 sm:col-start-4 sm:col-end-12">
+
+<section class="py-20 base-grid bg-neutral-50 md:py-32">
+	<div
+		class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12 md:col-start-3"
+	>
 		<h2
-			class="text-4xl font-black uppercase sm:text-6xl md:text-7xl lg:text-8xl"
+			class="max-w-5xl text-[clamp(3rem,9vw,8rem)] font-bold text-neutral-600"
 		>
-			Doručujeme
+			...Ale nebojíme se dělat změny
 		</h2>
-		<div class="mt-6 max-w-2xl sm:mt-8 md:mt-10">
-			<p>
-				Vybereme ta nejlepší řešení, pracujeme na nich a testujeme je.
-				Vyhovující řešení implementujeme do produktu a monitorujeme jeho dopady
-				na potřeby uživatelů a vaše cíle.
-			</p>
-		</div>
 	</div>
 </section>
+
+<!--<section class="base-grid py-28 md:py-32">
+	<div class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12">
+		<h2 class="max-w-3xl text-[clamp(2.25rem,5vw,4.5rem)] font-black uppercase">
+			Co můžete od našeho designu čekat
+		</h2>
+		<div class="grid md:grid-cols-3">
+			<div>
+				<h3>Jeden nebo více designérů</h3>
+				<p class="text-sm leading-normal text-neutral-400 sm:text-base">
+					Potřebujete specialistu, aby vám vyřešil konkrétní problém nebo celý
+					tým, který se postará o váš projekt od 0<span
+						class="inline-block w-3 h-3 mx-1 fill-neutral-300"
+						>{{< partial "svg/arrow-right.svg" >}}</span
+					>1.
+				</p>
+			</div>
+			<div>
+				<h3>Jsme součástí vašeho týmu</h3>
+				<p class="text-sm leading-normal text-neutral-400 sm:text-base">
+					Vaším projektem žijeme, adaptujeme se a upravujeme náš proces podle
+					vašich zavedených postupů,
+					<strong>na míru</strong>.
+				</p>
+			</div>
+			<div>
+				<h3>Flexibilita</h3>
+				<p class="text-sm leading-normal text-neutral-400 sm:text-base">
+					Na práci odkudkoli si zakládáme, ale přizpůsobujeme se potřebám
+					projektu. Pokud vám bude více vyhovovat, aby designéři byli k
+					dispozici u vás ve firmě zařídíme to.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>-->
