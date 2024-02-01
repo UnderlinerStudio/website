@@ -7,7 +7,10 @@ description: "Posouváme značky na další level. Jsme experti na design a výv
 	id="hero"
 	class="relative items-center w-screen h-screen pt-8 base-grid snap-start snap-normal sm:pt-0"
 >
-	<div class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12">
+	<div
+		id="hero-content"
+		class="col-start-1 col-end-13 sm:col-start-2 sm:col-end-12"
+	>
 		<h1 class="font-black leading-tight uppercase">
 			<span class="block">
 				<span class="relative flex items-center gap-[3vw]">
@@ -17,7 +20,7 @@ description: "Posouváme značky na další level. Jsme experti na design a výv
 			</span>
 			<span class="block">
 				<span class="flex items-center gap-[3vw]">
-					<span class="inline-block h-[1em] flex-grow  bg-tealblue"></span>
+					<span class="inline-block h-[1em] flex-grow bg-tealblue"></span>
 					<span>vyvíjíme</span>
 				</span>
 			</span>
@@ -30,7 +33,11 @@ description: "Posouváme značky na další level. Jsme experti na design a výv
 			<span>digitální produkty</span>
 		</h1>
 		{{< homeGrid >}}
-		<div class="relative flex items-start gap-8 mt-8 sm:hidden">
+		<div
+			data-animate=""
+			class="relative flex items-start gap-8 mt-8 sm:hidden"
+			style="opacity: 0;"
+		>
 			<p class="text-sm font-medium wrap-balace text-neutral-200">
 				Posouváme hranice digitálních produktů. Vytváříme aplikace, designy
 				& kampaně, které prolamují limity.
@@ -72,6 +79,7 @@ description: "Posouváme značky na další level. Jsme experti na design a výv
 	</div>
 	<div
 		data-animate="fade-in"
+		data-bounding=""
 		style="opacity: 0;"
 		class="max-w-4xl col-start-1 col-end-13 mt-6 mb-12 space-y-4 text-lg sm:col-start-3 sm:col-end-12 sm:mt-12 sm:space-y-8 sm:text-xl md:text-2xl"
 	>
