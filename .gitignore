@@ -19,7 +19,7 @@ $RECYCLE.BIN/
 .DS_Store
 .env
 
-hugo/assets/js/solid
+hugo/assets/js/solid/*.js
 
 
 # Local Netlify folder
