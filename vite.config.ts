@@ -39,8 +39,11 @@ function syncToHugo() {
 			const hugoWeb = hugoAssets.filter((name) =>
 				name.match(/(web*.).*\w+/),
 			)[0];
-			if (originWeb !== hugoWeb) {
-				await unlink(`./hugo/assets/js/solid/${hugoWeb}`);
+
+			if (hugoWeb && originWeb !== hugoWeb) {
+				await unlink(`./hugo/assets/js/solid/${hugoWeb}`).catch((e) =>
+					console.log(e),
+				);
 			}
 			try {
 				await mkdir("./hugo/assets/js/solid", { recursive: true });
